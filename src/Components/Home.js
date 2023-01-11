@@ -6,15 +6,16 @@ const Home = () => {
     return (
       <>
       <div id="home"
-        className=' img-fluid text-center bg-image'
+        className=' img-fluid  bg-image'
         style={{ backgroundImage: `url(${Dentist})`, backgroundColor: 'rgba(0, 0, 0, 0.6)', height: 850 }}
       >
         <div id="mask" className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
           <div id="homeContainter">
           <div id="textContainer" >
-              <h1 id="topText">Let us Brighten your Smile</h1>
-              <h3>Dr. Keith Brown, DDS-FAGD, has served the Naperville area for more than three decades. </h3>
-              <p>Whether you need 24/7 emegency care, a routine check-up (both kids and adults!) or issues with pain or discomfot, Dr. Brown provides a low-anxiety and trusted atmosphere to get your smile shining again. </p>
+              <h1 id="topHeroText">Let us brighten your smile.</h1>
+              <h3 id="bottomHeroText">Dr. Keith A. Brown, D.D.S., F.A.G.D, is one Naperville's top and dentists, serving the Chicagoland area for more than 40 years. Let us assist you.</h3>
+              <br></br>
+              
               </div>
              
             <div id="buttonContainer" >

@@ -1,7 +1,14 @@
 
 
-#topText {
+#topHeroText {
   font-size: 400%;
+  font-family: 'Abril Fatface', cursive;
+color: rgb(238, 238, 14);}
+
+  #bottomHeroText {
+    font-size: 200%;
+    font-family: 'Poppins', sans-serif;
+    width: auto;
 }
 
 #home {
@@ -28,3 +35,39 @@
   flex-direction: column;
 }
 
+#brand {
+  font-size: 300%;
+  font-family: 'Qwitcher Grypen', cursive;
+  font-weight: bolder;
+
+  color: #708A99
+}
+
+#navBar {
+  background-color: #E6D5BE;
+
+}
+
+#headerLinks {
+  color: rgb(62, 110, 110);
+  font-size: 125%;
+font-family: 'Poppins', sans-serif;
+}
+
+#headerButton {
+  background-color: #E6D5BE;
+  border: 4px solid black;
+  color: #708A99;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+
+}
+
+#footer {
+  background-color: #E6D5BE;
+  color: #708A99;
+}

@@ -21,9 +21,9 @@ export default function App() {
 
   return (
     <>
-      <MDBNavbar expand='md' light bgColor='white'>
+      <MDBNavbar id="navBar" expand='md' light >
         <MDBContainer fluid>
-          <MDBNavbarBrand href='#'>Home</MDBNavbarBrand>
+          <MDBNavbarBrand id="brand" href='#'>Dr. Keith Brown D.D.S.</MDBNavbarBrand>
           <MDBNavbarToggler
             type='button'
             data-target='#navbarTogglerDemo02'
@@ -35,7 +35,7 @@ export default function App() {
             <MDBIcon icon='bars' fas />
           </MDBNavbarToggler>
           <MDBCollapse navbar show={showNavNoTogglerSecond}>
-            <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
+            <MDBNavbarNav id="headerLinks" className='mr-auto mb-2 mb-lg-0'>
               <MDBNavbarItem>
                 <MDBNavbarLink href='#'>
                   Our Practice
@@ -87,7 +87,7 @@ export default function App() {
 
             </MDBNavbarNav>
          
-        <MDBBtn outline color="primary" className='me-2' type='button'>
+        <MDBBtn id="headerButton" outline className='me-2' type='button'>
           Make an Appointment
         </MDBBtn>
         
