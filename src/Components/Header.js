@@ -21,7 +21,7 @@ export default function App() {
 
   return (
     <>
-      <MDBNavbar expand='md' light bgColor='secondary'>
+      <MDBNavbar expand='md' light bgColor='white'>
         <MDBContainer fluid>
           <MDBNavbarBrand href='#'>Home</MDBNavbarBrand>
           <MDBNavbarToggler
