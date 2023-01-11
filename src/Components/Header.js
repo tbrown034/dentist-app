@@ -1,66 +1,59 @@
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import React, { useState } from 'react';
+import {
+  MDBNavbar,
+  MDBContainer,
+  MDBNavbarBrand,
+  MDBNavbarToggler,
+  MDBNavbarItem,
+  MDBNavbarLink,
+  MDBCollapse,
+  MDBBtn,
+  MDBIcon,
+  MDBNavbarNav,
+  MDBInputGroup
+} from 'mdb-react-ui-kit';
 
-function Header() {
+export default function App() {
+  const [showNavNoTogglerSecond, setShowNavNoTogglerSecond] = useState(false);
+
   return (
-    <Navbar  collapseOnSelect expand="sm" bg="dark" variant="dark">
-        <Navbar.Brand id="navBrand" href="/">Home</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav id="leftNavBar" className="me-auto">
-          <Nav.Link href="#features">About Us</Nav.Link>
-          <Nav.Link href="#features">Financing</Nav.Link>
-            <Nav.Link href="#pricing">Location</Nav.Link>
-          <NavDropdown title="Dental Services" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">
-                  General Dentristry
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Cosmetic Dentristry
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Endodontics and Root Canals
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">
-                  Denture Implants
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.5">
-                  Children's Dentistry
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.6">
-                  Dental Crowns
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.7">
-                  Dental Implants
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Dental Reconstruction
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Dentures</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Invisalign
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Teeth Whitening
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Teeth Extraction
-                </NavDropdown.Item>
-
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">More</NavDropdown.Item>
-              </NavDropdown>
-           
-          </Nav>
-          <Nav id="rightNavBar">
-            <Nav.Link href="#memes">
-              Make an Appointment
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-    </Navbar>
+    <>
+      <MDBNavbar expand='lg' light bgColor='light'>
+        <MDBContainer fluid>
+          <MDBNavbarBrand href='#'>Navbar</MDBNavbarBrand>
+          <MDBNavbarToggler
+            type='button'
+            data-target='#navbarTogglerDemo02'
+            aria-controls='navbarTogglerDemo02'
+            aria-expanded='false'
+            aria-label='Toggle navigation'
+            onClick={() => setShowNavNoTogglerSecond(!showNavNoTogglerSecond)}
+          >
+            <MDBIcon icon='bars' fas />
+          </MDBNavbarToggler>
+          <MDBCollapse navbar show={showNavNoTogglerSecond}>
+            <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
+              <MDBNavbarItem>
+                <MDBNavbarLink active aria-current='page' href='#'>
+                  Home
+                </MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink href='#'>Link</MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink disabled href='#' tabIndex={-1} aria-disabled='true'>
+                  Disabled
+                </MDBNavbarLink>
+              </MDBNavbarItem>
+            </MDBNavbarNav>
+            <MDBInputGroup tag="form" className='d-flex w-auto mb-3'>
+              <input className='form-control' placeholder="Type query" aria-label="Search" type='Search' />
+              <MDBBtn outline>Search</MDBBtn>
+            </MDBInputGroup>
+          </MDBCollapse>
+        </MDBContainer>
+      </MDBNavbar>
+    </>
   );
 }
-
-export default Header ;
