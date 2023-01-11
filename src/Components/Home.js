@@ -7,7 +7,7 @@ const Home = () => {
       <>
       <div id="home"
         className=' img-fluid text-center bg-image'
-        style={{ backgroundImage: `url(${Dentist})`, backgroundColor: 'rgba(0, 0, 0, 0.6)', height: 800 }}
+        style={{ backgroundImage: `url(${Dentist})`, backgroundColor: 'rgba(0, 0, 0, 0.6)', height: 1000 }}
       >
         <div id="mask" className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
           <div id="homeContainter">

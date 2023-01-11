@@ -21,7 +21,7 @@ export default function App() {
 
   return (
     <>
-      <MDBNavbar expand='md' light bgColor='light'>
+      <MDBNavbar expand='md' light bgColor='secondary'>
         <MDBContainer fluid>
           <MDBNavbarBrand href='#'>Home</MDBNavbarBrand>
           <MDBNavbarToggler
@@ -87,7 +87,7 @@ export default function App() {
 
             </MDBNavbarNav>
          
-        <MDBBtn outline color="success" className='me-2' type='button'>
+        <MDBBtn outline color="primary" className='me-2' type='button'>
           Make an Appointment
         </MDBBtn>
         
