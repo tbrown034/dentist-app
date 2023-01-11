@@ -1,0 +1,27 @@
+#topText {
+  font-size: 400%;
+}
+
+#home {
+  color: white
+  
+}
+
+#textContainer {
+  display: flex;
+  flex-direction: column
+}
+
+#buttonContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.mask {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+

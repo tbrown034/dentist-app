@@ -5,27 +5,38 @@ import Dentist from "./Images/dentist.jpeg"
 const Home = () => {
     return (
       <>
-      <header style={{ paddingLeft: 0 }}>
-      <div
-        className='p-5 img-fluid text-center bg-image'
-        style={{ backgroundImage: `url(${Dentist})`, height: 800 }}
+      <div id="home"
+        className=' img-fluid text-center bg-image'
+        style={{ backgroundImage: `url(${Dentist})`, backgroundColor: 'rgba(0, 0, 0, 0.6)', height: 800 }}
       >
-        <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
-          <div className='d-flex justify-content-center align-items-center h-100'>
-            <div className='text-white'>
-              <h1 className='mb-3'>Keith A. Brown, DDS-FAGD LTD</h1>
-              <h4 className='mb-3'>Serving Naperville and the surrounding area since 2000</h4>
-              <a className='btn btn-outline-light btn-lg' href='#!' role='button'>
+        <div id="mask" className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
+          <div id="homeContainter">
+          <div id="textContainer" >
+              <h1 id="topText">Let us Brighten your Smile</h1>
+              <h3>Dr. Keith Brown, DDS-FAGD, has served the Naperville area for more than three decades. </h3>
+              <p>Whether you need 24/7 emegency care, a routine check-up (both kids and adults!) or issues with pain or discomfot, Dr. Brown provides a low-anxiety atmosphere to get your smile shining again. </p>
+              </div>
+             
+            <div id="buttonContainer" >
+              <br></br>
+            <a className='btn btn-outline-light btn-lg' href='#!' role='button'>
                 Make an Appointment
-              </a><br/><br></br>
+              </a><br/>
               <a className='btn btn-outline-light btn-lg' href='#!' role='button'>
                 Frequently Asked Questions
               </a>
             </div>
+
+
+
           </div>
+
+
+
+     
+          
         </div>
       </div>
-    </header>
 
 
         
