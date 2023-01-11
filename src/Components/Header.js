@@ -10,7 +10,6 @@ import {
   MDBBtn,
   MDBIcon,
   MDBNavbarNav,
-  MDBInputGroup,
   MDBDropdown,
   MDBDropdownToggle,
   MDBDropdownMenu,
@@ -39,7 +38,12 @@ export default function App() {
             <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
               <MDBNavbarItem>
                 <MDBNavbarLink href='#'>
-                  About
+                  Our Practice
+                </MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink href='#'>
+                  Meet Dr. Brown
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
@@ -57,6 +61,12 @@ export default function App() {
                   Contact
                 </MDBNavbarLink>
               </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink href='#'>
+                  FAQs
+                </MDBNavbarLink>
+              </MDBNavbarItem>
+              
               <MDBNavbarItem>
               <MDBDropdown>
                 <MDBDropdownToggle tag='a' className='nav-link' role='button'>
