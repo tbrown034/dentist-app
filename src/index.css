@@ -3,16 +3,20 @@
 #topHeroText {
   font-size: 400%;
   font-family: 'Abril Fatface', cursive;
-color: rgb(238, 238, 14);}
+color: rgb(171, 223, 248);
+padding-left: 12px;
+
+}
 
   #bottomHeroText {
     font-size: 200%;
     font-family: 'Poppins', sans-serif;
     width: auto;
+    padding-left: 12px;
 }
 
 #home {
-  color: white;
+  color: whitesmoke;
 
   
 }
