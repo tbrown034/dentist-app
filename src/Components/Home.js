@@ -8,7 +8,7 @@ const Home = () => {
       <header style={{ paddingLeft: 0 }}>
       <div
         className='p-5 img-fluid text-center bg-image'
-        style={{ backgroundImage: `url(${Dentist})`, height: 900 }}
+        style={{ backgroundImage: `url(${Dentist})`, height: 800 }}
       >
         <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
           <div className='d-flex justify-content-center align-items-center h-100'>
