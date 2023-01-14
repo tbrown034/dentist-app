@@ -13,10 +13,12 @@ padding-left: 12px;
     font-family: 'Poppins', sans-serif;
     width: auto;
     padding-left: 12px;
+    color:whitesmoke
+
 }
 
 #home {
-  color: whitesmoke;
+color: rgb(171, 223, 248);
 
   
 }
@@ -60,7 +62,8 @@ font-family: 'Poppins', sans-serif;
 
 #headerButton {
   background-color: #E6D5BE;
-  border: 4px solid black;
+  border: 6px solid #708A99
+;
   color: #708A99;
   padding: 10px;
   text-align: center;

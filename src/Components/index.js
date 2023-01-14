@@ -1,3 +1,11 @@
 export { default as Home} from './Home'
 export { default as Header} from './Header'
 export { default as Footer} from './Footer'
+export { default as Contact} from './Contact'
+export { default as Appointment} from './Appoitnment'
+export { default as FAQ} from './FAQ'
+export { default as Location} from './Location'
+export { default as MeetDr} from './Appoitnment'
+export { default as Practice} from './Practice'
+export { default as Services} from './Services'
+
