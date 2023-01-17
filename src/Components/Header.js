@@ -87,7 +87,7 @@ export default function App() {
 
             </MDBNavbarNav>
          
-        <MDBBtn id="headerButton" outline className='me-2' type='button'>
+        <MDBBtn id="headerButton" href='/Appointment' outline className='me-2' type='button'>
           Make an Appointment
         </MDBBtn>
         
