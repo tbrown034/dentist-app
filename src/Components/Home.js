@@ -20,10 +20,10 @@ const Home = () => {
              
             <div id="buttonContainer" >
               <br></br>
-            <a className='btn btn-outline-light btn-lg' href='#!' role='button'>
+            <a className='btn btn-outline-light btn-lg' href='/Appointment' role='button'>
                 Make an Appointment
               </a><br/>
-              <a className='btn btn-outline-light btn-lg' href='#!' role='button'>
+              <a className='btn btn-outline-light btn-lg' href='/FAQs' role='button'>
                 Frequently Asked Questions
               </a>
             </div>

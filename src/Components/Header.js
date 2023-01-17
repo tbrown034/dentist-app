@@ -23,7 +23,7 @@ export default function App() {
     <>
       <MDBNavbar id="navBar" expand='md' light >
         <MDBContainer fluid>
-          <MDBNavbarBrand id="brand" href='#'>Dr. Keith Brown D.D.S.</MDBNavbarBrand>
+          <MDBNavbarBrand id="brand" href='/'>Dr. Keith Brown D.D.S.</MDBNavbarBrand>
           <MDBNavbarToggler
             type='button'
             data-target='#navbarTogglerDemo02'
@@ -37,50 +37,50 @@ export default function App() {
           <MDBCollapse navbar show={showNavNoTogglerSecond}>
             <MDBNavbarNav id="headerLinks" className='mr-auto mb-2 mb-lg-0'>
               <MDBNavbarItem>
-                <MDBNavbarLink href='#'>
+                <MDBNavbarLink href='/Practice'>
                   Our Practice
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href='#'>
+                <MDBNavbarLink href='/MeetDr'>
                   Meet Dr. Brown
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href='#'>
+                <MDBNavbarLink href='/Financing'>
                   Financing
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href='#'>
+                <MDBNavbarLink href='/Location'>
                   Location
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href='#'>
+                <MDBNavbarLink href='/Contact'>
                   Contact
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href='#'>
+                <MDBNavbarLink href='/FAQs'>
                   FAQs
                 </MDBNavbarLink>
               </MDBNavbarItem>
               
               <MDBNavbarItem>
               <MDBDropdown>
-                <MDBDropdownToggle tag='a' className='nav-link' role='button'>
+                <MDBDropdownToggle  tag='a' className='nav-link' role='button'>
                   Services
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
-                  <MDBDropdownItem link>General Dentristry</MDBDropdownItem>
-                  <MDBDropdownItem link>Emergency Dentristry</MDBDropdownItem>
-                  <MDBDropdownItem link>Cosmetic Dentristry </MDBDropdownItem>
-                  <MDBDropdownItem link>Childrens' Dentristry </MDBDropdownItem>
-                  <MDBDropdownItem link>Dental Crowns</MDBDropdownItem>
-                  <MDBDropdownItem link>Dental Implants </MDBDropdownItem>
-                  <MDBDropdownItem link>Whitening</MDBDropdownItem>
-                  <MDBDropdownItem link>More</MDBDropdownItem>
+                  <MDBDropdownItem  href='/Services' link>General Dentristry</MDBDropdownItem>
+                  <MDBDropdownItem href='/Services' link>Emergency Dentristry</MDBDropdownItem>
+                  <MDBDropdownItem href='/Services' link>Cosmetic Dentristry </MDBDropdownItem>
+                  <MDBDropdownItem href='/Services' link>Childrens' Dentristry </MDBDropdownItem>
+                  <MDBDropdownItem href='/Services' link>Dental Crowns</MDBDropdownItem>
+                  <MDBDropdownItem href='/Services' link>Dental Implants </MDBDropdownItem>
+                  <MDBDropdownItem href='/Services' link>Whitening</MDBDropdownItem>
+                  <MDBDropdownItem href='/Services' link>More</MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavbarItem>
