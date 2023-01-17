@@ -3,7 +3,7 @@
 #topHeroText {
   font-size: 400%;
   font-family: 'Abril Fatface', cursive;
-color: rgb(171, 223, 248);
+color: #E6D5BE;
 padding-left: 12px;
 
 }
@@ -25,7 +25,8 @@ color: rgb(171, 223, 248);
 
 #textContainer {
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  justify-content: center;
 }
 
 #buttonContainer {

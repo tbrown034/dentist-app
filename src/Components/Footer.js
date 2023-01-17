@@ -37,14 +37,14 @@ const Footer = () => {
 
               <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">Hours</h6>
-                <p>
+                
                   <ul>
                     <li>Monday & Tuesday: 9 a.m. to 5 p.m.</li>
                     <li>Wednesday: 9 a.m. to 9 p.m.</li>
                     <li>Thursday and Friday: 9 a.m. to 5 p.m.</li>
                     <li>Weekends: 5 p.m. to 10 p.m.</li>
                   </ul>
-                </p>
+                
               </MDBCol>
 
               <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
