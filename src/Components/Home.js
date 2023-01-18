@@ -1,5 +1,5 @@
 import React from "react";
-import Dentist from "./Images/dentist.jpeg"
+import Dentist from "./Images/dentist.jpeg";
 
 
 const Home = () => {
@@ -38,6 +38,8 @@ const Home = () => {
           
         </div>
       </div>
+
+      
 
 
         

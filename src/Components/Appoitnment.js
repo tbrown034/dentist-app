@@ -50,10 +50,9 @@ const Appointment = () => {
         >
           <div id="homeContainter">
             <div id="textContainer">
-              <h1 id="topHeroText">Convenient Location in Naperville</h1>
+              <h1 id="topHeroText">Book Your Next Appointment</h1>
               <h3 id="bottomHeroText">
-                Located in the thrid floor of the Fifth Third Bank at 75th St.
-                and Rickert Drive
+                Let us know how and when we can help you and we'll be back to you ASAP!
               </h3>
               <br></br>
             </div>
