@@ -43,7 +43,7 @@ color: rgb(171, 223, 248);
 }
 
 #brand {
-  font-size: 300%;
+  font-size: 200%;
   font-family: 'Qwitcher Grypen', cursive;
   font-weight: bolder;
 
@@ -66,16 +66,29 @@ font-family: 'Poppins', sans-serif;
   border: 6px solid #708A99
 ;
   color: #708A99;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 2px;
 
 }
 
 #footer {
   background-color: #E6D5BE;
   color: #708A99;
+}
+
+#secondLayer {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  color: #E6D5BE;
+  background-color: #708A99;
+  padding: 5px
+}
+
+#leftDiv, #rightText {
+  padding: 10px;
 }
