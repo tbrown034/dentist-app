@@ -1,10 +1,15 @@
 import React from "react";
 import Image from "react-bootstrap/Image";
-
+import TestMap from './TestMap';
+import GoogleMap from "./GoogleMap";
 import bank from "./Images/bank.jpeg";
 import map from "./Images/dummymap.png"
-
 const Location = () => {
+  const locationPin = {
+    address: '11296 Rickert Dr, Naperville, IL 60540',
+    lat: 41.748348062742295,
+    lng:  -88.16665423542193,
+  }
   return (
     <>
       <div
@@ -46,6 +51,10 @@ const Location = () => {
       </div>
       <div id="secondLayer">
       <div id="leftDiv">
+        <TestMap />
+        <GoogleMap />
+       
+      
         <Image
                 src={map}
                 fluid
