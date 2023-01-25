@@ -1,15 +1,7 @@
 import React from "react";
-import Image from "react-bootstrap/Image";
-import TestMap from './TestMap';
 import GoogleMap from "./GoogleMap";
 import bank from "./Images/bank.jpeg";
-import map from "./Images/dummymap.png"
 const Location = () => {
-  const locationPin = {
-    address: '11296 Rickert Dr, Naperville, IL 60540',
-    lat: 41.748348062742295,
-    lng:  -88.16665423542193,
-  }
   return (
     <>
       <div
@@ -50,31 +42,41 @@ const Location = () => {
         </div>
       </div>
       <div id="secondLayer">
-      <div id="leftDiv">
-        <TestMap />
-        <GoogleMap />
-       
-      
-        <Image
-                src={map}
-                fluid
-                alt="careCredit"
-              ></Image>
+        <div id="leftDiv">
+          <GoogleMap />
         </div>
-        <div  id="rightText">
-          <h3>Easy Location</h3>
-          <p>We promise to give you the most affordable dental care we can offer. We can also assist you in arranging a financing program tailored to your specific needs and budget.</p>
+        <div id="rightText">
+          <h3>Located in the heart of Naperville</h3>
+          <p>
+            We promise to give you the most affordable dental care we can offer.
+            We can also assist you in arranging a financing program tailored to
+            your specific needs and budget.
+          </p>
           <ul>
-            <li>We accept most traditional insurance plans, contact our office to verify acceptance of your plan.</li>
-            <li>We accept checks, cash or credit cards. We also offer a flexible payment plan.</li>
-            <li>We also can advise you on a variety of financial services to help you pay for treatments and procedures your insurance doesn’t cover. 
-</li>
-            <li>Each service offers No Interest or Low Interest financing and low minimum monthly payment options, so you can get the treatment you want, when you want it.</li>
-            <li>Our Financial Coordinator can walk you through the application process for Care Credit or Citi Health financing options.
-</li>
+            <li>
+              We accept most traditional insurance plans, contact our office to
+              verify acceptance of your plan.
+            </li>
+            <li>
+              We accept checks, cash or credit cards. We also offer a flexible
+              payment plan.
+            </li>
+            <li>
+              We also can advise you on a variety of financial services to help
+              you pay for treatments and procedures your insurance doesn’t
+              cover.
+            </li>
+            <li>
+              Each service offers No Interest or Low Interest financing and low
+              minimum monthly payment options, so you can get the treatment you
+              want, when you want it.
+            </li>
+            <li>
+              Our Financial Coordinator can walk you through the application
+              process for Care Credit or Citi Health financing options.
+            </li>
           </ul>
         </div>
-       
       </div>
     </>
   );

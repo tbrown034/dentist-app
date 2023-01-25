@@ -1,41 +1,31 @@
-import React from 'react'
-import GoogleMapReact from 'google-map-react'
-import { Icon } from '@iconify/react'
-import locationIcon from '@iconify/icons-mdi/map-marker'
+import React from "react";
+import GoogleMapReact from 'google-map-react';
 
-  
-  
-const GoogleMap = ({ LocationPin, zoomLevel }) => {
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
-    
-      const location = {
-        address: '11296 Rickert Dr, Naperville, IL 60540',
-        lat: 41.748348062742295,
-        lng:  -88.16665423542193,
-      }
+export default function GoogleMap(){
+  const defaultProps = {
+    center: {
+      lat: 41.74841368014457, 
+      lng: -88.166756002096
+    },
+    zoom: 14
+  };
 
-
-
-    return (
-    
-  <div className="map">
-    <h2 className="map-h2">Come Visit Us At Our Campus</h2>
-
-    <div className="google-map">
+  return (
+    // Important! Always set the container height explicitly
+    <div style={{ height: '100%', width: '100%' }}>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: '' }}
-        defaultCenter={location}
-        defaultZoom={zoomLevel}
+        bootstrapURLKeys={{ key: "AIzaSyCwX08HUwDEqG6xSWAFLozTBWBAB3e-aNc" }}
+        defaultCenter={defaultProps.center}
+        defaultZoom={defaultProps.zoom}
       >
-        <LocationPin
-          lat={location.lat}
-          lng={location.lng}
-          text={location.address}
+        <AnyReactComponent
+          lat={41.74841368014457}
+          lng={-88.166756002096}
+          text="My Marker"
         />
       </GoogleMapReact>
     </div>
-  </div>
-);
-    }
-
-export default GoogleMap
+  );
+}
