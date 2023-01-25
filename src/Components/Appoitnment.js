@@ -57,31 +57,21 @@ const Appointment = () => {
               <br></br>
             </div>
 
-            <div id="buttonContainer">
-              <br></br>
-              <a
-                className="btn btn-outline-light btn-lg"
-                href="/Appointment"
-                role="button"
-              >
-                Make an Appointment
-              </a>
-            </div>
+           
           </div>
         </div>
       </div>
             <div id="secondLayer">
       <div id="leftDiv">
-      <div>
-      
+      <div id="appointmentForm">
       <form id="contactForm" ref={form} onSubmit={sendEmail}>    
         <label>Patient name:</label>
         <input type="text" name="patient_name" />
         <br />
-        <label>Your mail</label>
+        <label>Your Email:</label>
         <input type="email" name="patient_email" />
         <br />
-        <label>Your Phone Number</label>
+        <label>Your Phone Number:</label>
         <input type="tel" name="patient_email" />
         <br />
         <label>Message:</label>
