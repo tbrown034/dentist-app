@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useState } from "react";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 import Button from "react-bootstrap/Button";
 import Toast from "react-bootstrap/Toast";
 import teeth from './Images/smile3.webp'
@@ -14,21 +14,21 @@ const Appointment = () => {
     console.log("handleSubmit ran");
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_99v16fc",
-        "contact_form",
-        form.current,
-        "oLVh7PnRrJc_IUIfK"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    // emailjs
+    //   .sendForm(
+    //     "service_99v16fc",
+    //     "contact_form",
+    //     form.current,
+    //     "oLVh7PnRrJc_IUIfK"
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
     e.target.reset();
   };
 
@@ -67,15 +67,23 @@ const Appointment = () => {
       <form id="contactForm" ref={form} onSubmit={sendEmail}>    
         <label>Patient name:</label>
         <input type="text" name="patient_name" />
-        <br />
         <label>Your Email:</label>
         <input type="email" name="patient_email" />
-        <br />
         <label>Your Phone Number:</label>
-        <input type="tel" name="patient_email" />
-        <br />
+        <input type="tel" name="patient_phone" />
+        
+
+        <input type="radio" id="css" name="fav_language" value="CSS" />
+        
+       
+
         <label>Message:</label>
-        <textarea rows="10" name="message" />
+        <textarea rows="8" name="message" />
+        <lable>Preferred Appointment Date:</lable>
+        <input type="date" name="date"   />
+        <lable>Back-Up Date</lable>
+        <input type="date" name="date"   />
+        
         <fieldset/>
       </form>
 <div id="contactButtonContain">

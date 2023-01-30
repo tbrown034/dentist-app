@@ -127,3 +127,9 @@ h6 {
 
 }
 
+#segmentGroup {
+  color: whitesmoke;
+  background-color: #3e5969;
+   margin: 0;
+   font-family: 'Poppins', sans-serif;
+}
