@@ -1,17 +1,9 @@
 import React from "react";
 import Dentist from "./Images/dentist.jpeg";
-import { Segment } from 'semantic-ui-react';
-import { Icon } from 'semantic-ui-react'
-
-
-
-
-
-
-
+import { Segment } from "semantic-ui-react";
+import { Icon } from "semantic-ui-react";
 
 const Home = () => {
-  
   return (
     <>
       <div
@@ -61,14 +53,25 @@ const Home = () => {
         </div>
       </div>
       <div id="sectionHolder">
-      <Segment.Group horizontal id="segmentGroup">
-    <Segment> <Icon  name='user md' size='big' /><p>40+ Years of Experience</p></Segment>
-    
-    <Segment> <Icon  name='emergency' size='big' /><p>24/7 Emergency Services</p></Segment>
-    <Segment> <Icon  name='money bill alternate outline' size='big'  /><p>Affordable Care</p></Segment>
-  </Segment.Group>
-  </div>
-    
+        <Segment.Group horizontal id="segmentGroup">
+          <Segment>
+            {" "}
+            <Icon name="user md" size="big" />
+            <p>40+ Years of Experience</p>
+          </Segment>
+
+          <Segment>
+            {" "}
+            <Icon name="emergency" size="big" />
+            <p>24/7 Emergency Services</p>
+          </Segment>
+          <Segment>
+            {" "}
+            <Icon name="money bill alternate outline" size="big" />
+            <p>Affordable Care</p>
+          </Segment>
+        </Segment.Group>
+      </div>
     </>
   );
 };
