@@ -70,7 +70,7 @@ const Footer = () => {
         </section>
 
         <div
-          className="text-center p-4"
+          className="text-center p-1"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.01)" }}
         >
           © 2023

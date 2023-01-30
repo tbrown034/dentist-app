@@ -86,10 +86,12 @@ export default function App() {
             </MDBNavbarItem>
 
             </MDBNavbarNav>
+            
          
-        <MDBBtn id="headerButton" href='/Appointment' outline className='me-2' type='button'>
-          Make an Appointment
-        </MDBBtn>
+            <button  class=" #E6D5BE circular ui icon button">
+  Make an Appointment
+</button>
+
         
    
           </MDBCollapse>
