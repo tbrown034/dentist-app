@@ -52,26 +52,20 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div id="sectionHolder">
-        <Segment.Group horizontal id="segmentGroup">
-          <Segment>
-            {" "}
-            <Icon name="user md" size="big" />
-            <p>40+ Years of Experience</p>
-          </Segment>
-
-          <Segment>
-            {" "}
-            <Icon name="emergency" size="big" />
-            <p>24/7 Emergency Services</p>
-          </Segment>
-          <Segment>
-            {" "}
-            <Icon name="money bill alternate outline" size="big" />
-            <p>Affordable Care</p>
-          </Segment>
-        </Segment.Group>
-      </div>
+      <Segment.Group horizontal id="segmentGroup">
+        <Segment id="segment">
+          <Icon name="user md" size="big" />
+          <p>40+ Years of Experience</p>
+        </Segment>
+        <Segment id="segment">
+          <Icon name="emergency" size="big" />
+          <p>24/7 Emergency Services</p>
+        </Segment>
+        <Segment id="segment">
+          <Icon name="money bill alternate outline" size="big" />
+          <p>Affordable Care</p>
+        </Segment>
+      </Segment.Group>
     </>
   );
 };
