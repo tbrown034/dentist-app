@@ -1,16 +1,11 @@
 import React, { useRef } from "react";
 import { useState } from "react";
 // import emailjs from "@emailjs/browser";
-import Toast from "react-bootstrap/Toast";
 import teeth from "./Images/smile3.webp";
 import {
   Button,
-  Checkbox,
   Form,
-  Input,
-  Radio,
   Select,
-  TextArea,
   Segment, 
   Icon,
 } from 'semantic-ui-react'
@@ -38,11 +33,13 @@ const services = [
 ]
 
 const Appointment = () => {
-  const form = useRef();
-  const [showA, setShowA] = useState(false);
-  const toggleShowA = () => setShowA(!showA);
+  // eslint-disable-next-line 
   const [currentDate, setNewDate] = useState(null);
   const onChange = (event, data) => setNewDate(data.value);
+  const form = useRef();
+  // const [showA, setShowA] = useState(false);
+  // const toggleShowA = () => setShowA(!showA);
+ 
   
 
   const sendEmail = (e) => {

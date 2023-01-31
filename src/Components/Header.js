@@ -7,7 +7,6 @@ import {
   MDBNavbarItem,
   MDBNavbarLink,
   MDBCollapse,
-  MDBBtn,
   MDBIcon,
   MDBNavbarNav,
   MDBDropdown,
@@ -92,7 +91,7 @@ export default function App() {
               </MDBNavbarItem>
             </MDBNavbarNav>
             <a href="/Appointment">
-              <button class=" circular ui icon button">
+              <button className="circular ui icon button">
                 Make an Appointment
               </button>
             </a>

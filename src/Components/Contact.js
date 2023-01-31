@@ -1,17 +1,11 @@
 import React, { useRef } from "react";
-import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import Toast from "react-bootstrap/Toast";
 import dentistwords from "./Images/dentistwords.jpeg";
 
 import {
   Button,
-  Checkbox,
   Form,
-  Input,
-  Radio,
   Select,
-  TextArea,
   Segment, 
   Icon,
 } from 'semantic-ui-react'
@@ -25,8 +19,8 @@ const options = [
 
 const Contact = () => {
   const form = useRef();
-  const [showA, setShowA] = useState(false);
-  const toggleShowA = () => setShowA(!showA);
+  // const [showA, setShowA] = useState(false);
+  // const toggleShowA = () => setShowA(!showA);
   
   
 
@@ -120,53 +114,9 @@ const Contact = () => {
             placeholder='Select'
           />
         <Form.TextArea label='About' placeholder='Tell us more about you...' />
-    <Button type='submit'>Submit</Button>
+    <Button type='submit' onClick={handleChange}>Submit</Button>
   </Form>
-            {/* <form id="contactForm" ref={form} onSubmit={sendEmail}>
-              <label>Patient name:</label>
-              <input type="text" name="patient_name" />
-              <br />
-              <label>Your mail</label>
-              <input type="email" name="patient_email" />
-              <br />
-              <label>Your Phone Number</label>
-              <input type="tel" name="patient_email" />
-              <br />
-              <label>Message:</label>
-              <textarea rows="10" name="message" />
-              <fieldset />
-            </form> */}
-            {/* <div id="contactButtonContain">
-              <Button
-                form="contactForm"
-                type="submit"
-                value="send"
-                onClick={toggleShowA}
-                className="mb-2"
-                id="contactMe"
-              >
-                Send
-              </Button>
-            </div> */}
-            {/* <Toast
-              delay="14000"
-              show={showA}
-              autohide="true"
-              onClose={toggleShowA}
-            >
-              <Toast.Header>
-                <img
-                  src="holder.js/20x20?text=%20"
-                  className="rounded me-2"
-                  alt=""
-                />
-                <strong className="me-auto">Success!</strong>
-              </Toast.Header>
-              <Toast.Body>
-                Thanks for sending your message! I'll get back to you ASAP! -
-                Trevor
-              </Toast.Body>
-            </Toast> */}
+          
           </div>
         <div id="rightText">
           <h3>Ready, When You Are.</h3>
