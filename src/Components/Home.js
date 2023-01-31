@@ -34,7 +34,7 @@ const Home = () => {
             <div id="buttonContainer">
               <br></br>
               <a
-                className="btn btn-outline-light btn-lg"
+                className="btn btn-outline-light btn-lg rounded-pill"
                 href="/Appointment"
                 role="button"
               >
@@ -42,7 +42,7 @@ const Home = () => {
               </a>
               <br />
               <a
-                className="btn btn-outline-light btn-lg"
+                className="btn btn-outline-light btn-lg rounded-pill"
                 href="/FAQs"
                 role="button"
               >
