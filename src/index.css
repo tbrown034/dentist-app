@@ -29,6 +29,7 @@ padding-left: 12px;
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 12px;
 }
 
 
@@ -76,6 +77,8 @@ font-family: 'Poppins', sans-serif;
 #footer {
   background-color: #E6D5BE;
   color: #708A99;
+  padding-bottom: 12px;
+  margin-bottom: 0;
 }
 
 #secondLayer {
@@ -127,6 +130,7 @@ h6 {
 #footText {
   color: #708A99;
   font-family: 'Source Serif Pro', serif;
+  font-size: 16px;
 
 }
 
@@ -150,3 +154,4 @@ h6 {
   text-align: center;
 
 }
+
