@@ -41,7 +41,7 @@ padding-left: 12px;
 }
 
 #brand {
-  font-size: 200%;
+  font-size: 280%;
   font-family: 'Qwitcher Grypen', cursive;
   font-weight: bolder;
 
@@ -50,7 +50,7 @@ padding-left: 12px;
 
 #navBar {
   background-color: #E6D5BE;
-  padding-bottom: 16px;
+  padding-bottom: 20px;
 
 }
 
@@ -77,8 +77,8 @@ font-family: 'Poppins', sans-serif;
 #footer {
   background-color: #E6D5BE;
   color: #708A99;
-  padding-bottom: 12px;
-  margin-bottom: 0;
+  padding-bottom: 102px;
+  margin-bottom: 11px;
 }
 
 #secondLayer {
