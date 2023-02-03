@@ -71,21 +71,6 @@ export default function App() {
                     <MDBDropdownItem href="/Services" link>
                       Cosmetic Dentristry{" "}
                     </MDBDropdownItem>
-                    <MDBDropdownItem href="/Services" link>
-                      Childrens' Dentristry{" "}
-                    </MDBDropdownItem>
-                    <MDBDropdownItem href="/Services" link>
-                      Dental Crowns
-                    </MDBDropdownItem>
-                    <MDBDropdownItem href="/Services" link>
-                      Dental Implants{" "}
-                    </MDBDropdownItem>
-                    <MDBDropdownItem href="/Services" link>
-                      Whitening
-                    </MDBDropdownItem>
-                    <MDBDropdownItem href="/Services" link>
-                      More
-                    </MDBDropdownItem>
                   </MDBDropdownMenu>
                 </MDBDropdown>
               </MDBNavbarItem>

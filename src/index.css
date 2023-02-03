@@ -75,7 +75,7 @@ font-family: 'Poppins', sans-serif;
 }
 
 #footer {
-  background-color: #E6D5BE;
+  background-color: #e6d5bed6;
   color: #708A99;
   padding-bottom: 102px;
   margin-bottom: 11px;
@@ -152,6 +152,116 @@ h6 {
   align-items: center;
   font-size: 18px;
   text-align: center;
+
+}
+
+#trioContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+background-color: #E6D5BE; justify-content: space-evenly;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+#topServiceText {
+  font-size: 400%;
+  font-family: 'Abril Fatface', cursive;
+  color: #E6D5BE; 
+  font-weight: 900;
+
+padding-left: 12px;
+}
+
+#serviceLinkHoldr a {
+  display: flex;
+  flex-direction: column;
+  font-size: 140%;
+  font-family: 'Abril Fatface', cursive;
+  color: rgb(33, 109, 215);
+padding-left: 12px;
+padding-bottom: 7px;
+}
+
+#thirdLayerH1 {
+  background-color: #E6D5BE;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 500%;
+  padding-top: 20px;
+  color: rgb(62, 110, 110);;
+  margin: 0; 
+  text-align: center;
+
+}
+
+
+
+#serviceTop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#serviceText {
+  background-color: darkblue;
+  font-size: 100%;
+  color: whitesmoke;
+  flex: 1;
+  flex-direction: column;
+  padding-left: 10px;
+  align-items: center;
+
+
+
+}
+
+#serviceText button {
+  font-size: 200%;
+  margin-top: 12px;
+
+
+
+}
+
+
+
+#serviceText h2 {
+  background-color: darkblue;
+  font-size: 500%;
+  color: whitesmoke;
+  flex: 1;
+
+}
+
+#serviceText h4 {
+  background-color: darkblue;
+  font-size: 300%;
+  color: whitesmoke;
+  flex: 1;
+
+}
+
+#servicePhoto {
+  background-color: #E6D5BE;
+  min-width: 50%;
+  flex: 1;
+
+}
+
+#serviceFAQ {
+  background-color: #E6D5BE;
+
+}
+
+#serviceFAQtext {
+  background-color: #E6D5BE;
+
+}
+
+#serviceFAQaccordian {
+  background-color: #E6D5BE;
 
 }
 

@@ -40,13 +40,7 @@ const Home = () => {
                 Make an Appointment
               </a>
               <br />
-              <a
-                className="btn btn-outline-light btn-lg rounded-pill"
-                href="/FAQs"
-                role="button"
-              >
-                Frequently Asked Questions
-              </a>
+        
             </div>
           </div>
         </div>
