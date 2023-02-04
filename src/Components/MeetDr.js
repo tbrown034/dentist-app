@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "react-bootstrap/Image";
 import logo from "./Images/logos.png";
+import Breadcrumb from "react-bootstrap/Breadcrumb";
 
 import keith from "./Images/keith2.jpeg";
 import { Segment } from "semantic-ui-react";
@@ -47,63 +48,84 @@ const MeetDr = () => {
         </div>
       </div>
       <div id="sectionHolder">
-      <Segment.Group horizontal id="segmentGroup">
-        <Segment id="segment">
-          <Icon name="user md" size="big" />
-          <p>40+ Years of Experience</p>
-          <a
-                className="btn btn-outline-light btn-lg rounded-pill"
-                href="/Appointment"
-                role="button"
-              >
-                Meet Dr. Brown, D.D.S., F.A.G.D. <i class="arrow "></i> <i class="arrow alternate circle right
-icon"></i>
-              </a>
-        </Segment>
-        <Segment id="segment">
-          <Icon name="emergency" size="big" />
-          <p>24/7 Emergency Services</p>
-          <a
-                className="btn btn-outline-light btn-lg rounded-pill"
-                href="/Appointment"
-                role="button"
-              >
-                Emergnecy? Call Now <i class="arrow "></i> <i class="arrow alternate circle right
-icon"></i>
-              </a>
-        </Segment>
-        <Segment id="segment">
-          <Icon name="money bill alternate outline" size="big" />
-          <p>Affordable Care</p>
-          <a
-                className="btn btn-outline-light btn-lg rounded-pill"
-                href="/Appointment"
-                role="button"
-              >
-                Check Your Coverage/Financing Options <i class="arrow "></i> <i class="arrow alternate circle right
-icon"></i>
-              </a>
-        </Segment>
-        <Segment id="segment">
-          <Icon name="heartbeat" size="big" />
-          <p>State of the Art Facilites</p>
-          <a
-                className="btn btn-outline-light btn-lg rounded-pill"
-                href="/Appointment"
-                role="button"
-              > 
-                Take a Tour <i class="arrow "></i> <i class="arrow alternate circle right
-icon"></i>
-              </a>
-        </Segment>
-      </Segment.Group>
+        <Segment.Group horizontal id="segmentGroup">
+          <Segment id="segment">
+            <Icon name="user md" size="big" />
+            <p>40+ Years of Experience</p>
+            <a
+              className="btn btn-outline-light btn-lg rounded-pill"
+              href="/Appointment"
+              role="button"
+            >
+              Meet Dr. Brown, D.D.S., F.A.G.D. <i class="arrow "></i>{" "}
+              <i
+                class="arrow alternate circle right
+icon"
+              ></i>
+            </a>
+          </Segment>
+          <Segment id="segment">
+            <Icon name="emergency" size="big" />
+            <p>24/7 Emergency Services</p>
+            <a
+              className="btn btn-outline-light btn-lg rounded-pill"
+              href="/Appointment"
+              role="button"
+            >
+              Emergnecy? Call Now <i class="arrow "></i>{" "}
+              <i
+                class="arrow alternate circle right
+icon"
+              ></i>
+            </a>
+          </Segment>
+          <Segment id="segment">
+            <Icon name="money bill alternate outline" size="big" />
+            <p>Affordable Care</p>
+            <a
+              className="btn btn-outline-light btn-lg rounded-pill"
+              href="/Appointment"
+              role="button"
+            >
+              Check Your Coverage/Financing Options <i class="arrow "></i>{" "}
+              <i
+                class="arrow alternate circle right
+icon"
+              ></i>
+            </a>
+          </Segment>
+          <Segment id="segment">
+            <Icon name="heartbeat" size="big" />
+            <p>State of the Art Facilites</p>
+            <a
+              className="btn btn-outline-light btn-lg rounded-pill"
+              href="/Appointment"
+              role="button"
+            >
+              Take a Tour <i class="arrow "></i>{" "}
+              <i
+                class="arrow alternate circle right
+icon"
+              ></i>
+            </a>
+          </Segment>
+        </Segment.Group>
       </div>
       <div id="secondLayer">
-        <div id="leftDiv">
-          <Image src={logo} fluid alt="careCredit"></Image>
+        <div id="secondPhoto">
+          <Image src={logo} fluid />
         </div>
-        <div id="rightText">
-          <h3>About Dr. Brown</h3>
+        <div id="secondLayerText">
+          a
+          <div id="breadcrum">
+            <Breadcrumb>
+              <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+              <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
+                Practice
+              </Breadcrumb.Item>
+            </Breadcrumb>
+          </div>
+          <h2>About Dr. Keith Brown, D.D.S., F.A.G.D</h2>
           <p>
             Hello, and welcome to my practice. Working in dentistry for over 40
             years, it has always been my goal to provide the highest level of
@@ -112,17 +134,13 @@ icon"></i>
             patients the finest care with financing they can afford.
           </p>
           <br></br>
-          <br></br>
-          <p>
-            I strive daily to make sure that my patients are comfortable,
-            informed and happy with their treatment. Your smile and how you feel
-            are what is most important to me, and I will go out of my way to
-            make sure that you feel at home in my office. I will do everything
-            within my power to give you the dental care you deserve.
-          </p>
+          <a href="/Appointment">
+            <button className="circular ui icon button">
+              Make an Appointment
+            </button>
+          </a>
         </div>
       </div>
-      
     </>
   );
 };

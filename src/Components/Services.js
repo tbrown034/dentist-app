@@ -4,11 +4,12 @@ import smile from "./Images/smile3.webp";
 import brush from "./Images/toothbrush.jpeg";
 import { Segment } from "semantic-ui-react";
 import { Icon } from "semantic-ui-react";
-import { Image } from 'semantic-ui-react'
+import { Image } from "semantic-ui-react";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import dentist1 from "./Images/dentist5.jpeg";
 import dentist2 from "./Images/dentist6.jpeg";
 import dentist3 from "./Images/dentrist7.jpeg";
+import Accordion from "react-bootstrap/Accordion";
 
 const Services = () => {
   return (
@@ -191,27 +192,256 @@ icon"
               <Breadcrumb>
                 <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
                 <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
-                  Library
+                  Services
                 </Breadcrumb.Item>
-                <Breadcrumb.Item active>Data</Breadcrumb.Item>
+                <Breadcrumb.Item active>General Dentristry</Breadcrumb.Item>
               </Breadcrumb>
             </div>
             <h2>General Dentristry</h2>
-            <h4>Our goal is to have your teeth functioning normally in as short a time as possible.</h4>
-            <br></br>  <br></br>
+            <h4>
+              Our goal is to have your teeth functioning normally in as short a
+              time as possible.
+            </h4>
+            <br></br> <br></br>
             <a href="/Appointment">
               <button className="circular ui icon button">
                 Make an Appointment
-              </button>                                                                                
+              </button>
             </a>
-
           </div>
-          <div id="servicePhoto"><Image src={dentist1} fluid /></div>
-          <div id="serviceFAQ">
-            <div id="serviceFAQtext">
-              <div id="serviceFAQaccordian"></div>
+          <div id="servicePhoto">
+            <Image src={dentist1} fluid />
+          </div>
+        </div>
+        <div id="serviceFAQ">
+          <Accordion id="accordionHeader" defaultActiveKey={["0"]} alwaysOpen>
+            <Accordion.Item id="accordionHeader" eventKey="0">
+              <Accordion.Header>Routine Check-Ups</Accordion.Header>
+              <Accordion.Body id="accordionBody">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="1">
+              <Accordion.Header id="accordionHeader">
+                Emergency Care
+              </Accordion.Header>
+              <Accordion.Body>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="2">
+              <Accordion.Header>Childrens' Care</Accordion.Header>
+              <Accordion.Body>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="3">
+              <Accordion.Header>Root Canals</Accordion.Header>
+              <Accordion.Body>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="4">
+              <Accordion.Header>Filings</Accordion.Header>
+              <Accordion.Body>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
+        </div>
+      </div>
+      <div id="serviceCategoryContainer">
+        <div id="serviceTop">
+          <div id="servicePhoto">
+            <Image src={dentist2} fluid />
+          </div>
+          <div id="serviceText">
+            <div id="breadcrum">
+              <Breadcrumb>
+                <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+                <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
+                  Services
+                </Breadcrumb.Item>
+                <Breadcrumb.Item active>Cosmetic Dentristry</Breadcrumb.Item>
+              </Breadcrumb>
             </div>
+            <h2>Cosmetic Dentristry</h2>
+            <h4>
+              We're pleased to offer our valued Naperville, IL patients a
+              variety of cosmetic solutions to suit their aesthetic needs.
+            </h4>
+            <br></br> <br></br>
+            <a href="/Appointment">
+              <button className="circular ui icon button">
+                Make an Appointment
+              </button>
+            </a>
           </div>
+        </div>
+        <div id="serviceFAQ">
+          <Accordion id="accordionHeader" defaultActiveKey={["0"]} alwaysOpen>
+            <Accordion.Item id="accordionHeader" eventKey="0">
+              <Accordion.Header>Invisalign</Accordion.Header>
+              <Accordion.Body id="accordionBody">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="1">
+              <Accordion.Header id="accordionHeader">
+                Teeth Whitening
+              </Accordion.Header>
+              <Accordion.Body>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="2">
+              <Accordion.Header>Bonding</Accordion.Header>
+              <Accordion.Body>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="3">
+              <Accordion.Header>Smile Makeover</Accordion.Header>
+              <Accordion.Body>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
+        </div>
+      </div>
+      <div id="serviceCategoryContainer">
+        <div id="serviceTop">
+          <div id="serviceText">
+            <div id="breadcrum">
+              <Breadcrumb>
+                <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+                <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
+                  Services
+                </Breadcrumb.Item>
+                <Breadcrumb.Item active>Surgical Dentristry</Breadcrumb.Item>
+              </Breadcrumb>
+            </div>
+            <h2>Surgical Dentristry</h2>
+            <h4>
+              With nitrous oxide, headphones and a staff that cares, we are
+              committed to providing safe and stress-free procedures.
+            </h4>
+            <br></br> <br></br>
+            <a href="/Appointment">
+              <button className="circular ui icon button">
+                Make an Appointment
+              </button>
+            </a>
+          </div>
+          <div id="servicePhoto">
+            <Image src={dentist3} fluid />
+          </div>
+        </div>
+        <div id="serviceFAQ">
+          <Accordion id="accordionHeader" defaultActiveKey={["0"]} alwaysOpen>
+            <Accordion.Item id="accordionHeader" eventKey="0">
+              <Accordion.Header>Extractions</Accordion.Header>
+              <Accordion.Body id="accordionBody">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="1">
+              <Accordion.Header id="accordionHeader">Implants</Accordion.Header>
+              <Accordion.Body>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="2">
+              <Accordion.Header>Bridges</Accordion.Header>
+              <Accordion.Body>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="3">
+              <Accordion.Header>Dentures</Accordion.Header>
+              <Accordion.Body>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
         </div>
       </div>
     </>

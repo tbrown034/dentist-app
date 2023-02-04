@@ -63,6 +63,9 @@ export default function App() {
                   </MDBDropdownToggle>
                   <MDBDropdownMenu>
                     <MDBDropdownItem href="/Services" link>
+                      All
+                    </MDBDropdownItem>
+                    <MDBDropdownItem href="/Services" link>
                       General Dentristry
                     </MDBDropdownItem>
                     <MDBDropdownItem href="/Services" link>

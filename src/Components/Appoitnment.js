@@ -1,46 +1,46 @@
 import React, { useRef } from "react";
 import { useState } from "react";
+import Breadcrumb from "react-bootstrap/Breadcrumb";
+import Image from "react-bootstrap/Image";
 // import emailjs from "@emailjs/browser";
 import teeth from "./Images/smile3.webp";
-import {
-  Button,
-  Form,
-  Select,
-  Segment, 
-  Icon,
-} from 'semantic-ui-react'
-import SemanticDatepicker from 'react-semantic-ui-datepickers';
-import 'react-semantic-ui-datepickers/dist/react-semantic-ui-datepickers.css';
+import { Button, Form, Select, Segment, Icon } from "semantic-ui-react";
+import SemanticDatepicker from "react-semantic-ui-datepickers";
+import "react-semantic-ui-datepickers/dist/react-semantic-ui-datepickers.css";
 
 const options = [
-  { key: 'new', text: 'New', value: 'New' },
-  { key: 'return', text: 'Returning', value: 'Returning' },
-]
+  { key: "new", text: "New", value: "New" },
+  { key: "return", text: "Returning", value: "Returning" },
+];
 
 const emergency = [
-  { key: 'No', text: 'No', value: 'No' },
-  { key: 'Yes', text: 'Yes', value: 'Yes' },
-]
+  { key: "No", text: "No", value: "No" },
+  { key: "Yes", text: "Yes", value: "Yes" },
+];
 
 const services = [
-  { key: 'Check Up', text: 'Check Up', value: 'Check Up' },
-  { key: 'Cosmetic Dentristry', text: 'Cosmetic Dentristry', value: 'Cosmetic Dentristry' },
-  { key: 'Appointment for a Child', text: 'Appointment for a Child', value: 'Appointment for a Child' },
-  { key: 'Filing/Cavity', text: 'Filing/Cavity', value: 'Filing/Cavity' },
-  { key: 'Other', text: 'Other', value: 'Other' },
-
-
-]
+  { key: "Check Up", text: "Check Up", value: "Check Up" },
+  {
+    key: "Cosmetic Dentristry",
+    text: "Cosmetic Dentristry",
+    value: "Cosmetic Dentristry",
+  },
+  {
+    key: "Appointment for a Child",
+    text: "Appointment for a Child",
+    value: "Appointment for a Child",
+  },
+  { key: "Filing/Cavity", text: "Filing/Cavity", value: "Filing/Cavity" },
+  { key: "Other", text: "Other", value: "Other" },
+];
 
 const Appointment = () => {
-  // eslint-disable-next-line 
+  // eslint-disable-next-line
   const [currentDate, setNewDate] = useState(null);
   const onChange = (event, data) => setNewDate(data.value);
   const form = useRef();
   // const [showA, setShowA] = useState(false);
   // const toggleShowA = () => setShowA(!showA);
- 
-  
 
   const sendEmail = (e) => {
     console.log("handleSubmit ran");
@@ -92,56 +92,145 @@ const Appointment = () => {
           </div>
         </div>
       </div>
+      <div id="sectionHolder">
+        <Segment.Group horizontal id="segmentGroup">
+          <Segment id="segment">
+            <Icon name="user md" size="big" />
+            <p>40+ Years of Experience</p>
+            <a
+              className="btn btn-outline-light btn-lg rounded-pill"
+              href="/Appointment"
+              role="button"
+            >
+              Meet Dr. Brown, D.D.S., F.A.G.D. <i class="arrow "></i>{" "}
+              <i
+                class="arrow alternate circle right
+icon"
+              ></i>
+            </a>
+          </Segment>
+          <Segment id="segment">
+            <Icon name="emergency" size="big" />
+            <p>24/7 Emergency Services</p>
+            <a
+              className="btn btn-outline-light btn-lg rounded-pill"
+              href="/Appointment"
+              role="button"
+            >
+              Emergnecy? Call Now <i class="arrow "></i>{" "}
+              <i
+                class="arrow alternate circle right
+icon"
+              ></i>
+            </a>
+          </Segment>
+          <Segment id="segment">
+            <Icon name="money bill alternate outline" size="big" />
+            <p>Affordable Care</p>
+            <a
+              className="btn btn-outline-light btn-lg rounded-pill"
+              href="/Appointment"
+              role="button"
+            >
+              Check Your Coverage/Financing Options <i class="arrow "></i>{" "}
+              <i
+                class="arrow alternate circle right
+icon"
+              ></i>
+            </a>
+          </Segment>
+          <Segment id="segment">
+            <Icon name="heartbeat" size="big" />
+            <p>State of the Art Facilites</p>
+            <a
+              className="btn btn-outline-light btn-lg rounded-pill"
+              href="/Appointment"
+              role="button"
+            >
+              Take a Tour <i class="arrow "></i>{" "}
+              <i
+                class="arrow alternate circle right
+icon"
+              ></i>
+            </a>
+          </Segment>
+        </Segment.Group>
+      </div>
+
       <div id="secondLayer">
-        <div id="leftDiv">
-          <h3>Request an Appointment
-          </h3>
-        <Form  ref={form} onSubmit={sendEmail}>
-    <Form.Field>
-      <label>Name</label>
-      <input placeholder='Name' />
-    </Form.Field>
-    <Form.Field>
-      <label>Phone</label>
-      <input type="tel" placeholder='Phone' />
-    </Form.Field>
-    <Form.Field>
-      <label>Email</label>
-      <input type="email" placeholder='Email' />
-    </Form.Field>
-    <Form.Field
-            control={Select}
-            label='Are You a New or Returning Patient?'
-            options={options}
-            placeholder='Select'
-          />
-           <Form.Field
-            control={Select}
-            label='Is this an Emergency?'
-            options={emergency}
-            placeholder='Select'
-          />
-           <Form.Field
-            control={Select}
-            label='How Can We Help You?'
-            options={services}
-            placeholder='Select'
-          />
-           <Form.TextArea label='More Infomation' placeholder='Let us Know about any details or questions you have ...' />
+        <div id="secondLayerText">
+          <div id="breadcrum">
+            <Breadcrumb>
+              <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+              <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
+                Practice
+              </Breadcrumb.Item>
+            </Breadcrumb>
+          </div>
+          <h2>Have Questions? Let us know!</h2>
+          <p>
+            We understand that going to the dentist's office can be a stressful
+            and confusing experience for some. That's why we are committed to
+            answering all your questions before, during and after your visit!
+            Let us know how we can help!
+          </p>
+          <br></br>
+          <a href="/Appointment">
+            <button className="circular ui icon button">
+              Make an Appointment
+            </button>
+          </a>
+        </div>
+        <div id="secondPhoto">
+          <h2>Contact Us!</h2>
+          <Form ref={form} onSubmit={sendEmail}>
+            <Form.Field>
+              <label>Name</label>
+              <input placeholder="Name" />
+            </Form.Field>
+            <Form.Field>
+              <label>Phone</label>
+              <input type="tel" placeholder="Phone" />
+            </Form.Field>
+            <Form.Field>
+              <label>Email</label>
+              <input type="email" placeholder="Email" />
+            </Form.Field>
+            <Form.Field
+              control={Select}
+              label="Are You a New or Returning Patient?"
+              options={options}
+              placeholder="Select"
+            />
+            <Form.Field
+              control={Select}
+              label="Is this an Emergency?"
+              options={emergency}
+              placeholder="Select"
+            />
+            <Form.Field
+              control={Select}
+              label="How Can We Help You?"
+              options={services}
+              placeholder="Select"
+            />
+            <Form.TextArea
+              label="More Infomation"
+              placeholder="Let us Know about any details or questions you have ..."
+            />
 
-        <Form.Field>
-      <label>Date Requested</label>
-      <SemanticDatepicker onChange={onChange} />
-      <label>Back-Up Date</label>
-      <SemanticDatepicker onChange={onChange} />
-    </Form.Field>
-    <Button type='submit'>Submit</Button>
-  </Form>
+            <Form.Field>
+              <label>Date Requested</label>
+              <SemanticDatepicker onChange={onChange} />
+              <label>Back-Up Date</label>
+              <SemanticDatepicker onChange={onChange} />
+            </Form.Field>
+            <Button type="submit">Submit</Button>
+          </Form>
+        </div>
+      </div>
 
-
-
-
-            {/* <form id="contactForm" ref={form} onSubmit={sendEmail}>
+      {/* <form id="contactForm" ref={form} onSubmit={sendEmail}>
               <label>Patient name:</label>
               <input type="text" name="patient_name" />
               <label>Your Email:</label>
@@ -160,7 +249,7 @@ const Appointment = () => {
 
               <fieldset />
             </form> */}
-            {/* <div >
+      {/* <div >
               <Button
                 form="contactForm"
                 type="submit"
@@ -171,7 +260,7 @@ const Appointment = () => {
                 Send
               </Button>
             </div> */}
-            {/* <Toast
+      {/* <Toast
               delay="14000"
               show={showA}
               autohide="true"
@@ -190,60 +279,6 @@ const Appointment = () => {
                 Trevor
               </Toast.Body>
             </Toast> */}
-        </div>
-        <div id="rightText">
-          <h3>Ready, When You Are.</h3>
-          <p>
-            We promise to give you the most affordable dental care we can offer.
-            We can also assist you in arranging a financing program tailored to
-            your specific needs and budget.
-          </p>
-          <ul>
-            <li>
-              We accept most traditional insurance plans, contact our office to
-              verify acceptance of your plan.
-            </li>
-            <li>
-              We accept checks, cash or credit cards. We also offer a flexible
-              payment plan.
-            </li>
-            <li>
-              We also can advise you on a variety of financial services to help
-              you pay for treatments and procedures your insurance doesn’t
-              cover.
-            </li>
-            <li>
-              Each service offers No Interest or Low Interest financing and low
-              minimum monthly payment options, so you can get the treatment you
-              want, when you want it.
-            </li>
-            <li>
-              Our Financial Coordinator can walk you through the application
-              process for Care Credit or Citi Health financing options.
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div id="sectionHolder">
-        <Segment.Group horizontal id="segmentGroup">
-          <Segment>
-            {" "}
-            <Icon name="user md" size="big" />
-            <p>40+ Years of Experience</p>
-          </Segment>
-
-          <Segment>
-            {" "}
-            <Icon name="emergency" size="big" />
-            <p>24/7 Emergency Services</p>
-          </Segment>
-          <Segment>
-            {" "}
-            <Icon name="money bill alternate outline" size="big" />
-            <p>Affordable Care</p>
-          </Segment>
-        </Segment.Group>
-      </div>
     </>
   );
 };

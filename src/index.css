@@ -1,23 +1,17 @@
-
-
 #topHeroText {
   font-size: 400%;
-  font-family: 'Abril Fatface', cursive;
-color: #E6D5BE;
-padding-left: 12px;
-
+  font-family: "Abril Fatface", cursive;
+  color: #e6d5be;
+  padding-left: 12px;
 }
 
-  #bottomHeroText {
-    font-size: 200%;
-    font-family: 'Poppins', sans-serif;
-    width: auto;
-    padding-left: 12px;
-    color:whitesmoke
-
+#bottomHeroText {
+  font-size: 200%;
+  font-family: "Poppins", sans-serif;
+  width: auto;
+  padding-left: 12px;
+  color: whitesmoke;
 }
-
-
 
 #textContainer {
   display: flex;
@@ -32,8 +26,6 @@ padding-left: 12px;
   padding-bottom: 12px;
 }
 
-
-
 .mask {
   display: flex;
   justify-content: center;
@@ -42,41 +34,38 @@ padding-left: 12px;
 
 #brand {
   font-size: 280%;
-  font-family: 'Qwitcher Grypen', cursive;
+  font-family: "Qwitcher Grypen", cursive;
   font-weight: bolder;
 
-  color: #708A99
+  color: #708a99;
 }
 
 #navBar {
-  background-color: #E6D5BE;
+  background-color: #e6d5be;
   padding-bottom: 20px;
-
 }
 
 #headerLinks {
   color: rgb(62, 110, 110);
   font-size: 125%;
-font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #headerButton {
-  background-color: #E6D5BE;
-  border: 6px solid #708A99
-;
-  color: #708A99;
+  background-color: #e6d5be;
+  border: 6px solid #708a99;
+  color: #708a99;
   padding: 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 2px;
-
 }
 
 #footer {
   background-color: #e6d5bed6;
-  color: #708A99;
+  color: #708a99;
   padding-bottom: 102px;
   margin-bottom: 11px;
 }
@@ -85,15 +74,17 @@ font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: row;
   align-content: space-around;
-  color: #E6D5BE;
-  background-color: #708A99;
-  padding: 5px
+  color: #e6d5be;
+  background-color: #708a99;
+  padding: 5px;
 }
 
-#sectionHolder  {background-color: #708A99;
+#sectionHolder {
+  background-color: #708a99;
 }
 
-#leftDiv, #rightText {
+#leftDiv,
+#rightText {
   padding: 10px;
   width: 100%;
 }
@@ -101,21 +92,20 @@ font-family: 'Poppins', sans-serif;
 #contactForm {
   display: flex;
   flex-direction: column;
-  border:  #def2f1 solid 10px;
+  border: #def2f1 solid 10px;
   margin: 10px;
   padding: 30px;
   margin-right: 17%;
   margin-left: 17%;
-
 }
 
 label {
-  color: #E6D5BE;
+  color: #e6d5be;
   font-size: larger;
 }
 
 h6 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #3e5969;
   text-decoration: underline;
   font-size: 200px;
@@ -128,21 +118,18 @@ h6 {
 } */
 
 #footText {
-  color: #708A99;
-  font-family: 'Source Serif Pro', serif;
+  color: #708a99;
+  font-family: "Source Serif Pro", serif;
   font-size: 16px;
-
 }
 
 #segmentGroup {
   color: whitesmoke;
-  background-color: #708A99;
+  background-color: #708a99;
   margin: 0px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   display: flex;
   flex-wrap: wrap;
-
-
 }
 
 #segment {
@@ -152,87 +139,76 @@ h6 {
   align-items: center;
   font-size: 18px;
   text-align: center;
-
 }
 
 #trioContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-background-color: #E6D5BE; justify-content: space-evenly;
+  background-color: #e6d5be;
+  justify-content: space-evenly;
   padding-top: 10px;
   padding-bottom: 10px;
-
 }
 
 #topServiceText {
   font-size: 400%;
-  font-family: 'Abril Fatface', cursive;
-  color: #E6D5BE; 
+  font-family: "Abril Fatface", cursive;
+  color: #e6d5be;
   font-weight: 900;
 
-padding-left: 12px;
+  padding-left: 12px;
 }
 
 #serviceLinkHoldr a {
   display: flex;
   flex-direction: column;
   font-size: 140%;
-  font-family: 'Abril Fatface', cursive;
+  font-family: "Abril Fatface", cursive;
   color: rgb(33, 109, 215);
-padding-left: 12px;
-padding-bottom: 7px;
+  padding-left: 12px;
+  padding-bottom: 7px;
 }
 
 #thirdLayerH1 {
-  background-color: #E6D5BE;
-  font-family: 'Abril Fatface', cursive;
+  background-color: #e6d5be;
+  font-family: "Abril Fatface", cursive;
   font-size: 500%;
   padding-top: 20px;
-  color: rgb(62, 110, 110);;
-  margin: 0; 
+  color: rgb(62, 110, 110);
+  margin: 0;
   text-align: center;
-
 }
 
-
-
-#serviceTop {
+#serviceTop,
+#secondLayer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
 }
 
-#serviceText {
+#serviceText,
+#secondLayerText {
   background-color: darkblue;
-  font-size: 100%;
+  font-size: 75%;
   color: whitesmoke;
   flex: 1;
   flex-direction: column;
   padding-left: 10px;
   align-items: center;
-
-
-
 }
 
 #serviceText button {
-  font-size: 200%;
-  margin-top: 12px;
-
-
-
+  font-size: 170%;
+  margin-bottom: 10px;
 }
-
-
 
 #serviceText h2 {
   background-color: darkblue;
   font-size: 500%;
   color: whitesmoke;
   flex: 1;
-
 }
 
 #serviceText h4 {
@@ -240,28 +216,22 @@ padding-bottom: 7px;
   font-size: 300%;
   color: whitesmoke;
   flex: 1;
-
 }
 
-#servicePhoto {
-  background-color: #E6D5BE;
+#servicePhoto,
+#secondPhoto {
   min-width: 50%;
+
   flex: 1;
-
 }
+a #serviceFAQ {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
 
-#serviceFAQ {
-  background-color: #E6D5BE;
-
-}
-
-#serviceFAQtext {
-  background-color: #E6D5BE;
-
+  background-color: #e6d5be;
 }
 
 #serviceFAQaccordian {
-  background-color: #E6D5BE;
-
+  background-color: #e6d5be;
 }
-
