@@ -10,6 +10,8 @@ import dentist1 from "./Images/dentist5.jpeg";
 import dentist2 from "./Images/dentist6.jpeg";
 import dentist3 from "./Images/dentrist7.jpeg";
 import Accordion from "react-bootstrap/Accordion";
+import Section from "./Section"
+
 
 const Services = () => {
   return (
@@ -54,79 +56,15 @@ const Services = () => {
         </div>
       </div>
       <div id="sectionHolder">
-        <Segment.Group horizontal id="segmentGroup">
-          <Segment id="segment">
-            <Icon name="user md" size="big" />
-            <p>40+ Years of Experience</p>
-            <a
-              className="btn btn-outline-light btn-lg rounded-pill"
-              href="/Appointment"
-              role="button"
-            >
-              Meet Dr. Brown, D.D.S., F.A.G.D. <i class="arrow "></i>{" "}
-              <i
-                class="arrow alternate circle right
-icon"
-              ></i>
-            </a>
-          </Segment>
-          <Segment id="segment">
-            <Icon name="emergency" size="big" />
-            <p>24/7 Emergency Services</p>
-            <a
-              className="btn btn-outline-light btn-lg rounded-pill"
-              href="/Appointment"
-              role="button"
-            >
-              Emergnecy? Call Now <i class="arrow "></i>{" "}
-              <i
-                class="arrow alternate circle right
-icon"
-              ></i>
-            </a>
-          </Segment>
-          <Segment id="segment">
-            <Icon name="money bill alternate outline" size="big" />
-            <p>Affordable Care</p>
-            <a
-              className="btn btn-outline-light btn-lg rounded-pill"
-              href="/Appointment"
-              role="button"
-            >
-              Check Your Coverage/Financing Options <i class="arrow "></i>{" "}
-              <i
-                class="arrow alternate circle right
-icon"
-              ></i>
-            </a>
-          </Segment>
-          <Segment id="segment">
-            <Icon name="heartbeat" size="big" />
-            <p>State of the Art Facilites</p>
-            <a
-              className="btn btn-outline-light btn-lg rounded-pill"
-              href="/Appointment"
-              role="button"
-            >
-              Take a Tour <i class="arrow "></i>{" "}
-              <i
-                class="arrow alternate circle right
-icon"
-              ></i>
-            </a>
-          </Segment>
-        </Segment.Group>
+        <Section />
       </div>
-      <h1 id="thirdLayerH1">Services We Provide</h1>
-
       <div id="trioContainer">
         <div
           id="LocationContainer"
           className=" img-fluid  bg-image"
           style={{
             backgroundImage: `url(${brush})`,
-            backgroundColor: "rgba(0, 0, 0, 0.6)",
-            height: 550,
+            backgroundColor: "rgba(0, 0, 0, 0.1)"
           }}
         >
           <div id="serviceContainer">
@@ -147,7 +85,7 @@ icon"
           style={{
             backgroundImage: `url(${smile})`,
             backgroundColor: "rgba(0, 0, 0, 0.6)",
-            height: 550,
+            height: 750,
           }}
         >
           <div id="serviceContainer">
@@ -171,7 +109,7 @@ icon"
           style={{
             backgroundImage: `url(${teeth})`,
             backgroundColor: "rgba(0, 0, 0, 0.6)",
-            height: 550,
+            height: 750,
           }}
         >
           <div id="serviceContainer">
