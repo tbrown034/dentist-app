@@ -1,8 +1,7 @@
 import practicePhoto from "./Images/practice.jpeg";
 import hepa from "./Images/HEPA.jpeg";
 import Image from "react-bootstrap/Image";
-import { Segment } from "semantic-ui-react";
-import { Icon } from "semantic-ui-react";
+
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Section from "./Section"
 

@@ -1,6 +1,5 @@
 import { Segment } from "semantic-ui-react";
 import { Icon } from "semantic-ui-react";
-import { Image } from "semantic-ui-react";
 const Section = () => {
     return (
         <>

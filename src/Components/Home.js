@@ -1,7 +1,6 @@
 import React from "react";
 import Dentist from "./Images/dentist.jpeg";
-import { Segment } from "semantic-ui-react";
-import { Icon } from "semantic-ui-react";
+
 import Section from "./Section"
 
 const Home = () => {

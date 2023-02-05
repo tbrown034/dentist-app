@@ -1,7 +1,6 @@
 import brush from "./Images/toothbrush.jpeg";
 import Accordion from "react-bootstrap/Accordion";
-import { Segment } from "semantic-ui-react";
-import { Icon } from "semantic-ui-react";
+
 import dentist6 from "./Images/dentrist7.jpeg";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Image from "react-bootstrap/Image";

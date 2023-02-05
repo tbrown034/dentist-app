@@ -1,8 +1,7 @@
 import insurance from "./Images/insurance.jpeg";
 import careCredit from "./Images/careCredit.webp";
 import Image from "react-bootstrap/Image";
-import { Segment } from "semantic-ui-react";
-import { Icon } from "semantic-ui-react";
+
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Section from "./Section"
 

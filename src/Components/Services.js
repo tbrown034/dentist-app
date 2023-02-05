@@ -2,8 +2,7 @@ import chair from "./Images/dentalchair.jpeg";
 import teeth from "./Images/dentistteeth.jpeg";
 import smile from "./Images/smile3.webp";
 import brush from "./Images/toothbrush.jpeg";
-import { Segment } from "semantic-ui-react";
-import { Icon } from "semantic-ui-react";
+
 import { Image } from "semantic-ui-react";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import dentist1 from "./Images/dentist5.jpeg";
@@ -70,12 +69,12 @@ const Services = () => {
           <div id="serviceContainer">
             <h1 id="topServiceText">General Dentristry </h1>
             <h3 id="serviceLinkHoldr">
-              <a href="">Check-Ups</a>
-              <a href="">Fillings</a>
-              <a href="">Emergency</a>
-              <a href="">Root Canals</a>
-              <a href="">Emergency</a>
-              <a href="">Childrens' Dentristry</a>
+              <a href="/Location">Check-Ups</a>
+              <a href="/Location">Fillings</a>
+              <a href="/Location">Emergency</a>
+              <a href="/Location">Root Canals</a>
+              <a href="/Location">Emergency</a>
+              <a href="/Location">Childrens' Dentristry</a>
             </h3>
           </div>
         </div>
@@ -93,11 +92,11 @@ const Services = () => {
             <h3 id="serviceLinkHoldr">
               <li>
                 <ul>
-                  <a href="">Invislaign</a>
-                  <a href="">Veeners </a>
-                  <a href="">Teeth Whitening</a>
-                  <a href="">Bonding</a>
-                  <a href="">Emergency</a>
+                  <a href="/Location">Invislaign</a>
+                  <a href="/Location">Veeners </a>
+                  <a href="/Location">Teeth Whitening</a>
+                  <a href="/Location">Bonding</a>
+                  <a href="/Location">Emergency</a>
                 </ul>
               </li>
             </h3>
@@ -115,10 +114,10 @@ const Services = () => {
           <div id="serviceContainer">
             <h1 id="topServiceText">Surgical Dentristry</h1>
             <h3 id="serviceLinkHoldr">
-              <a href="">Extractions</a>
-              <a href="">Implants</a>
-              <a href="">Bridges</a>
-              <a href="">Dentures</a>
+              <a href="/Location">Extractions</a>
+              <a href="/Location">Implants</a>
+              <a href="/Location">Bridges</a>
+              <a href="/Location">Dentures</a>
             </h3>
           </div>
         </div>

@@ -1,8 +1,7 @@
 import React from "react";
 import GoogleMap from "./GoogleMap";
 import bank from "./Images/bank.jpeg";
-import { Segment } from "semantic-ui-react";
-import { Icon } from "semantic-ui-react";
+
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Section from "./Section"
 

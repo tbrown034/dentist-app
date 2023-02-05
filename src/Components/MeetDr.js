@@ -4,8 +4,7 @@ import logo from "./Images/logos.png";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 
 import keith from "./Images/keith2.jpeg";
-import { Segment } from "semantic-ui-react";
-import { Icon } from "semantic-ui-react";
+
 import Section from "./Section"
 
 
