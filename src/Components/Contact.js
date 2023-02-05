@@ -5,7 +5,7 @@ import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Section from "./Section"
 
 
-import { Button, Form, Select, Segment, Icon } from "semantic-ui-react";
+import { Button, Form, Select } from "semantic-ui-react";
 
 const options = [
   { key: "new", text: "New", value: "New" },

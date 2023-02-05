@@ -1,10 +1,9 @@
 import React, { useRef } from "react";
 import { useState } from "react";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
-import Image from "react-bootstrap/Image";
 // import emailjs from "@emailjs/browser";
 import teeth from "./Images/smile3.webp";
-import { Button, Form, Select, Segment, Icon } from "semantic-ui-react";
+import { Button, Form, Select } from "semantic-ui-react";
 import SemanticDatepicker from "react-semantic-ui-datepickers";
 import "react-semantic-ui-datepickers/dist/react-semantic-ui-datepickers.css";
 import Section from "./Section"
