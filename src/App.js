@@ -14,6 +14,8 @@ import {
 import "bootstrap/dist/css/bootstrap.min.css";
 import "semantic-ui-css/semantic.min.css";
 
+
+
 import { Route, Routes } from "react-router-dom";
 
 function App() {

@@ -1,6 +1,6 @@
 import React from "react";
 import Dentist from "./Images/dentist.jpeg";
-
+import Reviews from './Reviews'
 import Section from "./Section"
 
 const Home = () => {
@@ -46,6 +46,7 @@ const Home = () => {
         </div>
       </div>
       <Section />
+      <Reviews />
       
     </>
   );

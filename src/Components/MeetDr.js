@@ -2,9 +2,7 @@ import React from "react";
 import Image from "react-bootstrap/Image";
 import logo from "./Images/logos.png";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
-
 import keith from "./Images/keith2.jpeg";
-
 import Section from "./Section"
 
 
