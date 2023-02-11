@@ -4,6 +4,8 @@ import Reviews from './Reviews'
 import Slider from "react-slick";
 import Section from "./Section"
 import TestimonialSlider from "./TestimonialSlider";
+import Testimonials from "./Testimonials";
+
 
 
 const Home = () => {
@@ -49,7 +51,7 @@ const Home = () => {
         </div>
       </div>
       <Section />
-      <TestimonialSlider />
+      <Testimonials />
       
     </>
   );

@@ -256,21 +256,21 @@ a #serviceFAQ {
 }
 
 .sliderHolder p {
-  font-size: 40px;
+  font-size: 20px;
   font-family: "Abril Fatface", cursive;
   color: #708a99;
 
 }
 
 .sliderHolder h4 {
-  font-size: 35px;
+  font-size: 315px;
   color: rgb(62, 110, 110);
 
 
 }
 
 .sliderHolder h5 {
-  font-size: 25px;
+  font-size: 15px;
   color: rgb(62, 110, 110);
   display: flex;
   align-self: center;
@@ -284,6 +284,3 @@ a #serviceFAQ {
 
 } 
 
-.stars {
-  font-size: 50px;
-}
