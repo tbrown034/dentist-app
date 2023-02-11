@@ -1,7 +1,10 @@
 import React from "react";
 import Dentist from "./Images/dentist.jpeg";
 import Reviews from './Reviews'
+import Slider from "react-slick";
 import Section from "./Section"
+import TestimonialSlider from "./TestimonialSlider";
+
 
 const Home = () => {
   return (
@@ -46,7 +49,7 @@ const Home = () => {
         </div>
       </div>
       <Section />
-      <Reviews />
+      <TestimonialSlider />
       
     </>
   );
