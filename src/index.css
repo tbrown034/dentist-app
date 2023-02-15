@@ -244,36 +244,28 @@ a #serviceFAQ {
 
 
 
+
 .swiper {
-  width: 100%;
-  height: 100%;
-  background-color:  #e6d5be; 
-
-}
-
-.swiper-slide {
   text-align: center;
   font-size: 22px;
-  background-color:  #e6d5be; 
-   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
+  font-family: "Abril Fatface", cursive;
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .swiper-slide h4 {
   font-size: 18px;
 }
-
 .swiper-slide h5 {
   font-size: 14px;
+}
+
+#testimonialPhoto {
+  object-fit: cover;
+
+}
+
+#sliderContainer {
+  background-color: #e6d5be;
+  margin-left: 1px;
+  margin-right: 1px;
 }
