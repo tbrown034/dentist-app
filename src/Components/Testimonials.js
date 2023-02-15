@@ -1,6 +1,8 @@
 
 import Carousel from 'react-bootstrap/Carousel';
 import color from './Images/color.png';
+import smile3 from './Images/smile3.webp'
+import Image from "react-bootstrap/Image";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -10,21 +12,23 @@ import { MDBIcon, MDBTypography } from "mdb-react-ui-kit";
 const Testimonials = () => {
     return (
         <>
-
-        <Container fluid>
-      <Row id="row">
-        <Col id="row">
-        <Carousel>
+        <Container  id="testimonialContainer" >
+      <Row>
+        <Col>
+        <Image fluid src={smile3} id="testimonialPhoto"  />
+        </Col>
+        
+        <Col>
+        <Carousel fluid>
       <Carousel.Item>
-        <img
+        <img fluid
           className="d-block w-100"
           src={color}
-          height="200"
 
           alt="First slide"
         />
         <Carousel.Caption>
-        <div class="sliderHolder">
+        <div>
           <p>
             <MDBIcon fas icon="quote-left" />
             I have been receiving dental care from Dr. Brown for 17 years. I
