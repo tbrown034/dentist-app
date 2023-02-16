@@ -247,17 +247,28 @@ a #serviceFAQ {
 
 .swiper {
   text-align: center;
-  font-size: 22px;
+  font-size: 32px;
   font-family: "Abril Fatface", cursive;
+  color: #708a99;
+
+}
+
+
+.swiper p {
+  padding-top: 10px;
+  padding-left: 45px;
+  padding-right: 45px;
 
 }
 
 
 
 #testimonialPhoto {
-  object-fit: fill;
+  object-fit: cover;
   border-left: whitesmoke 5px solid;
   border-right: whitesmoke 10px solid;
+
+  
   background-color: rgb(225, 216, 216);
 
 
@@ -272,4 +283,3 @@ a #serviceFAQ {
 
 
 }
-

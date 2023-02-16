@@ -3,6 +3,8 @@ import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { MDBIcon, MDBTypography } from "mdb-react-ui-kit";
 import smile3 from "./Images/smile3.webp";
+import smile4 from "./Images/slidersmile.jpeg";
+
 import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -23,7 +25,7 @@ export default function Slider1() {
     <>
       <Container fluid  >
         <Row id="sliderContainer" >
-          <Col lg={5}>
+          <Col  xl ={6}  >
             <Swiper 
               autoplay={{
                 delay: 4500,
@@ -215,7 +217,8 @@ export default function Slider1() {
               </SwiperSlide>
             </Swiper>
           </Col>
-          <Col  lg={7}>
+          <Col 
+          xl ={6} >
             <Image fluid src={smile3} id="testimonialPhoto" />
           </Col>
         </Row>
