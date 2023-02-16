@@ -247,9 +247,10 @@ a #serviceFAQ {
 
 .swiper {
   text-align: center;
-  font-size: 32px;
+  font-size: 28px;
   font-family: "Abril Fatface", cursive;
   color: #708a99;
+  
 
 }
 
@@ -265,8 +266,11 @@ a #serviceFAQ {
 
 #testimonialPhoto {
   object-fit: cover;
+  border: 8px, whitesmoke solid;
+  width: 100%;
+  margin-right: 0;
   border-left: whitesmoke 5px solid;
-  border-right: whitesmoke 10px solid;
+
 
   
   background-color: rgb(225, 216, 216);
@@ -277,9 +281,20 @@ a #serviceFAQ {
 #sliderContainer {
   background-color: #e6d5be;
   border: whitesmoke 5px solid;
+  border-top: none;
   display: flex;
   flex-direction: row;
   background-color: rgb(225, 216, 216);
+}
+
+#col2 {
+  padding: 0px;
+  border-top: whitesmoke 5px solid;
+  border-left:  whitesmoke 5px solid;
+}
+
+#col1 {
+  border-top: whitesmoke 5px solid;
 
 
 }

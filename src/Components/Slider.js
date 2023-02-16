@@ -1,32 +1,28 @@
 import React, { useRef, useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { MDBIcon, MDBTypography } from "mdb-react-ui-kit";
 import smile3 from "./Images/smile3.webp";
 import smile4 from "./Images/slidersmile.jpeg";
-
+import patient from "./Images/patient.jpeg";
 import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
 import "./styles.css";
-
 // import required modules
 import { Navigation, Pagination, Autoplay } from "swiper";
 
 export default function Slider1() {
   return (
     <>
-      <Container fluid  >
-        <Row id="sliderContainer" >
-          <Col  xl ={6}  >
-            <Swiper 
+      <Container fluid>
+        <Row id="sliderContainer">
+          <Col id="col1" lg={7} >
+            <Swiper
               autoplay={{
                 delay: 4500,
               }}
@@ -102,8 +98,7 @@ export default function Slider1() {
                   I initially came here with a dental crisis and needed an
                   emergency appointment. It's out of network for me but they did
                   everything they could with the insurance and I've gotten
-                  excellent care. My mouth was in horrible shape and now it's a
-                  lot better. Instead of losing some teeth I have teeth that
+                  excellent care. Instead of losing some teeth I have teeth that
                   look really good.
                   <MDBIcon fas icon="quote-right" />
                   <MDBTypography
@@ -217,9 +212,8 @@ export default function Slider1() {
               </SwiperSlide>
             </Swiper>
           </Col>
-          <Col 
-          xl ={6} >
-            <Image fluid src={smile3} id="testimonialPhoto" />
+          <Col xl={5} id="col2"  >
+            <Image fluid src={smile3}  />
           </Col>
         </Row>
       </Container>
