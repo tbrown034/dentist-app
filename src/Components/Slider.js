@@ -21,9 +21,9 @@ import { Navigation, Pagination, Autoplay } from "swiper";
 export default function Slider1() {
   return (
     <>
-      <Container fluid id="sliderContainer" >
-        <Row>
-          <Col md={6}>
+      <Container fluid  >
+        <Row id="sliderContainer" >
+          <Col lg={5}>
             <Swiper 
               autoplay={{
                 delay: 4500,
@@ -215,7 +215,7 @@ export default function Slider1() {
               </SwiperSlide>
             </Swiper>
           </Col>
-          <Col  md={6}>
+          <Col  lg={7}>
             <Image fluid src={smile3} id="testimonialPhoto" />
           </Col>
         </Row>

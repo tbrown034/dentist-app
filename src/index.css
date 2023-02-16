@@ -252,20 +252,24 @@ a #serviceFAQ {
 
 }
 
-.swiper-slide h4 {
-  font-size: 18px;
-}
-.swiper-slide h5 {
-  font-size: 14px;
-}
+
 
 #testimonialPhoto {
-  object-fit: cover;
+  object-fit: fill;
+  border-left: whitesmoke 5px solid;
+  border-right: whitesmoke 10px solid;
+  background-color: rgb(225, 216, 216);
+
 
 }
 
 #sliderContainer {
   background-color: #e6d5be;
-  margin-left: 1px;
-  margin-right: 1px;
+  border: whitesmoke 5px solid;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(225, 216, 216);
+
+
 }
+
