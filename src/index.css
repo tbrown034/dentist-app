@@ -2,7 +2,7 @@
 #topHeroText {
   font-size: 400%;
   font-family: "Abril Fatface", cursive;
-  color: #e6d5be;
+  color: rgb(225, 216, 216);
   padding-left: 12px;
 }
 
@@ -42,7 +42,7 @@
 }
 
 #navBar {
-  background-color: #e6d5be;
+  background-color: rgb(225, 216, 216);
   padding-bottom: 20px;
 }
 
@@ -71,13 +71,7 @@
   margin-bottom: 11px;
 }
 
-#secondLayer {
-  display: flex;
-  flex-direction: row;
-  align-content: space-around;
-  color: #708a99;
-  background-color:  #e6d5be; 
-}
+
 
 #sectionHolder {
   background-color: #708a99;
@@ -176,16 +170,14 @@ h6 {
   text-align: center;
 }
 
-#serviceTop,
-#secondLayer {
+#serviceTop {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
 }
 
-#serviceText,
-#secondLayerText {
+#serviceText {
   background-color: #e6d5be;
   font-size: 75%;
   color:  rgb(62, 110, 110);
@@ -221,9 +213,7 @@ h6 {
   flex: 1;
 }
 
-#secondPhoto {
-  background-color: #eae5dd;
-}
+
 
 a #serviceFAQ {
   display: flex;
@@ -247,7 +237,7 @@ a #serviceFAQ {
 
 .swiper {
   text-align: center;
-  font-size: 28px;
+  font-size: 30px;
   font-family: "Abril Fatface", cursive;
   color: #708a99;
   
@@ -298,3 +288,70 @@ a #serviceFAQ {
 
 
 }
+
+#swiperHead {
+  font-family: "Poppins", sans-serif;
+  color: #708a99;
+  text-decoration: wavy #708a99 20px;
+
+
+}
+
+span {
+  background-color: whitesmoke;
+  padding: 10px;
+  text-decoration: wavy #708a99 2px;
+}
+
+.secondLayer {
+  background-color: #e6d5be;
+  border: whitesmoke 5px solid;
+  border-top: none;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(225, 216, 216);
+}
+
+.col2 {
+  padding: 0px;
+  border-top: whitesmoke 5px solid;
+  border-left:  whitesmoke 5px solid;
+}
+
+.col {
+  border-top: whitesmoke 5px solid;
+}
+
+.secondHeader {
+  font-size: 50px;
+  font-family: "Abril Fatface", cursive;
+  color: #708a99;
+}
+
+.secondList, .secondText {
+  font-size: 20px;
+  font-family: 'Source Serif Pro', serif;
+  color: #708a99;
+
+}
+
+#button2 {
+  color: whitesmoke;
+  background-color:   #708a99;
+
+}
+
+#swiperHead2 {
+  font-family: "Poppins", sans-serif;
+  color: #708a99;
+  text-decoration: wavy #708a99 20px;
+  margin-top: 14px;
+
+
+}
+
+
+
+
+
+

@@ -1,10 +1,6 @@
 import React from "react";
 import Dentist from "./Images/dentist.jpeg";
-import Reviews from './Reviews'
-import Slider from "react-slick";
 import Section from "./Section"
-import TestimonialSlider from "./TestimonialSlider";
-import Testimonials from "./Testimonials";
 import Slider1 from './Slider'
 
 

@@ -12,7 +12,6 @@ export { default as Financing} from './Financing'
 export { default as GoogleMap} from './GoogleMap'
 export { default as Section } from './Section'
 export { default as Reviews } from './Reviews'
-export { default as TestimonialSlider } from './TestimonialSlider'
 
 
 

@@ -43,7 +43,7 @@ icon"
               href="/Appointment"
               role="button"
             >
-              Check Your Coverage/Financing Options <i class="arrow "></i>{" "}
+              Check Your Financing Options <i class="arrow "></i>{" "}
               <i
                 class="arrow alternate circle right
 icon"
@@ -58,7 +58,7 @@ icon"
               href="/Appointment"
               role="button"
             >
-              Take a Tour <i class="arrow "></i>{" "}
+              Take a Tour of our Office<i class="arrow "></i>{" "}
               <i
                 class="arrow alternate circle right
 icon"

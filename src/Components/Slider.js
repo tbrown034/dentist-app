@@ -12,7 +12,6 @@ import Col from "react-bootstrap/Col";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "./styles.css";
 // import required modules
 import { Navigation, Pagination, Autoplay } from "swiper";
 
@@ -22,6 +21,7 @@ export default function Slider1() {
       <Container fluid>
         <Row id="sliderContainer">
           <Col id="col1" lg={7} >
+          <h1 id="swiperHead"><span>  Hear from our patients  </span></h1>
             <Swiper
               autoplay={{
                 delay: 4500,
@@ -34,6 +34,8 @@ export default function Slider1() {
               modules={[Navigation, Pagination, Autoplay]}
               className="mySwiper"
             >
+                      
+
               <SwiperSlide id="slide">
                 <p>
                   <MDBIcon fas icon="quote-left" />

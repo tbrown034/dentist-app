@@ -22,12 +22,8 @@ const Reviews = () => {
       <div id="reviewContainer">
         <MDBRow className="d-flex justify-content-center">
           <MDBCol md="10" xl="8" className="text-center">
-          <h3 className="mb-4">Testimonials</h3>
-          <p className="mb-4 pb-2 mb-md-5 pb-md-0">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
-            error amet numquam iure provident voluptate esse quasi, veritatis
-            totam voluptas nostrum quisquam eum porro a pariatur veniam.
-          </p>
+          <h3 className="mb-4">What People Are Saying about Dr. Brown</h3>
+          
           </MDBCol>
         </MDBRow>
         <MDBRow className="text-center">
