@@ -39,6 +39,12 @@ const Appointment = () => {
   const [currentDate, setNewDate] = useState(null);
   const onChange = (event, data) => setNewDate(data.value);
   const form = useRef();
+
+  const HeroStyle = {
+    backgroundImage: `url(${teeth})`,
+    backgroundColor: "rgba(0, 0, 0, 0.6)",
+    height: 550,
+  };
  
 
   const sendEmail = (e) => {
@@ -68,16 +74,10 @@ const Appointment = () => {
       <div
         id="LocationContainer"
         className=" img-fluid  bg-image"
-        style={{
-          backgroundImage: `url(${teeth})`,
-          backgroundColor: "rgba(0, 0, 0, 0.6)",
-          height: 550,
-        }}
+        style={HeroStyle}
       >
         <div
-          id="mask"
           className="mask"
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
         >
           <div id="homeContainter">
             <div id="textContainer">

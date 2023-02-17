@@ -14,6 +14,8 @@ const handleSubmit = (e, { value }) => {
   console.log("handleSubmit ran");
   e.preventDefault();
 
+  
+
   // emailjs
   //   .sendForm(
   //     "service_99v16fc",
@@ -31,6 +33,11 @@ const handleSubmit = (e, { value }) => {
   //   );
   e.target.reset();
 };
+const HeroStyle = {
+  backgroundImage: `url(${dentistwords})`,
+  backgroundColor: "rgba(0, 0, 0, 0.6)",
+  height: 550,
+};
 
 const Contact = () => {
   const form = useRef();
@@ -40,18 +47,13 @@ const Contact = () => {
   return (
     <>
       <div
-        id="LocationContainer"
         className=" img-fluid  bg-image"
-        style={{
-          backgroundImage: `url(${dentistwords})`,
-          backgroundColor: "rgba(0, 0, 0, 0.6)",
-          height: 550,
-        }}
+        style={HeroStyle}
       >
         <div
-          id="mask"
+         
           className="mask"
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
+          
         >
           <div id="homeContainter">
             <div id="textContainer">
