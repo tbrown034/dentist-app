@@ -4,8 +4,6 @@ import { Breadcrumb, Image, Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Section from "./Section";
 import practicePhoto from "./Images/practice.jpeg";
-
-
 const BACKGROUND_COLOR = "rgba(0, 0, 0, 0.6)";
 const HERO_HEIGHT = 550;
 const heroStyle = {
