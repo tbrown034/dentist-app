@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import { useState } from "react";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
-// import emailjs from "@emailjs/browser";
 import teeth from "./Images/smile3.webp";
 import { Button, Form, Select } from "semantic-ui-react";
 import SemanticDatepicker from "react-semantic-ui-datepickers";
@@ -36,12 +35,11 @@ const services = [
 ];
 
 const Appointment = () => {
-  // eslint-disable-next-line
+
   const [currentDate, setNewDate] = useState(null);
   const onChange = (event, data) => setNewDate(data.value);
   const form = useRef();
-  // const [showA, setShowA] = useState(false);
-  // const toggleShowA = () => setShowA(!showA);
+ 
 
   const sendEmail = (e) => {
     console.log("handleSubmit ran");
@@ -99,14 +97,13 @@ const Appointment = () => {
 
       <div id="secondLayer">
         <div id="secondLayerText">
-          <div id="breadcrum">
             <Breadcrumb>
               <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
               <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
                 Practice
               </Breadcrumb.Item>
             </Breadcrumb>
-          </div>
+          
           <h2>Have Questions? Let us know!</h2>
           <p>
             We understand that going to the dentist's office can be a stressful
