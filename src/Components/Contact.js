@@ -1,46 +1,41 @@
 import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
-import dentistwords from "./Images/dentistwords.jpeg";
+import { Button, Form, Select } from "semantic-ui-react";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Section from "./Section";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-
-
-import { Button, Form, Select } from "semantic-ui-react";
+import emailjs from "@emailjs/browser";
+import dentistwords from "./Images/dentistwords.jpeg";
 
 const options = [
   { key: "new", text: "New", value: "New" },
   { key: "return", text: "Returning", value: "Returning" },
 ];
 
+const handleSubmit = (e, { value }) => {
+  console.log("handleSubmit ran");
+  e.preventDefault();
+
+  // emailjs
+  //   .sendForm(
+  //     "service_99v16fc",
+  //     "contact_form",
+  //     Form.current,
+  //     "oLVh7PnRrJc_IUIfK"
+  //   )
+  //   .then(
+  //     (result) => {
+  //       console.log(result.text);
+  //     },
+  //     (error) => {
+  //       console.log(error.text);
+  //     }
+  //   );
+  e.target.reset();
+};
+
 const Contact = () => {
   const form = useRef();
-  // const [showA, setShowA] = useState(false);
-  // const toggleShowA = () => setShowA(!showA);
 
-  const handleChange = (e, { value }) => {
-    console.log("handleSubmit ran");
-    e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_99v16fc",
-        "contact_form",
-        form.current,
-        "oLVh7PnRrJc_IUIfK"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-  };
 
   return (
     <>
@@ -113,7 +108,7 @@ const Contact = () => {
         </div>
         <div id="secondPhoto">
           <h2>Contact Us!</h2>
-          <Form>
+          <Form ref={form} onSubmit={handleSubmit}>
             <Form.Field>
               <label>Name</label>
               <input placeholder="Name" />
@@ -136,7 +131,7 @@ const Contact = () => {
               label="About"
               placeholder="Tell us more about you..."
             />
-            <Button type="submit" onClick={handleChange}>
+            <Button type="submit">
               Submit
             </Button>
           </Form>
