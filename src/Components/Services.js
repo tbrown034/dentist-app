@@ -1,14 +1,11 @@
 import chair from "./Images/dentalchair.jpeg";
 import smile from "./Images/smile.jpeg";
 import general from "./Images/slidersmile.jpeg";
-import { Image } from "semantic-ui-react";
-import Breadcrumb from "react-bootstrap/Breadcrumb";
 import dentist1 from "./Images/dentist5.jpeg";
 import dentist3 from "./Images/dentrist7.jpeg";
 import Section from "./Section";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Image, Breadcrumb, Container, Row, Col } from "react-bootstrap";
+import {LinkContainer} from "./Data/Links"
 import {
   accordionGeneralMap,
   accordionCosmeticMap,
@@ -25,11 +22,7 @@ const Services = () => {
   return (
     <>
       <div className=" img-fluid  bg-image" style={HeroStyle}>
-        <div
-          id="mask"
-          className="mask"
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
-        >
+        <div className="mask">
           <div id="homeContainter">
             <div id="textContainer">
               <h1 id="topHeroText">
@@ -76,8 +69,9 @@ const Services = () => {
               our services. We also provide root canal therapy with treatments
               completed in just one visit.
             </p>
+            <LinkContainer/>
 
-            <Container>
+            {/* <Container>
               <Row>
                 <Col lg={4}>
                   <ul>
@@ -146,7 +140,7 @@ const Services = () => {
                   </ul>
                 </Col>
               </Row>
-            </Container>
+            </Container> */}
 
             <a href="/Appointment">
               <button id="button2" className="circular ui icon button">
