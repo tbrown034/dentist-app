@@ -43,7 +43,8 @@ export default function Slider1() {
                   I truly believe he is the best in the business. He is a
                   perfectionist in his work. I highly recommend him and his
                   staff.
-                  <MDBIcon fas icon="quote-right" />
+                  <MDBIcon fas icon="quote-right" /> </p>
+
                   <MDBTypography
                     listUnStyled
                     className="d-flex justify-content-center mb-0"
@@ -89,7 +90,7 @@ export default function Slider1() {
                       />
                     </li>
                   </MDBTypography>
-                </p>
+             
 
                 <h4> - Mike L.</h4>
                 <h5>Napeville, IL</h5>
@@ -102,7 +103,7 @@ export default function Slider1() {
                   everything they could with the insurance and I've gotten
                   excellent care. Instead of losing some teeth I have teeth that
                   look really good.
-                  <MDBIcon fas icon="quote-right" />
+                  <MDBIcon fas icon="quote-right" /></p>
                   <MDBTypography
                     listUnStyled
                     className="d-flex justify-content-center mb-0"
@@ -148,7 +149,7 @@ export default function Slider1() {
                       />
                     </li>
                   </MDBTypography>
-                </p>
+         
 
                 <h4>- Mike C..</h4>
                 <h5>Markham, IL</h5>
@@ -161,7 +162,7 @@ export default function Slider1() {
                   ribs, steaks, and all kinds of hard foods. If you are having
                   problems with your dentures, I would recommended Dr. Keith
                   Brown to anyone.
-                  <MDBIcon fas icon="quote-right" />
+                  <MDBIcon fas icon="quote-right" /> </p>
                   <MDBTypography
                     listUnStyled
                     className="d-flex justify-content-center mb-0"
@@ -207,7 +208,6 @@ export default function Slider1() {
                       />
                     </li>
                   </MDBTypography>
-                </p>
 
                 <h4>- Mattie P W.</h4>
                 <h5>Bolingbrook, ILL</h5>

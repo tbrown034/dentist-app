@@ -13,9 +13,9 @@ const Section = () => {
               href="/Appointment"
               role="button"
             >
-              Meet Dr. Brown, D.D.S., F.A.G.D. <i class="arrow "></i>{" "}
+              Meet Dr. Brown, D.D.S., F.A.G.D. <i className="arrow "></i>{" "}
               <i
-                class="arrow alternate circle right
+                className="arrow alternate circle right
 icon"
               ></i>
             </a>
@@ -28,9 +28,9 @@ icon"
               href="/Appointment"
               role="button"
             >
-              Emergnecy? Call Now <i class="arrow "></i>{" "}
+              Emergnecy? Call Now <i className="arrow "></i>{" "}
               <i
-                class="arrow alternate circle right
+                className="arrow alternate circle right
 icon"
               ></i>
             </a>
@@ -43,9 +43,9 @@ icon"
               href="/Appointment"
               role="button"
             >
-              Check Your Financing Options <i class="arrow "></i>{" "}
+              Check Your Financing Options <i className="arrow "></i>{" "}
               <i
-                class="arrow alternate circle right
+                className="arrow alternate circle right
 icon"
               ></i>
             </a>
@@ -58,9 +58,9 @@ icon"
               href="/Appointment"
               role="button"
             >
-              Take a Tour of our Office<i class="arrow "></i>{" "}
+              Take a Tour of our Office<i className="arrow "></i>{" "}
               <i
-                class="arrow alternate circle right
+                className="arrow alternate circle right
 icon"
               ></i>
             </a>

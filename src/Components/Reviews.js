@@ -37,7 +37,7 @@ const Reviews = () => {
               />
             </div>
             <h5 className="mb-3">Mike L.</h5>
-            <p class="location">Napeville, IL</p>
+            <p className="location">Napeville, IL</p>
     
             <p className="px-xl-3">
               <MDBIcon fas icon="quote-left" className="pe-2" />
@@ -84,7 +84,7 @@ const Reviews = () => {
             <h5 className="mb-3">Robby G.</h5>
             
           
-            <p class="location">Willowbrook, IL</p>
+            <p className="location">Willowbrook, IL</p>
             <p className="px-xl-3">
               <MDBIcon fas icon="quote-left" className="pe-2" />
               I have been receiving dental care from Dr. Brown for 17 years. I
@@ -128,7 +128,7 @@ const Reviews = () => {
               />
             </div>
             <h5 className="mb-3">Mattie P W.</h5>
-            <p class="location">Bolingbrook, IL</p>
+            <p className="location">Bolingbrook, IL</p>
             <p className="px-xl-3">
               <MDBIcon fas icon="quote-left" className="pe-2" />
               Dr. Brown made me a total new set of dentures that attaches to
@@ -172,7 +172,7 @@ const Reviews = () => {
               />
             </div>
             <h5 className="mb-3">Mike C.</h5>
-            <p class="location">Markham, IL</p>
+            <p className="location">Markham, IL</p>
             <p className="px-xl-3">
               <MDBIcon fas icon="quote-left" className="pe-2" />
               I initially came here with a dental crisis and needed an emergency

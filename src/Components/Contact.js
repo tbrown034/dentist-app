@@ -2,7 +2,10 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import dentistwords from "./Images/dentistwords.jpeg";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
-import Section from "./Section"
+import Section from "./Section";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 
 import { Button, Form, Select } from "semantic-ui-react";

@@ -1,9 +1,13 @@
 import React from "react";
 import GoogleMap from "./GoogleMap";
+import Map from "./Map"
+import Image from "react-bootstrap/Image";
 import bank from "./Images/bank.jpeg";
-
 import Breadcrumb from "react-bootstrap/Breadcrumb";
-import Section from "./Section"
+import Section from "./Section";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 
 const Location = () => {
@@ -50,33 +54,40 @@ const Location = () => {
        <Section />
       </div>
 
-      <div id="secondLayer">
-        <div id="secondPhoto">
-          <GoogleMap />
-        </div>
-        <div id="secondLayerText">
-          <div id="breadcrum">
-            <Breadcrumb>
-              <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
-              <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
-                Practice
-              </Breadcrumb.Item>
-            </Breadcrumb>
-          </div>
-          <h2>Located in the heart of Naperville</h2>
-          <p>
-            We promise to give you the most affordable dental care we can offer.
-            We can also assist you in arranging a financing program tailored to
-            your specific needs and budget.
+
+      <Container fluid >
+        <Row className="secondLayer">
+          <Col lg={5} className="col1">
+            <div id="breadcrum">
+              <Breadcrumb>
+                <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+                <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
+                  Meet Dr. Brown
+                </Breadcrumb.Item>
+              </Breadcrumb>
+            </div>
+            <h2 className="secondHeader">Located in the heart of Naperville</h2>
+            <p className="secondText">
+            Hello, and welcome to my practice. Working in dentistry for over 40
+            years, it has always been my goal to provide the highest level of
+            dental care possible. By working my hardest to stay current with the
+            latest techniques and technology I am devoted to giving all my
+            patients the finest care with financing they can afford.
           </p>
-          <br></br> <br></br>
-          <a href="/Appointment">
-            <button className="circular ui icon button">
-              Make an Appointment
-            </button>
-          </a>
-        </div>
-      </div>
+            <a href="/Appointment">
+              <button id="button2" className="circular ui icon button">
+                Make an Appointment
+              </button>
+            </a>
+          </Col>
+          <Col lg={7} id="col2">
+            <div>
+            <Map/>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+      
     </>
   );
 };

@@ -7,12 +7,7 @@ import Section from "./Section";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-// import required modules
-;
+
 
 
 const MeetDr = () => {
@@ -60,7 +55,7 @@ const MeetDr = () => {
       </div>
       <Container fluid >
         <Row className="secondLayer">
-          <Col lg={7} className="col1">
+          <Col lg={5} className="col1">
             <div id="breadcrum">
               <Breadcrumb>
                 <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
@@ -83,9 +78,9 @@ const MeetDr = () => {
               </button>
             </a>
           </Col>
-          <Col lg={5} id="col2">
-            <div id="secondPhoto">
-              <Image src={logo} fluid />
+          <Col lg={7} id="col2">
+            <div>
+              <Image className="secondPhoto" src={logo} fluid />
             </div>
           </Col>
         </Row>

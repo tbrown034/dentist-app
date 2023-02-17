@@ -206,8 +206,7 @@ h6 {
   flex: 1;
 }
 
-#servicePhoto,
-#secondPhoto {
+#servicePhoto {
   min-width: 50%;
 
   flex: 1;
@@ -341,16 +340,10 @@ span {
 
 }
 
-#swiperHead2 {
-  font-family: "Poppins", sans-serif;
-  color: #708a99;
-  text-decoration: wavy #708a99 20px;
-  margin-top: 14px;
-
-
+.secondPhoto {
+  width: 100%;
+  object-fit: cover;
 }
-
-
 
 
 
