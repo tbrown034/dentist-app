@@ -1,28 +1,15 @@
 import React from "react";
-import Dentist from "./Images/dentist.jpeg";
-import Section from "./Section"
-import Slider1 from './Slider'
-
+import Section from "./Section";
+import Slider1 from "./Slider";
+import "../index.css";
 
 
 const Home = () => {
   return (
-    <>
-      <div
-        id="home"
-        className=" img-fluid  bg-image"
-        style={{
-          backgroundImage: `url(${Dentist})`,
-          backgroundColor: "rgba(0, 0, 0, 0.6)",
-          height: 680,
-        }}
-      >
-        <div
-          id="mask"
-          className="mask"
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
-        >
-          <div id="homeContainter">
+    <main id="home">
+      <header className="bg-image">
+        <div className="mask">
+          <div id="homeContainer">
             <div id="textContainer">
               <h1 id="topHeroText">Let us brighten your smile.</h1>
               <h3 id="bottomHeroText">
@@ -30,11 +17,10 @@ const Home = () => {
                 Chicagoland area for more than 40 years. Schedule a cleaning or
                 appointment today!
               </h3>
-              <br></br>
+              <br />
             </div>
-
             <div id="buttonContainer">
-              <br></br>
+              <br />
               <a
                 className="btn btn-outline-light btn-lg rounded-pill"
                 href="/Appointment"
@@ -46,11 +32,10 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </header>
       <Section />
       <Slider1 />
-      
-    </>
+    </main>
   );
 };
 

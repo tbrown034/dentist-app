@@ -1,4 +1,7 @@
 
+
+/* Home */
+
 #topHeroText {
   font-size: 400%;
   font-family: "Abril Fatface", cursive;
@@ -12,6 +15,26 @@
   width: auto;
   padding-left: 12px;
   color: whitesmoke;
+}
+
+#homeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 40px;
+  text-align: center;
+}
+
+.bg-image {
+  background-image: url("./Components/Images/dentist.jpeg");
+  height: 680px;
+}
+
+.mask {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 #textContainer {
@@ -32,6 +55,8 @@
   justify-content: center;
   flex-direction: column;
 }
+
+/* Header */
 
 #brand {
   font-size: 280%;
@@ -64,14 +89,22 @@
   margin: 2px;
 }
 
+/* Footer */
+
 #footer {
-  background-color: #708a99; 
-  color:  #e6d5be;
+  background-color: #708a99;
+  color: #e6d5be;
   padding-bottom: 102px;
   margin-bottom: 11px;
 }
 
+#footText {
+  color: #e6d5be;
+  font-family: "Source Serif Pro", serif;
+  font-size: 16px;
+}
 
+/* Section */
 
 #sectionHolder {
   background-color: #708a99;
@@ -82,6 +115,8 @@
   padding: 10px;
   width: 100%;
 }
+
+/* Contact and forms */
 
 #contactForm {
   display: flex;
@@ -97,24 +132,7 @@ label {
   font-size: larger;
 }
 
-h6 {
-  font-family: "Poppins", sans-serif;
-  color:  #e6d5be;
-  text-decoration: underline;
-  font-size: 200px;
-}
-
-/* li, p {
-  color: #708A99;
-  font-family: 'Source Serif Pro', serif;
-
-} */
-
-#footText {
-  color:  #e6d5be;
-  font-family: "Source Serif Pro", serif;
-  font-size: 16px;
-}
+/* Middle Segment  */
 
 #segmentGroup {
   color: whitesmoke;
@@ -134,11 +152,13 @@ h6 {
   text-align: center;
 }
 
+/* Services */
+
 #trioContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color:  #e6d5be;
+  background-color: #e6d5be;
 }
 
 #topServiceText {
@@ -160,16 +180,6 @@ h6 {
   padding-bottom: 7px;
 }
 
-#thirdLayerH1 {
-  background-color: #e6d5be;
-  font-family: "Abril Fatface", cursive;
-  font-size: 500%;
-  padding-top: 20px;
-  color: rgb(62, 110, 110);
-  margin: 0;
-  text-align: center;
-}
-
 #serviceTop {
   display: flex;
   flex-direction: row;
@@ -180,7 +190,7 @@ h6 {
 #serviceText {
   background-color: #e6d5be;
   font-size: 75%;
-  color:  rgb(62, 110, 110);
+  color: rgb(62, 110, 110);
   flex: 1;
   flex-direction: column;
   padding-left: 10px;
@@ -193,14 +203,14 @@ h6 {
 }
 
 #serviceText h2 {
-  background-color: #e6d5bed6; 
+  background-color: #e6d5bed6;
   font-size: 500%;
   color: rgb(62, 110, 110);
   flex: 1;
 }
 
 #serviceText h4 {
-  background-color:  #e6d5be;
+  background-color: #e6d5be;
   font-size: 300%;
   color: whitesmoke;
   flex: 1;
@@ -212,9 +222,7 @@ h6 {
   flex: 1;
 }
 
-
-
-a #serviceFAQ {
+a .serviceFAQ {
   display: flex;
   flex-direction: column;
   padding: 12px;
@@ -226,32 +234,18 @@ a #serviceFAQ {
   background-color: #e6d5be;
 }
 
-
-
-
-
-
-
-
-
 .swiper {
   text-align: center;
   font-size: 30px;
   font-family: "Abril Fatface", cursive;
   color: #708a99;
-  
-
 }
-
 
 .swiper p {
   padding-top: 10px;
   padding-left: 45px;
   padding-right: 45px;
-
 }
-
-
 
 #testimonialPhoto {
   object-fit: cover;
@@ -260,11 +254,7 @@ a #serviceFAQ {
   margin-right: 0;
   border-left: whitesmoke 5px solid;
 
-
-  
   background-color: rgb(225, 216, 216);
-
-
 }
 
 #sliderContainer {
@@ -276,36 +266,23 @@ a #serviceFAQ {
   background-color: rgb(225, 216, 216);
 }
 
-#col2 {
-  padding: 0px;
-  border-top: whitesmoke 5px solid;
-  border-left:  whitesmoke 5px solid;
-}
-
-#col1 {
-  border-top: whitesmoke 5px solid;
-
-
-}
-
-#swiperHead {
-  font-family: "Poppins", sans-serif;
-  color: #708a99;
-  text-decoration: wavy #708a99 20px;
-
-
-}
-
 span {
   background-color: whitesmoke;
   padding: 10px;
   text-decoration: wavy #708a99 2px;
 }
 
+#swiperHead {
+  font-family: "Poppins", sans-serif;
+  color: #708a99;
+  text-decoration: wavy #708a99 20px;
+}
+
+/* Second Layer Formatting Across Components */
+
 .secondLayer {
   background-color: #e6d5be;
   border: whitesmoke 5px solid;
-  border-top: none;
   display: flex;
   flex-direction: row;
   background-color: rgb(225, 216, 216);
@@ -314,7 +291,7 @@ span {
 .col2 {
   padding: 0px;
   border-top: whitesmoke 5px solid;
-  border-left:  whitesmoke 5px solid;
+  border-left: whitesmoke 5px solid;
 }
 
 .col {
@@ -327,24 +304,19 @@ span {
   color: #708a99;
 }
 
-.secondList, .secondText {
+.secondList,
+.secondText {
   font-size: 20px;
-  font-family: 'Source Serif Pro', serif;
+  font-family: "Source Serif Pro", serif;
   color: #708a99;
-
 }
 
 #button2 {
   color: whitesmoke;
-  background-color:   #708a99;
-
+  background-color: #708a99;
 }
 
 .secondPhoto {
   width: 100%;
   object-fit: cover;
 }
-
-
-
-

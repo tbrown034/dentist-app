@@ -4,7 +4,10 @@ import Accordion from "react-bootstrap/Accordion";
 import dentist6 from "./Images/dentrist7.jpeg";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Image from "react-bootstrap/Image";
-import Section from "./Section"
+import Section from "./Section";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 
 const FAQ = () => {
@@ -51,35 +54,39 @@ const FAQ = () => {
        <Section />
       </div>
 
-      <div id="secondLayer">
-        <div id="secondPhoto">
-          <Image src={dentist6} fluid />
-        </div>
-        <div id="secondLayerText">
-          <div id="breadcrum">
-            <Breadcrumb>
-              <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
-              <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
-                Practice
-              </Breadcrumb.Item>
-            </Breadcrumb>
-          </div>
-          <h2>Let us answer your questions?</h2>
-          <p>
-            Have questions about your visit, financing or what to expect before,
-            during and after your procedure? Let us answer your questions. If
-            you don't see your answer <a href="/Contact">Let us know!</a>
-          </p>
-          <br></br>
-          <a href="/Appointment">
-            <button className="circular ui icon button">
-              Make an Appointment
-            </button>
-          </a>
-        </div>
-      </div>
+      
 
-      <div id="secondLayer">
+      <Container fluid >
+        <Row className="secondLayer">
+          <Col lg={7} className="col1">
+            <div id="breadcrum">
+              <Breadcrumb>
+                <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+                <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
+                  FAQs
+                </Breadcrumb.Item>
+              </Breadcrumb>
+            </div>
+            <h2 className="secondHeader">Let us answer your questions?</h2>
+            <p className="secondText">Have questions about your visit, financing or what to expect before,
+            during and after your procedure? Let us answer your questions. If
+            you don't see your answer <a href="/Contact">Let us know!</a></p>
+            <a href="/Appointment">
+              <button id="button2" className="circular ui icon button">
+                Make an Appointment
+              </button>
+            </a>
+          </Col>
+          <Col lg={5} id="col2">
+              <Image className="secondPhoto" src={dentist6} fluid />
+          </Col>
+        </Row>
+      </Container>
+
+
+
+
+      <div id="thirdLayer">
         <div id="leftDiv">
           <Accordion>
             <Accordion.Item eventKey="0">
