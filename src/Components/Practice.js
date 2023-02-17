@@ -1,48 +1,40 @@
-import practicePhoto from "./Images/practice.jpeg";
+
 import hepa from "./Images/HEPA.jpeg";
-import Image from "react-bootstrap/Image";
-import Breadcrumb from "react-bootstrap/Breadcrumb";
+import { Breadcrumb, Image, Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import Section from "./Section";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import practicePhoto from "./Images/practice.jpeg";
+
+
+const BACKGROUND_COLOR = "rgba(0, 0, 0, 0.6)";
+const HERO_HEIGHT = 550;
+const heroStyle = {
+  backgroundImage: `url(${practicePhoto})`,
+  backgroundColor: BACKGROUND_COLOR,
+  height: HERO_HEIGHT,
+};
+const maskStyle = { backgroundColor: BACKGROUND_COLOR };
+
 
 const Practice = () => {
   return (
     <>
-      <div
-        id="LocationContainer"
-        className=" img-fluid  bg-image"
-        style={{
-          backgroundImage: `url(${practicePhoto})`,
-          backgroundColor: "rgba(0, 0, 0, 0.6)",
-          height: 550,
-        }}
-      >
-        <div
-          id="mask"
-          className="mask"
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
-        >
+      <div className="img-fluid bg-image" style={heroStyle}>
+        <div id="mask" className="mask" style={maskStyle}>
           <div id="homeContainter">
-            <div id="textContainer">
+            <div className="textContainer">
               <h1 id="topHeroText">Committed to Your Health and Safety</h1>
               <h3 id="bottomHeroText">
                 Dr. Brown and his staff has helped serve hundreds of patients in
                 the Naperville and greater Chicagoland area since 1994.
               </h3>
-              <br></br>
+              <br />
             </div>
-
             <div id="buttonContainer">
-              <br></br>
-              <a
-                className="btn btn-outline-light btn-lg"
-                href="/Appointment"
-                role="button"
-              >
+              <br />
+              <Link to="/Appointment" className="btn btn-outline-light btn-lg">
                 Make an Appointment
-              </a>
+              </Link>
             </div>
           </div>
         </div>
