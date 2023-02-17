@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { Button, Form, Select } from "semantic-ui-react";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Section from "./Section";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 import dentistwords from "./Images/dentistwords.jpeg";
 
 const options = [
@@ -13,8 +13,6 @@ const options = [
 const handleSubmit = (e, { value }) => {
   console.log("handleSubmit ran");
   e.preventDefault();
-
-  
 
   // emailjs
   //   .sendForm(
@@ -42,19 +40,10 @@ const HeroStyle = {
 const Contact = () => {
   const form = useRef();
 
-
-
   return (
     <>
-      <div
-        className=" img-fluid  bg-image"
-        style={HeroStyle}
-      >
-        <div
-         
-          className="mask"
-          
-        >
+      <div className="img-fluid  bg-image" style={HeroStyle}>
+        <div className="mask">
           <div id="homeContainter">
             <div id="textContainer">
               <h1 id="topHeroText">Have Any Questions? Let us Know!</h1>
@@ -66,7 +55,6 @@ const Contact = () => {
               </h3>
               <br></br>
             </div>
-
             <div id="buttonContainer">
               <br></br>
               <a
@@ -83,7 +71,6 @@ const Contact = () => {
       <div id="sectionHolder">
         <Section />
       </div>
-
       <div id="secondLayer">
         <div id="secondLayerText">
           <div id="breadcrum">
@@ -133,9 +120,7 @@ const Contact = () => {
               label="About"
               placeholder="Tell us more about you..."
             />
-            <Button type="submit">
-              Submit
-            </Button>
+            <Button type="submit">Submit</Button>
           </Form>
         </div>
       </div>

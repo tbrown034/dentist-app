@@ -2,12 +2,19 @@ import React from "react";
 import Section from "./Section";
 import Slider1 from "./Slider";
 import "../index.css";
+import homePhoto from "./Images/dentist.jpeg"
+
+const HeroStyle = {
+  backgroundImage: `url(${homePhoto})`,
+  backgroundColor: "rgba(0, 0, 0, 0.6)",
+  height: 550,
+};
 
 
 const Home = () => {
   return (
     <main id="home">
-      <header className="bg-image">
+      <header className="img-fluid bg-image" style={HeroStyle}>
         <div className="mask">
           <div id="homeContainer">
             <div id="textContainer">

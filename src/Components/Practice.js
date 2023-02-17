@@ -11,14 +11,13 @@ const heroStyle = {
   backgroundColor: BACKGROUND_COLOR,
   height: HERO_HEIGHT,
 };
-const maskStyle = { backgroundColor: BACKGROUND_COLOR };
 
 
 const Practice = () => {
   return (
     <>
       <div className="img-fluid bg-image" style={heroStyle}>
-        <div id="mask" className="mask" style={maskStyle}>
+        <div className="mask">
           <div id="homeContainter">
             <div className="textContainer">
               <h1 id="topHeroText">Committed to Your Health and Safety</h1>

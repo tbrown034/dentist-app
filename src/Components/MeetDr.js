@@ -4,21 +4,19 @@ import logo from "./Images/logos.png";
 import keith from "./Images/keith2.jpeg";
 import Section from "./Section";
 
-const bgStyle = {
+const HeroStyle = {
   backgroundImage: `url(${keith})`,
   backgroundColor: "rgba(0, 0, 0, 0.6)",
   height: 550,
 };
 
-const maskStyle = {
-  backgroundColor: "rgba(0, 0, 0, 0.6)",
-};
+
 
 const MeetDr = () => {
   return (
     <>
-      <div id="Location" className="img-fluid bg-image" style={bgStyle}>
-        <div id="mask" className="mask" style={maskStyle}>
+      <div id="Location" className="img-fluid bg-image" style={HeroStyle}>
+        <div className="mask">
           <div id="homeContainter">
             <div id="textContainer">
               <h1 id="topHeroText">A Doctor Who Cares</h1>

@@ -33,6 +33,11 @@ const services = [
   { key: "Filing/Cavity", text: "Filing/Cavity", value: "Filing/Cavity" },
   { key: "Other", text: "Other", value: "Other" },
 ];
+const HeroStyle = {
+  backgroundImage: `url(${teeth})`,
+  backgroundColor: "rgba(0, 0, 0, 0.6)",
+  height: 550,
+};
 
 const Appointment = () => {
 
@@ -40,11 +45,7 @@ const Appointment = () => {
   const onChange = (event, data) => setNewDate(data.value);
   const form = useRef();
 
-  const HeroStyle = {
-    backgroundImage: `url(${teeth})`,
-    backgroundColor: "rgba(0, 0, 0, 0.6)",
-    height: 550,
-  };
+
  
 
   const sendEmail = (e) => {
