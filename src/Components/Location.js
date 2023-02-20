@@ -1,7 +1,5 @@
 import React from "react";
-import GoogleMap from "./GoogleMap";
 import Map from "./Map"
-import Image from "react-bootstrap/Image";
 import bank from "./Images/bank.jpeg";
 import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Section from "./Section";

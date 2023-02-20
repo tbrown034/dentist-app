@@ -9,7 +9,6 @@ export { default as MeetDr} from './MeetDr'
 export { default as Practice} from './Practice'
 export { default as Services} from './Services'
 export { default as Financing} from './Financing'
-export { default as GoogleMap} from './GoogleMap'
 export { default as Section } from './Section'
 export { default as Reviews } from './Reviews'
 
