@@ -3,6 +3,8 @@ import Section from "./Section";
 import Slider1 from "./Slider";
 import "../index.css";
 import homePhoto from "./Images/dentist.jpeg"
+import Promotions from "./Promotions";
+import TrioServices from "./TrioContainer";
 
 const HeroStyle = {
   backgroundImage: `url(${homePhoto})`,
@@ -42,6 +44,8 @@ const Home = () => {
       </header>
       <Section />
       <Slider1 />
+      <Promotions />
+      <TrioServices />
     </main>
   );
 };

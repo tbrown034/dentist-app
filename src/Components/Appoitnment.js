@@ -5,7 +5,8 @@ import teeth from "./Images/smile3.webp";
 import { Button, Form, Select } from "semantic-ui-react";
 import SemanticDatepicker from "react-semantic-ui-datepickers";
 import "react-semantic-ui-datepickers/dist/react-semantic-ui-datepickers.css";
-import Section from "./Section"
+import Section from "./Section";
+import Stepper from "./Stepper"
 
 
 const options = [
@@ -92,32 +93,27 @@ const Appointment = () => {
           </div>
         </div>
       </div>
+      
       <div id="sectionHolder">
         <Section />
       </div>
+      
 
       <div id="secondLayer">
         <div id="secondLayerText">
             <Breadcrumb>
               <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
               <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
-                Practice
+               Appointments
               </Breadcrumb.Item>
             </Breadcrumb>
+            
           
-          <h2>Have Questions? Let us know!</h2>
+          <h2>Let's Get You Scheduled!</h2>
           <p>
-            We understand that going to the dentist's office can be a stressful
-            and confusing experience for some. That's why we are committed to
-            answering all your questions before, during and after your visit!
-            Let us know how we can help!
+            We are committed to getting you in as fast as possible to meet your needs. 
           </p>
-          <br></br>
-          <a href="/Appointment">
-            <button className="circular ui icon button">
-              Make an Appointment
-            </button>
-          </a>
+       <Stepper />
         </div>
         <div id="secondPhoto">
           <h2>Contact Us!</h2>

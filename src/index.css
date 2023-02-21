@@ -1,3 +1,14 @@
+ul,
+ol,
+dl,
+p {
+  font-size: 1.5rem;
+}
+
+li,
+p {
+  line-height: 1.5;
+}
 
 
 /* Home */
@@ -304,10 +315,14 @@ span {
   color: #708a99;
 }
 
-.secondList,
+
 .secondText {
+  font-size: 40px;
+  color: #708a99;
+}
+
+.secondList {
   font-size: 20px;
-  font-family: "Source Serif Pro", serif;
   color: #708a99;
 }
 
@@ -320,3 +335,49 @@ span {
   width: 100%;
   object-fit: cover;
 }
+
+Marker {
+  size: 200px;
+  color: blue;
+  fill:blue;
+}
+
+.promotions {
+  width: 100%;
+  background-color: #D6F0E0;
+  border: solid whitesmoke 5px
+
+}
+
+.promotionHead {
+  font-size: 50px;
+  font-family: "Abril Fatface", cursive;
+  color: #708a99;
+}
+
+
+#promo1 {
+  margin-bottom: 4px;
+}
+
+.promoBody {
+  font-size: 2px;
+}
+
+.promoTop {
+  font-size: 50px;
+}
+
+.stepper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+
+
+
+
+
+

@@ -1,5 +1,6 @@
 import React from 'react';
-import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
+import { GoogleMap, useJsApiLoader, Marker, InfoWindow } from '@react-google-maps/api';
+// import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const containerStyle = {
   width: '100%',
@@ -7,13 +8,14 @@ const containerStyle = {
 };
 
 const markerPosition = {
-  lat: 41.74841368014457,
-  lng: -88.166756002096,
+  lat: 41.74823550483188,
+  lng: -88.1667606297537141
 };
 
+
 const center = {
-  lat: 41.74841368014457,
-  lng: -88.166756002096,
+  lat: 41.74823550483188,
+  lng: -88.1667606297537141,
 };
 
 function Map() {
@@ -26,8 +28,8 @@ function Map() {
   const [map, setMap] = React.useState(null);
 
   const onLoad = React.useCallback(function callback(map) {
-    const bounds = new window.google.maps.LatLngBounds(center);
-    map.fitBounds(bounds);
+    
+  
     setMap(map);
   }, []);
 
@@ -38,14 +40,14 @@ function Map() {
   return isLoaded ? (
     <div>
       <GoogleMap
+      center={center}
+        zoom={13}
         mapContainerStyle={containerStyle}
-        center={center}
-        zoom={22}
         onLoad={onLoad}
         onUnmount={onUnmount}
       >
-        <Marker position={markerPosition} defaultClickable label={"Located Here"} />
-        <></>
+        <Marker  position={markerPosition} defaultClickable />
+        
       </GoogleMap>
     </div>
   ) : <></>;

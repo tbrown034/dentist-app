@@ -1,14 +1,7 @@
-import chair from "./Images/dentalchair.jpeg";
 import teeth from "./Images/dentistteeth.jpeg";
 import smile from "./Images/smile3.webp";
 import brush from "./Images/toothbrush.jpeg";
-import { Image } from "semantic-ui-react";
-import Breadcrumb from "react-bootstrap/Breadcrumb";
-import dentist1 from "./Images/dentist5.jpeg";
-import dentist2 from "./Images/dentist6.jpeg";
-import dentist3 from "./Images/dentrist7.jpeg";
-import Accordion from "react-bootstrap/Accordion";
-import Section from "./Section";
+
 
 
 
@@ -87,4 +80,4 @@ const trioServices = () => {
   );
 };
 
-export default Services;
+export default trioServices;

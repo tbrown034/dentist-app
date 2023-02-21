@@ -81,6 +81,7 @@ const Location = () => {
           <Col lg={7} id="col2">
             <div>
             <Map/>
+            {/* <iframe src="https://www.google.com/maps/embed?pb=!4v1676919765743!6m8!1m7!1sCAoSLEFGMVFpcE5VN3ZXUGE2TVoxN1FrY1g0YTJ2WEZ3M1ZTbWR2RkNURVpUMktx!2m2!1d41.74820708153727!2d-88.16678148740277!3f253.00565058917272!4f-18.759004074294552!5f0.7820865974627469"></iframe> */}
             </div>
           </Col>
         </Row>
