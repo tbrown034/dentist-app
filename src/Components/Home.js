@@ -5,6 +5,8 @@ import "../index.css";
 import homePhoto from "./Images/dentist.jpeg"
 import Promotions from "./Promotions";
 import TrioServices from "./TrioContainer";
+import Map from "./Map";
+import ServiceHome from "./ServiceHome"
 
 const HeroStyle = {
   backgroundImage: `url(${homePhoto})`,
@@ -44,8 +46,12 @@ const Home = () => {
       </header>
       <Section />
       <Slider1 />
+      
       <Promotions />
       <TrioServices />
+      <Map />
+      <ServiceHome/>
+
     </main>
   );
 };
