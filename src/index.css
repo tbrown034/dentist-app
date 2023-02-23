@@ -399,9 +399,17 @@ padding-bottom: 35px;
 }
 
 .servicesCard {
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
 
+}
+
+#cardRadius {
+  border-radius: 10px 100px / 120px; 
+  border: none;}
+
+#cardBackground {
+  background-color: transparent;
 }
 
 

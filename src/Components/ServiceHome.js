@@ -15,21 +15,21 @@ function ServiceHome() {
           <h2>Our Services</h2>
           <p>We provide a range of dental services to take the best care of you and your family's dental health for life.
 </p>
-<hr></hr>
+<br></br>
         </div>
-      <CardGroup>
-        <Card className="servicesCard">
+      <CardGroup >
+        <Card id="cardBackground" className="servicesCard">
 
-          <Reveal animated="move up">
+          <Reveal  animated="move up">
             <Reveal.Content visible>
-              <Card.Img src={chair} />
-              <Card.ImgOverlay>
+              <Card.Img variant="top" id="cardRadius" src={chair} />
+              <Card.ImgOverlay >
                 <Card.Title>General Dentristry</Card.Title>
               </Card.ImgOverlay>
             </Reveal.Content>
             <Reveal.Content hidden>
-              <Card.Img variant="top" src={brush} />
-              <Card.ImgOverlay>
+              <Card.Img    id="cardRadius" src={brush} />
+              <Card.ImgOverlay >
                 <Card.Title>General Dentristry</Card.Title>
                 <div id="serviceLinkHoldr">
                   <a href="/Location">Check-Ups</a>
@@ -43,16 +43,16 @@ function ServiceHome() {
             </Reveal.Content>
           </Reveal>
         </Card>
-        <Card className="servicesCard">
+        <Card id="cardBackground" className="servicesCard">
           <Reveal animated="move up">
             <Reveal.Content visible>
-              <Card.Img variant="top" src={invialign} />
+              <Card.Img id="cardRadius" variant="top" src={invialign} />
               <Card.ImgOverlay>
                 <Card.Title>Cosmetic Dentristry</Card.Title>
               </Card.ImgOverlay>
             </Reveal.Content>
             <Reveal.Content hidden>
-              <Card.Img variant="top" src={girl} />
+              <Card.Img id="cardRadius" variant="top" src={girl} />
               <Card.ImgOverlay>
                 <Card.Title>General Dentristry</Card.Title>
                 <div id="serviceLinkHoldr">
@@ -70,16 +70,16 @@ function ServiceHome() {
             </Reveal.Content>
           </Reveal>
         </Card>
-        <Card className="servicesCard">
+        <Card id="cardBackground" className="servicesCard">
           <Reveal animated="move up">
             <Reveal.Content visible>
-              <Card.Img variant="top" src={teeth} />
+              <Card.Img id="cardRadius" variant="top" src={teeth} />
               <Card.ImgOverlay>
                 <Card.Title>Surgical Dentristry</Card.Title>
               </Card.ImgOverlay>
             </Reveal.Content>
             <Reveal.Content hidden>
-              <Card.Img variant="top" src={dentist} />
+              <Card.Img id="cardRadius" variant="top" src={dentist} />
               <Card.ImgOverlay>
                 <Card.Title>Surgical Dentristry</Card.Title>
                 <div id="serviceLinkHoldr">
