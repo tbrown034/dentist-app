@@ -16,7 +16,7 @@ p {
 #topHeroText {
   font-size: 400%;
   font-family: "Abril Fatface", cursive;
-  color: rgb(225, 216, 216);
+  color: #e1d8d8;
   padding-left: 12px;
 }
 
@@ -39,10 +39,6 @@ p {
   text-align: center;
 }
 
-.bg-image {
-  background-image: url("./Components/Images/dentist.jpeg");
-  height: 680px;
-}
 
 .mask {
   background-color: rgba(0, 0, 0, 0.6);
@@ -78,7 +74,7 @@ p {
 }
 
 #navBar {
-  background-color: rgb(225, 216, 216);
+  background-color: #e1d8d8;
   padding-bottom: 20px;
 }
 
@@ -341,31 +337,38 @@ Marker {
   fill:blue;
 }
 
+
+
 .promotions {
   width: 100%;
-  background-color: #D6F0E0;
-  border: solid whitesmoke 5px
-
+  background-color:#e1d8d8;
+  padding-bottom: 19px;
 }
 
-.promotionHead {
-  font-size: 50px;
-  font-family: "Abril Fatface", cursive;
-  color: #708a99;
-}
-
-
-#promo1 {
-  margin-bottom: 4px;
-}
 
 .promoBody {
-  font-size: 25ypx;
+  font-size: 25px;
 }
 
 .promoTop {
   font-size: 50px;
+  
 }
+
+.promoCol1, .promoCol2 {
+
+  border: none;
+
+
+}
+
+.promoCol1 {
+  display: flex;
+  flex-direction: row;
+  border-right: #708a99 dashed 4px;
+
+}
+
 
 .stepper {
   display: flex;
@@ -374,15 +377,15 @@ Marker {
   width: 100%;
 }
 
+/* Service Home Bar */
+
 #serviceHome {
-background-color: rgb(225, 216, 216);
+background-color: whitesmoke;
 color: #708a99;
+margin-bottom: 5px;
 }
 
-#services {
-  background-color: #708a99;
 
-}
 
 #serviceText {
   display: flex;
@@ -390,6 +393,17 @@ color: #708a99;
   background-color: whitesmoke;;
   color:  #708a99
 }
+
+.servicesCard {
+  margin-right: 10px;
+  margin-left: 10px;
+
+}
+
+/* #divider {
+  background-color: #371a1a;
+}
+ */
 
 
 

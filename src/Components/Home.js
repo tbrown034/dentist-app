@@ -38,6 +38,14 @@ const Home = () => {
               >
                 Make an Appointment
               </a>
+              <a
+                className="btn btn-outline-light btn-lg rounded-pill"
+                href="/Appointment"
+                role="button"
+              >
+                Call (630) 396-8702
+              </a>
+             
               <br />
             </div>
           </div>

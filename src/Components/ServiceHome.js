@@ -18,9 +18,9 @@ function ServiceHome() {
 <hr></hr>
         </div>
       <CardGroup>
-        <Card>
+        <Card className="servicesCard">
 
-          <Reveal animated="move">
+          <Reveal animated="move up">
             <Reveal.Content visible>
               <Card.Img src={chair} />
               <Card.ImgOverlay>
@@ -43,8 +43,8 @@ function ServiceHome() {
             </Reveal.Content>
           </Reveal>
         </Card>
-        <Card>
-          <Reveal animated="move">
+        <Card className="servicesCard">
+          <Reveal animated="move up">
             <Reveal.Content visible>
               <Card.Img variant="top" src={invialign} />
               <Card.ImgOverlay>
@@ -70,18 +70,18 @@ function ServiceHome() {
             </Reveal.Content>
           </Reveal>
         </Card>
-        <Card>
-          <Reveal animated="move">
+        <Card className="servicesCard">
+          <Reveal animated="move up">
             <Reveal.Content visible>
               <Card.Img variant="top" src={teeth} />
               <Card.ImgOverlay>
-                <Card.Title>General Dentristry</Card.Title>
+                <Card.Title>Surgical Dentristry</Card.Title>
               </Card.ImgOverlay>
             </Reveal.Content>
             <Reveal.Content hidden>
               <Card.Img variant="top" src={dentist} />
               <Card.ImgOverlay>
-                <Card.Title>General Dentristry</Card.Title>
+                <Card.Title>Surgical Dentristry</Card.Title>
                 <div id="serviceLinkHoldr">
                   <a href="/Location">Extractions</a>
                   <a href="/Location">Implants</a>

@@ -5,12 +5,16 @@ import Button from 'react-bootstrap/Button';
 
 const Promotion2 = () => {
     const [show, setShow] = useState(true);
+    const alertStyle = {
+        backgroundColor: '#e1d8d8',
+        color: '#708a99'
+      };
   return (
     <div>
-        <Alert show={show} variant="success">
+        <Alert style={alertStyle} show={show} variant="success">
         <h3 className="promoTop">Free Virtual Before & After Picture</h3>
         <p className="promoBody" >
-          With any cosmetic procedure, we will use our latest technology to provide you with a clear view of what you'll be getting. No purchase required. Just give a ring or make an appointment!
+          With any cosmetic procedure, we will use our latest technology to provide you with a clear view of what you'll be getting. No purchase required. 
         </p>
      
         <div className="d-flex justify-content-end">

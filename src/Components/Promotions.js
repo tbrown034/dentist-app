@@ -1,25 +1,28 @@
-import Promotion1 from "./Promotion1"
-import Promotion2 from "./Promotion2"
-
+import Promotion1 from "./Promotion1";
+import Promotion2 from "./Promotion2";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const Promotions = () => {
-    const hrStyle = {
-        border: 'none',
-        borderBottom: '1px dotted black',
-      };
-    return (
-        <div className="promotions">
-            <h1 id="swiperHead"><span>2023 Deals and Promotions</span></h1>
-  
-        <div id="promo1"> <Promotion1   /></div>
-       
-        <hr style={hrStyle} /><br></br>
-        <Promotion2/>
-        </div>
-    )
+  return (
+    <div className="promotions">
+      <h1 id="swiperHead">
+        <span>2023 Deals and Promotions</span>
+      </h1>
+      <Container>
+        <Row>
+          <Col className="promoCol1">
+            <Promotion1 />
+          </Col>
 
-
-
-}
+          <Col className="promoCol2">
+            <Promotion2 />
+          </Col>
+        </Row>
+      </Container>
+    </div>
+  );
+};
 
 export default Promotions;
