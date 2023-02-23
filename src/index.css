@@ -1,48 +1,31 @@
-ul,
-ol,
-dl,
-p {
-  font-size: 1.5rem;
-}
-
-li,
-p {
-  line-height: 1.5;
-}
-
 
 /* Home */
 
 #topHeroText {
-  font-size: 400%;
+  font-size: 66px;
   font-family: "Abril Fatface", cursive;
   color: #e1d8d8;
   padding-left: 12px;
+  padding-right: 12px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #bottomHeroText {
-  font-size: 200%;
+  font-size: 25px;
   font-family: "Poppins", sans-serif;
-  width: auto;
-  padding-left: 12px;
-  color: whitesmoke;
+  padding-left: 5px;
+  color: #e1d8d8;
 }
 
 #homeContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 40px;
-  text-align: center;
+
+ 
 }
 
 
-.mask {
-  background-color: rgba(0, 0, 0, 0.6);
-}
 
 #textContainer {
   display: flex;
@@ -61,21 +44,21 @@ p {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* Header */
 
 #brand {
-  font-size: 280%;
+  font-size: 40px;
   font-family: "Qwitcher Grypen", cursive;
   font-weight: bolder;
-
   color: #708a99;
 }
 
 #navBar {
   background-color: #e1d8d8;
-  padding-bottom: 20px;
+
 }
 
 #headerLinks {
@@ -412,6 +395,10 @@ padding-bottom: 35px;
   background-color: transparent;
 }
 
+#buttonContainer a {
+  margin: 20px;
+  font-size: 15px;
+}
 
 
 
