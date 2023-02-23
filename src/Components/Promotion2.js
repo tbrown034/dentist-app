@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Alert from 'react-bootstrap/Alert';
 import Button from 'react-bootstrap/Button';
 
+
 const Promotion2 = () => {
     const [show, setShow] = useState(true);
   return (

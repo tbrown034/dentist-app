@@ -279,7 +279,6 @@ a .serviceFAQ {
 
 span {
   background-color: whitesmoke;
-  padding: 10px;
   text-decoration: wavy #708a99 2px;
 }
 
@@ -361,7 +360,7 @@ Marker {
 }
 
 .promoBody {
-  font-size: 25px;
+  font-size: 25ypx;
 }
 
 .promoTop {
@@ -373,6 +372,23 @@ Marker {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+}
+
+#serviceHome {
+background-color: rgb(225, 216, 216);
+color: #708a99;
+}
+
+#services {
+  background-color: #708a99;
+
+}
+
+#serviceText {
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;;
+  color:  #708a99
 }
 
 

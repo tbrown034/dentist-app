@@ -1,56 +1,99 @@
-import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
+import Card from "react-bootstrap/Card";
+import CardGroup from "react-bootstrap/CardGroup";
 import teeth from "./Images/dentistteeth.jpeg";
-import smile from "./Images/smile3.webp";
 import brush from "./Images/toothbrush.jpeg";
+import { Reveal } from "semantic-ui-react";
+import girl from "./Images/slidersmile.jpeg";
+import dentist from "./Images/dentrist7.jpeg";
+import invialign from "./Images/invisalign.jpeg";
+import chair from "./Images/officechair.jpeg";
 
-function ServiceHome () {
+function ServiceHome() {
   return (
-    <>
-     <h1 id="swiperHead"><span>  Hear from our patients  </span></h1>
-    <CardGroup>
-      <Card>
-        <Card.Img variant="top" src={brush} />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src={smile}  />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This card has supporting text below as a natural lead-in to
-            additional content.{' '}
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src={teeth}  />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
-    </CardGroup>
-    </>
+    <div id="serviceHome">
+      <div id="serviceText">
+          <h1>Our Services</h1>
+          <p>We provide a range of dental services to take the best care of you and your family's dental health for life.
+</p>
+<hr></hr>
+        </div>
+      <CardGroup>
+        <Card>
+
+          <Reveal animated="move">
+            <Reveal.Content visible>
+              <Card.Img src={chair} />
+              <Card.ImgOverlay>
+                <Card.Title>General Dentristry</Card.Title>
+              </Card.ImgOverlay>
+            </Reveal.Content>
+            <Reveal.Content hidden>
+              <Card.Img variant="top" src={brush} />
+              <Card.ImgOverlay>
+                <Card.Title>General Dentristry</Card.Title>
+                <div id="serviceLinkHoldr">
+                  <a href="/Location">Check-Ups</a>
+                  <a href="/Location">Fillings</a>
+                  <a href="/Location">Emergency</a>
+                  <a href="/Location">Root Canals</a>
+                  <a href="/Location">Emergency</a>
+                  <a href="/Location">Childrens' Dentristry</a>
+                </div>
+              </Card.ImgOverlay>
+            </Reveal.Content>
+          </Reveal>
+        </Card>
+        <Card>
+          <Reveal animated="move">
+            <Reveal.Content visible>
+              <Card.Img variant="top" src={invialign} />
+              <Card.ImgOverlay>
+                <Card.Title>Cosmetic Dentristry</Card.Title>
+              </Card.ImgOverlay>
+            </Reveal.Content>
+            <Reveal.Content hidden>
+              <Card.Img variant="top" src={girl} />
+              <Card.ImgOverlay>
+                <Card.Title>General Dentristry</Card.Title>
+                <div id="serviceLinkHoldr">
+                  <li>
+                    <ul>
+                      <a href="/Location">Invislaign</a>
+                      <a href="/Location">Veeners </a>
+                      <a href="/Location">Teeth Whitening</a>
+                      <a href="/Location">Bonding</a>
+                      <a href="/Location">Emergency</a>
+                    </ul>
+                  </li>
+                </div>
+              </Card.ImgOverlay>
+            </Reveal.Content>
+          </Reveal>
+        </Card>
+        <Card>
+          <Reveal animated="move">
+            <Reveal.Content visible>
+              <Card.Img variant="top" src={teeth} />
+              <Card.ImgOverlay>
+                <Card.Title>General Dentristry</Card.Title>
+              </Card.ImgOverlay>
+            </Reveal.Content>
+            <Reveal.Content hidden>
+              <Card.Img variant="top" src={dentist} />
+              <Card.ImgOverlay>
+                <Card.Title>General Dentristry</Card.Title>
+                <div id="serviceLinkHoldr">
+                  <a href="/Location">Extractions</a>
+                  <a href="/Location">Implants</a>
+                  <a href="/Location">Bridges</a>
+                  <a href="/Location">Dentures</a>
+                </div>
+              </Card.ImgOverlay>
+            </Reveal.Content>
+          </Reveal>
+        </Card>
+      </CardGroup>
+    </div>
   );
 }
 
