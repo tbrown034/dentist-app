@@ -196,12 +196,12 @@ label {
 
 #serviceText {
   background-color: #e6d5be;
-  font-size: 75%;
   color: rgb(62, 110, 110);
   flex: 1;
   flex-direction: column;
   padding-left: 10px;
   align-items: center;
+  font-family: "Poppins", sans-serif;
 }
 
 #serviceText button {
@@ -210,10 +210,11 @@ label {
 }
 
 #serviceText h2 {
-  background-color: #e6d5bed6;
-  font-size: 500%;
-  color: rgb(62, 110, 110);
-  flex: 1;
+  font-size: 40px;
+  font-family: "Abril Fatface", cursive;
+
+
+  
 }
 
 #serviceText h4 {
@@ -266,7 +267,6 @@ a .serviceFAQ {
 
 #sliderContainer {
   background-color: #e6d5be;
-  border: whitesmoke 5px solid;
   border-top: none;
   display: flex;
   flex-direction: row;
@@ -343,6 +343,8 @@ Marker {
   width: 100%;
   background-color:#e1d8d8;
   padding-bottom: 19px;
+  margin-top: 1px;
+  padding-top: 0px;
 }
 
 
@@ -380,9 +382,10 @@ Marker {
 /* Service Home Bar */
 
 #serviceHome {
-background-color: whitesmoke;
+  background-color: #708a99;
 color: #708a99;
-margin-bottom: 5px;
+padding-bottom: 35px;
+
 }
 
 
@@ -390,8 +393,9 @@ margin-bottom: 5px;
 #serviceText {
   display: flex;
   justify-content: center;
-  background-color: whitesmoke;;
-  color:  #708a99
+  background-color: #708a99;
+  color:  whitesmoke;
+  padding-top: 7px;
 }
 
 .servicesCard {
@@ -399,11 +403,6 @@ margin-bottom: 5px;
   margin-left: 10px;
 
 }
-
-/* #divider {
-  background-color: #371a1a;
-}
- */
 
 
 

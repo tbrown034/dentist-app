@@ -12,7 +12,7 @@ function ServiceHome() {
   return (
     <div id="serviceHome">
       <div id="serviceText">
-          <h1>Our Services</h1>
+          <h2>Our Services</h2>
           <p>We provide a range of dental services to take the best care of you and your family's dental health for life.
 </p>
 <hr></hr>
