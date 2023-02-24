@@ -239,7 +239,7 @@ a .serviceFAQ {
 }
 
 #bigContain {
-  margin-right: 0;
+  padding-left: 0;
   padding-right: 0;
 }
 
@@ -247,6 +247,14 @@ a .serviceFAQ {
 
   background-color: rgb(225, 216, 216);
   padding-right: 0px;
+}
+
+#sliderImage {
+  object-fit: cover;
+
+
+
+  
 }
 
 

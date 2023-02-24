@@ -19,7 +19,7 @@ export default function Slider1() {
     <>
       <Container id="bigContain" fluid>
         <Row id="sliderContainer">
-          <Col id="col1"  xl={5}>
+          <Col id="col1"  xl={6}>
           <h1 id="swiperHead"><span>  Hear from our patients  </span></h1>
             <Swiper
               autoplay={{
@@ -213,7 +213,7 @@ export default function Slider1() {
               </SwiperSlide>
             </Swiper>
           </Col>
-          <Col  xl={7} className="col2">
+          <Col  xl={6} className="col2">
             <Image id="sliderImage" thumbnail   src={smile3}  />
           </Col>
         </Row>
