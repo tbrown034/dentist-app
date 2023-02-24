@@ -16,10 +16,10 @@ const Footer = () => {
           <MDBContainer className="text-center text-md-start">
             <MDBRow>
               <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
-                <h6 className="text-uppercase fw-bold mb-4">
+                <h6>
                   Keith Brown, DDS-FAGD LTD
                 </h6>
-                <p id="footText">
+                <p>
                   With more than 40 years of dental experience, Dr. Keith Brown
                   has served Naperville and the surrounding communites for
                   decades.<br></br> <br></br> With a committment to provide the
@@ -27,7 +27,7 @@ const Footer = () => {
                   and technology, we will do everything to give you the dental
                   care you deserve.
                 </p>
-                <p></p>
+                
               </MDBCol>
 
               <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">

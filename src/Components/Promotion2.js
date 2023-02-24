@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Alert from 'react-bootstrap/Alert';
-import Button from 'react-bootstrap/Button';
 
 
 const Promotion2 = () => {
@@ -11,25 +10,28 @@ const Promotion2 = () => {
       };
   return (
     <div>
-        <Alert style={alertStyle} show={show} variant="success">
+        <Alert style={alertStyle} show={show} >
         <h3 className="promoTop">Free Virtual Before & After Picture</h3>
         <p className="promoBody" >
           With any cosmetic procedure, we will use our latest technology to provide you with a clear view of what you'll be getting. No purchase required. 
         </p>
      
-        <div className="d-flex justify-content-end">
+        <div className="buttonGroup">
         <a href="/Appointment">
-              <Button variant="outline-info">
-                Get the Deal, Make an Appointment!
-              </Button>
+        <button id="confirmButton" className="btn btn-outline-dark btn-lg rounded-pill">
+              Get the Deal, Make an Appointment!
+            </button>
             </a>
             
-          <Button  onClick={() => setShow(false)} variant="outline-info" style={ {marginLeft: 20}}>
+            <button id="rejectButton" className="btn btn-outline-dark btn-lg rounded-pill"
+            onClick={() => setShow(false)}
+            style={{ marginLeft: 20 }}
+          >
             No Thanks, not intereted.
-          </Button>
+          </button>
         </div>
       </Alert>
-      {!show && <Button onClick={() => setShow(true)}>Nevermind! Show me Again!</Button>}
+      {!show && <button id="confirmButton" className="btn btn-outline-dark btn-lg rounded-pill" onClick={() => setShow(true)}>Nevermind! Show me Again!</button>}
       </div>
   );
 }

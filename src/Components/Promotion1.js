@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Alert from "react-bootstrap/Alert";
-import Button from "react-bootstrap/Button";
 
 const Promotion1 = () => {
   const [show, setShow] = useState(true);
@@ -18,24 +17,23 @@ const Promotion1 = () => {
           obligation!
         </p>
 
-        <div className="d-flex justify-content-end">
+        <div className="buttonGroup">
           <a href="/Appointment">
-            <Button variant="outline-info">
+            <button id="confirmButton" className="btn btn-outline-dark btn-lg rounded-pill">
               Get the Deal, Make an Appointment!
-            </Button>
+            </button>
           </a>
 
-          <Button
+          <button id="rejectButton" className="btn btn-outline-dark btn-lg rounded-pill"
             onClick={() => setShow(false)}
-            variant="outline-info"
             style={{ marginLeft: 20 }}
           >
             No Thanks, not intereted.
-          </Button>
+          </button>
         </div>
       </Alert>
       {!show && (
-        <Button onClick={() => setShow(true)}>Nevermind! Show me Again!</Button>
+        <button id="confirmButton" className="btn btn-outline-dark btn-lg rounded-pill" onClick={() => setShow(true)}>Nevermind! Show me Again!</button>
       )}
     </div>
   );
