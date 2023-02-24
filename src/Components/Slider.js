@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { MDBIcon, MDBTypography } from "mdb-react-ui-kit";
+import { MDBIcon } from "mdb-react-ui-kit";
 import smile3 from "./Images/smile3.webp";
 
 import Image from "react-bootstrap/Image";
@@ -20,7 +20,7 @@ export default function Slider1() {
     <>
       <Container id="bigContain" fluid>
         <Row>
-          <Col xl={6}>
+          <Col xl={8}>
             <h1 id="swiperHead">
               <span> Hear from our patients </span>
             </h1>
@@ -29,9 +29,7 @@ export default function Slider1() {
                 delay: 4500,
               }}
               navigation={true}
-              pagination={{
-                dynamicBullets: true,
-              }}
+              
               speed={1400}
               modules={[Navigation, Pagination, Autoplay]}
               className="mySwiper"
@@ -49,11 +47,10 @@ export default function Slider1() {
                 <h5>Napeville, IL</h5>
 
                 <Rating
-                  id="fu"
-                  className="rating"
                   name="read-only"
-                  value={3.5}
+                  value={4}
                   readOnly
+                  size="large" 
                 />
               </SwiperSlide>
               <SwiperSlide>
@@ -66,51 +63,12 @@ export default function Slider1() {
                   look really good.
                   <MDBIcon fas icon="quote-right" />
                 </p>
-                <MDBTypography
-                  listUnStyled
-                  className="d-flex justify-content-center mb-0"
-                >
-                  <li>
-                    <MDBIcon
-                      fas
-                      icon="star"
-                      size="sm"
-                      className="text-warning"
-                    />
-                  </li>
-                  <li>
-                    <MDBIcon
-                      fas
-                      icon="star"
-                      size="sm"
-                      className="text-warning"
-                    />
-                  </li>
-                  <li>
-                    <MDBIcon
-                      fas
-                      icon="star"
-                      size="sm"
-                      className="text-warning"
-                    />
-                  </li>
-                  <li>
-                    <MDBIcon
-                      fas
-                      icon="star"
-                      size="sm"
-                      className="text-warning"
-                    />
-                  </li>
-                  <li>
-                    <MDBIcon
-                      far
-                      icon="star"
-                      size="sm"
-                      className="text-warning"
-                    />
-                  </li>
-                </MDBTypography>
+                <Rating
+                  name="read-only"
+                  value={5}
+                  readOnly
+                  size="large" 
+                />
 
                 <h4>- Mike C..</h4>
                 <h5>Markham, IL</h5>
@@ -125,58 +83,18 @@ export default function Slider1() {
                   Brown to anyone.
                   <MDBIcon fas icon="quote-right" />{" "}
                 </p>
-                <MDBTypography
-                  listUnStyled
-                  className="d-flex justify-content-center mb-0"
-                >
-                  <li>
-                    <MDBIcon
-                      fas
-                      icon="star"
-                      size="sm"
-                      className="text-warning"
-                    />
-                  </li>
-                  <li>
-                    <MDBIcon
-                      fas
-                      icon="star"
-                      size="sm"
-                      className="text-warning"
-                    />
-                  </li>
-                  <li>
-                    <MDBIcon
-                      fas
-                      icon="star"
-                      size="sm"
-                      className="text-warning"
-                    />
-                  </li>
-                  <li>
-                    <MDBIcon
-                      fas
-                      icon="star"
-                      size="sm"
-                      className="text-warning"
-                    />
-                  </li>
-                  <li>
-                    <MDBIcon
-                      far
-                      icon="star"
-                      size="sm"
-                      className="text-warning"
-                    />
-                  </li>
-                </MDBTypography>
-
+                <Rating
+                  name="read-only"
+                  value={5}
+                  readOnly
+                  size="large" 
+                />
                 <h4>- Mattie P W.</h4>
                 <h5>Bolingbrook, ILL</h5>
               </SwiperSlide>
             </Swiper>
           </Col>
-          <Col xl={6} className="col2">
+          <Col xl={4} className="col2">
             <Image id="sliderImage" thumbnail src={smile3} />
           </Col>
         </Row>
