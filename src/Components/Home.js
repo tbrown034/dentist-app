@@ -13,12 +13,14 @@ const HeroStyle = {
   height: 650,
 };
 
+
+
 const Home = () => {
   return (
     <main>
-      <div className="img-fluid bg-image" style={HeroStyle}>
+      <div id="totalContain" className="img-fluid bg-image" style={HeroStyle}>
         <div className="mask">
-          <div>
+          <div id="homeContainer" >
             <div id="textContainer">
               <h1 id="topHeroText">Let us brigten your smile. </h1>
               <h3 id="bottomHeroText">
@@ -39,7 +41,7 @@ const Home = () => {
                   className="btn btn-outline-light btn-lg rounded-pill"
                   href="/Appointment"
                   role="button"
-                  id="homeButton"
+                  id="homeButton2"
                 >
                   Call Us At (630) 396-8702
                 </a>
@@ -53,6 +55,13 @@ const Home = () => {
       <ServiceHome />
       <Promotions />
       <Map />
+      <style>{`
+        @media (max-width: 768px) {
+          #totalContain {
+            height: 1650px;
+          }
+        }
+      `}</style>
     </main>
   );
 };

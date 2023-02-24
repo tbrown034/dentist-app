@@ -18,19 +18,29 @@
   color: #e1d8d8;
 }
 
+/* #homeContainer {
+  display: flex;
+  flex-direction: column;
+
+ 
+} */
 
 
-#homeButton {
+
+#homeButton, #homeButton2 {
   font-size: 20px !important;
   color: #e1d8d8;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-bottom: 20px;
 }
 
-#homeButton:hover {
+#homeButton:hover, #homeButton2:hover {
  
   background-color:#708a99;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+
 
 
 
@@ -451,10 +461,7 @@ padding-top: 20px;
   background-color: transparent;
 }
 
-#buttonContainer a {
-  margin: 20px;
-  font-size: 15px;
-}
+
 
 
 /* Media query for smaller screens */
@@ -478,6 +485,16 @@ padding-top: 20px;
     margin: 30px;
     margin-left: 0 !important;
   }
+
+  #topHeroText {
+    padding-top: 25px;
+  }
+
+  #buttonContainer {
+    padding-bottom: 1px;
+  }
+
+
 
 
   /* .buttonGroup {
