@@ -1,9 +1,8 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { MDBIcon, MDBTypography } from "mdb-react-ui-kit";
 import smile3 from "./Images/smile3.webp";
-import smile4 from "./Images/slidersmile.jpeg";
-import patient from "./Images/patient.jpeg";
+
 import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -18,9 +17,9 @@ import { Navigation, Pagination, Autoplay } from "swiper";
 export default function Slider1() {
   return (
     <>
-      <Container fluid>
+      <Container id="bigContain" fluid>
         <Row id="sliderContainer">
-          <Col id="col1" lg={7} >
+          <Col id="col1"  xl={5}>
           <h1 id="swiperHead"><span>  Hear from our patients  </span></h1>
             <Swiper
               autoplay={{
@@ -214,8 +213,8 @@ export default function Slider1() {
               </SwiperSlide>
             </Swiper>
           </Col>
-          <Col xl={5} id="col2"  >
-            <Image fluid src={smile3}  />
+          <Col  xl={7} className="col2">
+            <Image id="sliderImage" thumbnail   src={smile3}  />
           </Col>
         </Row>
       </Container>

@@ -238,23 +238,18 @@ a .serviceFAQ {
   padding-right: 45px;
 }
 
-#testimonialPhoto {
-  object-fit: cover;
-  border: 8px, whitesmoke solid;
-  width: 100%;
+#bigContain {
   margin-right: 0;
-  border-left: whitesmoke 5px solid;
-
-  background-color: rgb(225, 216, 216);
+  padding-right: 0;
 }
 
 #sliderContainer {
-  background-color: #e6d5be;
-  border-top: none;
-  display: flex;
-  flex-direction: row;
+
   background-color: rgb(225, 216, 216);
+  padding-right: 0px;
 }
+
+
 
 span {
   background-color: whitesmoke;
@@ -277,15 +272,9 @@ span {
   background-color: rgb(225, 216, 216);
 }
 
-.col2 {
-  padding: 0px;
-  border-top: whitesmoke 5px solid;
-  border-left: whitesmoke 5px solid;
-}
 
-.col {
-  border-top: whitesmoke 5px solid;
-}
+
+
 
 .secondHeader {
   font-size: 50px;
