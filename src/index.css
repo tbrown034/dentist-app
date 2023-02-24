@@ -225,6 +225,8 @@ a .serviceFAQ {
   background-color: #e6d5be;
 }
 
+/* Testimoinail Swiper  */
+
 .swiper {
   text-align: center;
   font-size: 30px;
@@ -233,29 +235,54 @@ a .serviceFAQ {
 }
 
 .swiper p {
-  padding-top: 10px;
-  padding-left: 45px;
-  padding-right: 45px;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 40px;
+}
+
+.swiper p {
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 40px;
+}
+
+.swiper p {
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 40px;
+}
+
+.swiper h4 {
+  font-size: 30px;
+}
+
+.swiper h5 {
+  font-size: 25px;
 }
 
 #bigContain {
   padding-left: 0;
   padding-right: 0;
-}
-
-#sliderContainer {
-
   background-color: rgb(225, 216, 216);
-  padding-right: 0px;
 }
+
+
+
 
 #sliderImage {
   object-fit: cover;
-
-
-
   
 }
+
+
+
+.MuiRating-root, .MuiRating-icon {
+  background-color: #e1d8d8;
+}
+
 
 
 

@@ -13,14 +13,17 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 // import required modules
 import { Navigation, Pagination, Autoplay } from "swiper";
+import Rating from "@mui/material/Rating";
 
 export default function Slider1() {
   return (
     <>
       <Container id="bigContain" fluid>
-        <Row id="sliderContainer">
-          <Col id="col1"  xl={6}>
-          <h1 id="swiperHead"><span>  Hear from our patients  </span></h1>
+        <Row>
+          <Col xl={6}>
+            <h1 id="swiperHead">
+              <span> Hear from our patients </span>
+            </h1>
             <Swiper
               autoplay={{
                 delay: 4500,
@@ -33,66 +36,25 @@ export default function Slider1() {
               modules={[Navigation, Pagination, Autoplay]}
               className="mySwiper"
             >
-                      
-
-              <SwiperSlide id="slide">
+              <SwiperSlide className="slideContents">
                 <p>
                   <MDBIcon fas icon="quote-left" />
                   I have been receiving dental care from Dr. Brown for 17 years.
                   I truly believe he is the best in the business. He is a
                   perfectionist in his work. I highly recommend him and his
                   staff.
-                  <MDBIcon fas icon="quote-right" /> </p>
-
-                  <MDBTypography
-                    listUnStyled
-                    className="d-flex justify-content-center mb-0"
-                  >
-                    <li>
-                      <MDBIcon
-                        fas
-                        icon="star"
-                        size="sm"
-                        className="text-warning"
-                      />
-                    </li>
-                    <li>
-                      <MDBIcon
-                        fas
-                        icon="star"
-                        size="sm"
-                        className="text-warning"
-                      />
-                    </li>
-                    <li>
-                      <MDBIcon
-                        fas
-                        icon="star"
-                        size="sm"
-                        className="text-warning"
-                      />
-                    </li>
-                    <li>
-                      <MDBIcon
-                        fas
-                        icon="star"
-                        size="sm"
-                        className="text-warning"
-                      />
-                    </li>
-                    <li>
-                      <MDBIcon
-                        far
-                        icon="star"
-                        size="sm"
-                        className="text-warning"
-                      />
-                    </li>
-                  </MDBTypography>
-             
-
+                  <MDBIcon fas icon="quote-right" />{" "}
+                </p>
                 <h4> - Mike L.</h4>
                 <h5>Napeville, IL</h5>
+
+                <Rating
+                  id="fu"
+                  className="rating"
+                  name="read-only"
+                  value={3.5}
+                  readOnly
+                />
               </SwiperSlide>
               <SwiperSlide>
                 <p>
@@ -102,53 +64,53 @@ export default function Slider1() {
                   everything they could with the insurance and I've gotten
                   excellent care. Instead of losing some teeth I have teeth that
                   look really good.
-                  <MDBIcon fas icon="quote-right" /></p>
-                  <MDBTypography
-                    listUnStyled
-                    className="d-flex justify-content-center mb-0"
-                  >
-                    <li>
-                      <MDBIcon
-                        fas
-                        icon="star"
-                        size="sm"
-                        className="text-warning"
-                      />
-                    </li>
-                    <li>
-                      <MDBIcon
-                        fas
-                        icon="star"
-                        size="sm"
-                        className="text-warning"
-                      />
-                    </li>
-                    <li>
-                      <MDBIcon
-                        fas
-                        icon="star"
-                        size="sm"
-                        className="text-warning"
-                      />
-                    </li>
-                    <li>
-                      <MDBIcon
-                        fas
-                        icon="star"
-                        size="sm"
-                        className="text-warning"
-                      />
-                    </li>
-                    <li>
-                      <MDBIcon
-                        far
-                        icon="star"
-                        size="sm"
-                        className="text-warning"
-                      />
-                    </li>
-                  </MDBTypography>
-         
+                  <MDBIcon fas icon="quote-right" />
+                </p>
+                <MDBTypography
+                  listUnStyled
+                  className="d-flex justify-content-center mb-0"
+                >
+                  <li>
+                    <MDBIcon
+                      fas
+                      icon="star"
+                      size="sm"
+                      className="text-warning"
+                    />
+                  </li>
+                  <li>
+                    <MDBIcon
+                      fas
+                      icon="star"
+                      size="sm"
+                      className="text-warning"
+                    />
+                  </li>
+                  <li>
+                    <MDBIcon
+                      fas
+                      icon="star"
+                      size="sm"
+                      className="text-warning"
+                    />
+                  </li>
+                  <li>
+                    <MDBIcon
+                      fas
+                      icon="star"
+                      size="sm"
+                      className="text-warning"
+                    />
+                  </li>
+                  <li>
+                    <MDBIcon
+                      far
+                      icon="star"
+                      size="sm"
+                      className="text-warning"
+                    />
+                  </li>
+                </MDBTypography>
 
                 <h4>- Mike C..</h4>
                 <h5>Markham, IL</h5>
@@ -161,60 +123,61 @@ export default function Slider1() {
                   ribs, steaks, and all kinds of hard foods. If you are having
                   problems with your dentures, I would recommended Dr. Keith
                   Brown to anyone.
-                  <MDBIcon fas icon="quote-right" /> </p>
-                  <MDBTypography
-                    listUnStyled
-                    className="d-flex justify-content-center mb-0"
-                  >
-                    <li>
-                      <MDBIcon
-                        fas
-                        icon="star"
-                        size="sm"
-                        className="text-warning"
-                      />
-                    </li>
-                    <li>
-                      <MDBIcon
-                        fas
-                        icon="star"
-                        size="sm"
-                        className="text-warning"
-                      />
-                    </li>
-                    <li>
-                      <MDBIcon
-                        fas
-                        icon="star"
-                        size="sm"
-                        className="text-warning"
-                      />
-                    </li>
-                    <li>
-                      <MDBIcon
-                        fas
-                        icon="star"
-                        size="sm"
-                        className="text-warning"
-                      />
-                    </li>
-                    <li>
-                      <MDBIcon
-                        far
-                        icon="star"
-                        size="sm"
-                        className="text-warning"
-                      />
-                    </li>
-                  </MDBTypography>
+                  <MDBIcon fas icon="quote-right" />{" "}
+                </p>
+                <MDBTypography
+                  listUnStyled
+                  className="d-flex justify-content-center mb-0"
+                >
+                  <li>
+                    <MDBIcon
+                      fas
+                      icon="star"
+                      size="sm"
+                      className="text-warning"
+                    />
+                  </li>
+                  <li>
+                    <MDBIcon
+                      fas
+                      icon="star"
+                      size="sm"
+                      className="text-warning"
+                    />
+                  </li>
+                  <li>
+                    <MDBIcon
+                      fas
+                      icon="star"
+                      size="sm"
+                      className="text-warning"
+                    />
+                  </li>
+                  <li>
+                    <MDBIcon
+                      fas
+                      icon="star"
+                      size="sm"
+                      className="text-warning"
+                    />
+                  </li>
+                  <li>
+                    <MDBIcon
+                      far
+                      icon="star"
+                      size="sm"
+                      className="text-warning"
+                    />
+                  </li>
+                </MDBTypography>
 
                 <h4>- Mattie P W.</h4>
                 <h5>Bolingbrook, ILL</h5>
               </SwiperSlide>
             </Swiper>
           </Col>
-          <Col  xl={6} className="col2">
-            <Image id="sliderImage" thumbnail   src={smile3}  />
+          <Col xl={6} className="col2">
+            <Image id="sliderImage" thumbnail src={smile3} />
           </Col>
         </Row>
       </Container>
