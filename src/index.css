@@ -195,9 +195,11 @@ label {
 #serviceText h2 {
   font-size: 40px;
   font-family: "Abril Fatface", cursive;
+}
 
-
-  
+#serviceText p {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
 }
 
 #serviceText h4 {
@@ -378,7 +380,8 @@ Marker {
 #serviceHome {
   background-color: #708a99;
 color: #708a99;
-padding-bottom: 35px;
+padding-bottom: 55px;
+padding-top: 20px;
 
 }
 
@@ -396,17 +399,25 @@ padding-bottom: 35px;
   margin-right: 40px;
   margin-left: 40px;
 
+
+
 }
 
 .cardTitle {
   font-size: 50px !important;
-  color: #283137;
+  color: #e1d8d8;
   text-emphasis: bold;
+  font-family: "Abril Fatface", cursive;
 }
 
-#cardRadius {
-  border-radius: 10px 100px / 120px; 
-  border: none;}
+.cardPhoto {
+  filter: brightness(0.6); /* adjust the brightness value to your liking */
+}
+
+.backCardPhoto {
+  opacity: .3;
+
+}
 
 #cardBackground {
   background-color: transparent;

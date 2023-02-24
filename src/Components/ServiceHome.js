@@ -1,12 +1,11 @@
 import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
-import teeth from "./Images/dentistteeth.jpeg";
 import brush from "./Images/toothbrush.jpeg";
 import { Reveal } from "semantic-ui-react";
-import girl from "./Images/slidersmile.jpeg";
-import dentist from "./Images/dentrist7.jpeg";
 import invialign from "./Images/invisalign.jpeg";
 import chair from "./Images/officechair.jpeg";
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 function ServiceHome() {
   return (
@@ -18,20 +17,25 @@ function ServiceHome() {
 <br></br>
         </div>
       <CardGroup >
+        
+      <Row xl={3} md={1} sm={1} xs={'auto'} className="g-4">
+      <Col>
+
+
         <Card id="cardBackground" className="servicesCard">
 
           <Reveal  animated="move up">
             <Reveal.Content visible>
 
-              <Card.Img  variant="top" id="cardRadius" src={chair} />
+              <Card.Img  variant="top" className="cardPhoto" src={brush} />
               <Card.ImgOverlay >
                 <Card.Title className="cardTitle">General Dentristry</Card.Title>
               </Card.ImgOverlay>
             </Reveal.Content>
             <Reveal.Content hidden>
-              <Card.Img    id="cardRadius" src={brush} />
+              <Card.Img   variant="top"  className="backCardPhoto" src={brush} />
               <Card.ImgOverlay >
-                <Card.Title className="cardTitle">General Dentristry</Card.Title>
+                
                 <div id="serviceLinkHoldr">
                   <a href="/Location">Check-Ups</a>
                   <a href="/Location">Fillings</a>
@@ -45,18 +49,20 @@ function ServiceHome() {
             </Reveal.Content>
           </Reveal>
         </Card>
+        </Col>
+        <Col>
         <Card id="cardBackground" className="servicesCard">
           <Reveal animated="move up">
             <Reveal.Content visible>
-              <Card.Img id="cardRadius" variant="top" src={invialign} />
+              <Card.Img className="cardPhoto" variant="top" src={invialign} />
               <Card.ImgOverlay>
                 <Card.Title  className="cardTitle">Cosmetic Dentristry</Card.Title>
               </Card.ImgOverlay>
             </Reveal.Content>
             <Reveal.Content hidden>
-              <Card.Img id="cardRadius" variant="top" src={girl} />
+              <Card.Img className="backCardPhoto" variant="top" src={invialign} />
               <Card.ImgOverlay>
-                <Card.Title  className="cardTitle">Cosmetic Dentristry</Card.Title>
+                
                 <div id="serviceLinkHoldr">
                   <li>
                     <ul>
@@ -72,18 +78,20 @@ function ServiceHome() {
             </Reveal.Content>
           </Reveal>
         </Card>
+        </Col>
+        <Col>
         <Card id="cardBackground" className="servicesCard">
           <Reveal animated="move up">
             <Reveal.Content visible>
-              <Card.Img id="cardRadius" variant="top" src={teeth} />
+              <Card.Img className="cardPhoto" variant="top" src={chair} />
               <Card.ImgOverlay>
                 <Card.Title  className="cardTitle">Surgical Dentristry</Card.Title>
               </Card.ImgOverlay>
             </Reveal.Content>
             <Reveal.Content hidden>
-              <Card.Img id="cardRadius" variant="top" src={dentist} />
+              <Card.Img className="backCardPhoto" variant="top" src={chair} />
               <Card.ImgOverlay>
-                <Card.Title  className="cardTitle">Surgical Dentristry</Card.Title>
+                
                 <div id="serviceLinkHoldr">
                   <a href="/Location">Extractions</a>
                   <a href="/Location">Implants</a>
@@ -94,6 +102,10 @@ function ServiceHome() {
             </Reveal.Content>
           </Reveal>
         </Card>
+        </Col>
+       
+        </Row>
+
       </CardGroup>
     </div>
   );
