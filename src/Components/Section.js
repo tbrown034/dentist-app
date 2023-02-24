@@ -38,6 +38,7 @@ const Section = () => {
             className="btn btn-outline-light btn-lg rounded-pill"
             href="/Appointment"
             role="button"
+            id="sectionButtons"
           >
             {item.buttonText} <i className="arrow "></i>{" "}
             <i className="arrow alternate circle right icon"></i>

@@ -18,8 +18,8 @@ const Home = () => {
     <main>
       <div className="img-fluid bg-image" style={HeroStyle}>
         <div className="mask">
-          <div id="homeContainer">
-            <div id="texxtContainer">
+          <div>
+            <div id="textContainer">
               <h1 id="topHeroText">Let us brigten your smile. </h1>
               <h3 id="bottomHeroText">
                 Dr. Keith A. Brown has been serving Napeville and the
@@ -31,6 +31,7 @@ const Home = () => {
                   className="btn btn-outline-light btn-lg rounded-pill"
                   href="/Appointment"
                   role="button"
+                  id="homeButton"
                 >
                   Make an Appointment
                 </a>
@@ -38,6 +39,7 @@ const Home = () => {
                   className="btn btn-outline-light btn-lg rounded-pill"
                   href="/Appointment"
                   role="button"
+                  id="homeButton"
                 >
                   Call Us At (630) 396-8702
                 </a>

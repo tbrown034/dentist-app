@@ -27,11 +27,10 @@ const Footer = () => {
                   and technology, we will do everything to give you the dental
                   care you deserve.
                 </p>
-                
               </MDBCol>
 
               <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
-                <h6 className="text-uppercase fw-bold mb-4">Why Choose Us?</h6>
+                <h6>Why Choose Us?</h6>
                 <ul id="footText">
                   <li>24/7 Emergency Service</li>
                   <li>Free Laughing Gas Sedation (Nitrous Oxide)</li>

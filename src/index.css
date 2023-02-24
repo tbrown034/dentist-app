@@ -18,11 +18,18 @@
   color: #e1d8d8;
 }
 
-#homeContainer {
-  display: flex;
-  flex-direction: column;
 
+
+#homeButton {
+  font-size: 20px !important;
+  color: #e1d8d8;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#homeButton:hover {
  
+  background-color:#708a99;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 
@@ -94,6 +101,16 @@
 #rightText {
   padding: 10px;
   width: 100%;
+}
+
+#sectionButtons {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+#sectionButtons:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
 }
 
 /* Contact and forms */
