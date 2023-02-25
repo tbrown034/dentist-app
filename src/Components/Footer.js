@@ -9,8 +9,8 @@ const Footer = () => {
   return (
     <>
       <MDBFooter
-        id="footer"
-        className="text-center text-lg-start pt-4 text-muted"
+        className="footer"
+        
       >
         <section>
           <MDBContainer className="text-center text-md-start">
