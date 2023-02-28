@@ -1,5 +1,5 @@
 import React from 'react';
-import { GoogleMap, useJsApiLoader, Marker, InfoWindow } from '@react-google-maps/api';
+import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 // import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const containerStyle = {

@@ -1,8 +1,8 @@
 import React from "react";
 import { Image, Breadcrumb, Container, Row, Col } from "react-bootstrap";
-import logo from "./Images/logos.png";
 import keith from "./Images/keith2.jpeg";
 import Section from "./Section";
+import Keith01 from "./Images/Keith_1.jpg"
 
 const HeroStyle = {
   backgroundImage: `url(${keith})`,
@@ -19,23 +19,24 @@ const MeetDr = () => {
         <div className="mask">
           <div id="homeContainter">
             <div id="textContainer">
-              <h1 id="topHeroText">A Doctor Who Cares</h1>
+              <h4 id="extraTopText">Meet Your Next Dentist</h4>
+              <h1 id="topHeroText">Dr. Keith Brown</h1>
               <h3 id="bottomHeroText">
                 Dr. Keith A. Brown, D.D.S., F.A.G.D, has been practicing
-                dentristry for more than 40 years.
+                dentristry in Naperville for more than 40 years.
               </h3>
               <br />
             </div>
 
             <div id="buttonContainer">
-              <br />
-              <a
-                className="btn btn-outline-light btn-lg"
-                href="/Appointment"
-                role="button"
-              >
-                Make an Appointment
-              </a>
+            <a
+                  className="btn btn-outline-light btn-lg rounded-pill"
+                  href="/Appointment"
+                  role="button"
+                  id="homeButton"
+                >
+                  Make an Appointment
+                </a>
             </div>
           </div>
         </div>
@@ -43,32 +44,24 @@ const MeetDr = () => {
       <div id="sectionHolder">
         <Section />
       </div>
-      <Container fluid>
+      <Container className="secondContainer" fluid>
         <Row className="secondLayer">
-          <Col lg={5} className="col1">
+          <Col lg={7}  md={12} className="col1">
             <Breadcrumb>
               <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
               <Breadcrumb.Item active>Meet Dr. Brown</Breadcrumb.Item>
             </Breadcrumb>
 
-            <h2 className="secondHeader">Dr. Keith Brown, D.D.S., F.A.G.D</h2>
+            <h2 className="secondHeader">More than a Typical Dentist</h2>
             <p className="secondText">
-              Hello, and welcome to my practice. Working in dentistry for over
-              40 years, it has always been my goal to provide the highest level
-              of dental care possible. By working my hardest to stay current
-              with the latest techniques and technology I am devoted to giving
-              all my patients the finest care with financing they can afford.
+              Dr. Brown is one of just <a href="https://www.agd.org/education/awards-recognition/become-an-agd-fellow">6% of all dentists</a> in the country to become a Fellow or Master of the Academy of General Dentistry (F.A.G.D.).<br></br><br></br> And with more than 40 years of experience, you can rest assured you are in trustworthy hands. 
             </p>
-            <a href="/Appointment">
-              <button id="button2" className="circular ui icon button">
-                Make an Appointment
-              </button>
-            </a>
+            
           </Col>
-          <Col lg={7} id="col2">
-            <div>
-              <Image className="secondPhoto" src={logo} fluid />
-            </div>
+          <Col   className="col2" style={{ paddingRight: 0, paddingLeft: 0 }}>
+            
+              <Image className="secondPhoto" thumbnail src={Keith01} fluid />
+            
           </Col>
         </Row>
       </Container>

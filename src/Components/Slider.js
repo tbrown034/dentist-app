@@ -20,7 +20,7 @@ export default function Slider1() {
     <>
       <Container id="bigContain" fluid>
         <Row>
-          <Col xl={8}>
+          <Col  xl={6}  md={12}>
             <h1 id="swiperHead">
               <span> Hear from our patients </span>
             </h1>
@@ -28,8 +28,11 @@ export default function Slider1() {
               autoplay={{
                 delay: 4500,
               }}
+             
               navigation={true}
-              
+              pagination={{
+                dynamicBullets: true,
+              }}
               speed={1400}
               modules={[Navigation, Pagination, Autoplay]}
               className="mySwiper"
@@ -94,7 +97,7 @@ export default function Slider1() {
               </SwiperSlide>
             </Swiper>
           </Col>
-          <Col xl={4} className="col2">
+          <Col  className="col2">
             <Image id="sliderImage" thumbnail src={smile3} />
           </Col>
         </Row>
