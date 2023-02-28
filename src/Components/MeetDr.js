@@ -3,6 +3,8 @@ import { Image, Breadcrumb, Container, Row, Col } from "react-bootstrap";
 import keith from "./Images/keith2.jpeg";
 import Section from "./Section";
 import Keith01 from "./Images/Keith_1.jpg"
+import Statistics from "./Statistics"
+import Logos from "./Logos"
 
 const HeroStyle = {
   backgroundImage: `url(${keith})`,
@@ -65,6 +67,8 @@ const MeetDr = () => {
           </Col>
         </Row>
       </Container>
+      <Statistics />
+      <Logos />
     </>
   );
 };

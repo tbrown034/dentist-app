@@ -530,6 +530,21 @@ padding-top: 20px;
 }
 
 
+.statistics {
+  background-color: #708a99;
+  padding: 20px;
+}
+
+#statHead {
+  background-color: #708a99;
+}
+
+.logos {
+  display: flex;
+  background-color: #e1d8d8;
+  justify-content: space-evenly;
+}
+
 
 
 
