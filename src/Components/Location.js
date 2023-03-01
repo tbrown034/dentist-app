@@ -1,11 +1,9 @@
 import React from "react";
 import Map from "./Map"
-import bank from "./Images/bank.jpeg";
-import Breadcrumb from "react-bootstrap/Breadcrumb";
 import Section from "./Section";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Breadcrumb, Col, Container, Row } from "react-bootstrap";
+import bank from "./Images/bank.jpeg";
+
 
 
 const Location = () => {
@@ -34,7 +32,6 @@ const Location = () => {
               </h3>
               <br></br>
             </div>
-
             <div id="buttonContainer">
               <br></br>
               <a
@@ -51,8 +48,6 @@ const Location = () => {
       <div id="sectionHolder">
        <Section />
       </div>
-
-
       <Container fluid >
         <Row className="secondLayer">
           <Col lg={5} className="col1">
@@ -86,7 +81,6 @@ const Location = () => {
           </Col>
         </Row>
       </Container>
-      
     </>
   );
 };

@@ -24,7 +24,7 @@ function Map() {
     googleMapsApiKey: "AIzaSyDwt5C1zgXggpCw44IjmYs2GbJcuc5QXcU",
     // libraries: ['places']
   });
-
+ // eslint-disable-next-line
   const [map, setMap] = React.useState(null);
 
   const onLoad = React.useCallback(function callback(map) {

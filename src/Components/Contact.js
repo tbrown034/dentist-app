@@ -63,81 +63,74 @@ const Contact = () => {
         <Section />
       </div>
       <div id="secondLayer">
-          <Container id="contactContainer" className="secondContainer" fluid>
-            <Row className="secondLayer">
-              
-              
-                
-              
-              <Col>
+        <Container id="contactContainer" className="secondContainer" fluid>
+          <Row className="secondLayer">
+            <Col>
               <Breadcrumb>
-                  <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
-                  <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
-                    Contact
-                  </Breadcrumb.Item>
-                </Breadcrumb>
-                <h2 className="secondHeader">Have Questions? Let us know!</h2>
-                <p className="secondText">
-                  We understand that going to the dentist's office can be a
-                  stressful and confusing experience for some. That's why we are
-                  committed to answering all your questions before, during and
-                  after your visit! Let us know how we can help!
-                </p>
-              </Col>
-              <Col id="contactCol" lg={3}>
-                <h2>Contact</h2>
-                <h4>
-                  <MDBIcon icon="home" className="me-2" />
-                  1296 Rickert Dr, Naperville, IL 60540
-                </h4>
-                <h4>
-                  <MDBIcon icon="envelope" className="me-3" />
-                  kabdds@aol.com
-                </h4>
-                <h4>
-                  <MDBIcon icon="phone" className="me-3" /> 630-396-8702
-                </h4>
+                <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+                <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
+                  Contact
+                </Breadcrumb.Item>
+              </Breadcrumb>
+              <h2 className="secondHeader">Have Questions? Let us know!</h2>
+              <p className="secondText">
+                We understand that going to the dentist's office can be a
+                stressful and confusing experience for some. That's why we are
+                committed to answering all your questions before, during and
+                after your visit! Let us know how we can help!
+              </p>
+            </Col>
+            <Col id="contactCol" lg={3}>
+              <h2>Contact</h2>
+              <h4>
+                <MDBIcon icon="home" className="me-2" />
+                1296 Rickert Dr, Naperville, IL 60540
+              </h4>
+              <h4>
+                <MDBIcon icon="envelope" className="me-3" />
+                kabdds@aol.com
+              </h4>
+              <h4>
+                <MDBIcon icon="phone" className="me-3" /> 630-396-8702
+              </h4>
 
-                <h4>
-                  <MDBIcon icon="fax" className="me-3" /> 630-396-8703
-                </h4>
-                <h4>
-                  <MDBIcon fab icon="facebook-f" className="me-3" /> Facebook
-                </h4>
-              </Col>
-            </Row>
-          </Container>
-      
+              <h4>
+                <MDBIcon icon="fax" className="me-3" /> 630-396-8703
+              </h4>
+              <h4>
+                <MDBIcon fab icon="facebook-f" className="me-3" /> Facebook
+              </h4>
+            </Col>
+          </Row>
+        </Container>
 
-
-          <Form ref={form} onSubmit={handleSubmit}>
-            <h1>Contact Us Today!</h1>
-            <h2>Your Information:</h2>
-            <Form.Field >
-              <label >Name</label>
-              <input  placeholder="Name" />
-            </Form.Field>
-            <Form.Field>
-              <label>Phone</label>
-              <input type="tel" placeholder="Phone" />
-            </Form.Field>
-            <Form.Field>
-              <label>Email</label>
-              <input type="email" placeholder="Email" />
-            </Form.Field>
-            <Form.Field
-              control={Select}
-              label="Are You a New or Returning Patient?"
-              options={options}
-              placeholder="Select"
-            />
-            <Form.TextArea
-              label="About"
-              placeholder="Tell us more about you..."
-            />
-            <Button type="submit">Submit</Button>
-          </Form>
-
+        <Form ref={form} onSubmit={handleSubmit}>
+          <h1>Contact Us Today!</h1>
+          <h2>Your Information:</h2>
+          <Form.Field>
+            <label>Name</label>
+            <input placeholder="Name" />
+          </Form.Field>
+          <Form.Field>
+            <label>Phone</label>
+            <input type="tel" placeholder="Phone" />
+          </Form.Field>
+          <Form.Field>
+            <label>Email</label>
+            <input type="email" placeholder="Email" />
+          </Form.Field>
+          <Form.Field
+            control={Select}
+            label="Are You a New or Returning Patient?"
+            options={options}
+            placeholder="Select"
+          />
+          <Form.TextArea
+            label="About"
+            placeholder="Tell us more about you..."
+          />
+          <Button type="submit">Submit</Button>
+        </Form>
       </div>
     </>
   );

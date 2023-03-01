@@ -2,10 +2,10 @@ import React from "react";
 import Section from "./Section";
 import Slider1 from "./Slider";
 import "../index.css";
-import homePhoto from "./Images/dentist.jpeg";
 import Promotions from "./Promotions";
 import Map from "./Map";
 import ServiceHome from "./ServiceHome";
+import homePhoto from "./Images/dentist.jpeg";
 
 const HeroStyle = {
   backgroundImage: `url(${homePhoto})`,
@@ -13,14 +13,12 @@ const HeroStyle = {
   height: 650,
 };
 
-
-
 const Home = () => {
   return (
     <main>
       <div id="totalContain" className="img-fluid bg-image" style={HeroStyle}>
         <div className="mask">
-          <div id="homeContainer" >
+          <div id="homeContainer">
             <div id="textContainer">
               <h1 id="topHeroText">Let us brigten your smile. </h1>
               <h3 id="bottomHeroText">

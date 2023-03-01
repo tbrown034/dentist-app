@@ -55,7 +55,6 @@ export default function App() {
               <MDBNavbarItem>
                 <MDBNavbarLink href="/FAQs">FAQs</MDBNavbarLink>
               </MDBNavbarItem>
-
               <MDBNavbarItem>
                 <MDBDropdown>
                   <MDBDropdownToggle tag="a" className="nav-link" role="button">

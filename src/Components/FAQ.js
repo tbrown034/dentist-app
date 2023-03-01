@@ -1,9 +1,8 @@
+import { Image, Breadcrumb, Container, Row, Col } from "react-bootstrap";
+import { accordionFAQsMap } from "./Data/FAQData";
+import Section from "./Section";
 import brush from "./Images/toothbrush.jpeg";
 import dentist6 from "./Images/dentrist7.jpeg";
-import Section from "./Section";
-import { Image, Breadcrumb, Container, Row, Col } from "react-bootstrap";
-import {accordionFAQsMap} from "./Data/FAQData";
-
 
 const Herostyle = {
   backgroundImage: `url(${brush})`,
@@ -11,16 +10,11 @@ const Herostyle = {
   height: 550,
 };
 
-
-
 const FAQ = () => {
   return (
     <>
-      <div
-        className=" img-fluid bg-image"
-        style={Herostyle}
-      >
-        <div  className="mask" >
+      <div className=" img-fluid bg-image" style={Herostyle}>
+        <div className="mask">
           <div id="homeContainter">
             <div id="textContainer">
               <h1 id="topHeroText">Frequently Asked Questions</h1>
@@ -30,7 +24,6 @@ const FAQ = () => {
               </h3>
               <br></br>
             </div>
-
             <div id="buttonContainer">
               <br></br>
               <a
@@ -77,7 +70,6 @@ const FAQ = () => {
         </Row>
       </Container>
       <div className="serviceItems">{accordionFAQsMap}</div>
-    
     </>
   );
 };

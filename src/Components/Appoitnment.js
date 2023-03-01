@@ -1,14 +1,12 @@
 import React, { useRef } from "react";
 import { useState } from "react";
-import teeth from "./Images/smile3.webp";
 import { Button, Form, Select } from "semantic-ui-react";
 import { Breadcrumb, Col, Container, Row } from "react-bootstrap";
-import SemanticDatepicker from "react-semantic-ui-datepickers";
-import "react-semantic-ui-datepickers/dist/react-semantic-ui-datepickers.css";
 import { MDBIcon } from "mdb-react-ui-kit";
+import SemanticDatepicker from "react-semantic-ui-datepickers";
 import Section from "./Section";
-import Stepper from "./Stepper"
-
+import Stepper from "./Stepper";
+import teeth from "./Images/smile3.webp";
 
 const options = [
   { key: "new", text: "New", value: "New" },
@@ -42,13 +40,10 @@ const HeroStyle = {
 };
 
 const Appointment = () => {
-
+   // eslint-disable-next-line
   const [currentDate, setNewDate] = useState(null);
   const onChange = (event, data) => setNewDate(data.value);
   const form = useRef();
-
-
- 
 
   const sendEmail = (e) => {
     console.log("handleSubmit ran");
@@ -79,9 +74,7 @@ const Appointment = () => {
         className=" img-fluid  bg-image"
         style={HeroStyle}
       >
-        <div
-          className="mask"
-        >
+        <div className="mask">
           <div id="homeContainter">
             <div id="textContainer">
               <h1 id="topHeroText">Book Your Next Appointment</h1>
@@ -94,154 +87,95 @@ const Appointment = () => {
           </div>
         </div>
       </div>
-      
       <div id="sectionHolder">
         <Section />
       </div>
-      
-
       <div id="secondLayer">
-      <Container id="contactContainer" className="secondContainer" fluid>
-            <Row className="secondLayer">
-              
-              
-                
-              
-              <Col>
+        <Container id="contactContainer" className="secondContainer" fluid>
+          <Row className="secondLayer">
+            <Col>
               <Breadcrumb>
-                  <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
-                  <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
-                    Contact
-                  </Breadcrumb.Item>
-                </Breadcrumb>
-                <h2 className="secondHeader">Let's Get You Booked!</h2>
-                <p className="secondText">
-                  We are excited to serve you! Just fill you the form below and we will contact you shortly after to confirm your appointment and answer any questions you have!
-                </p>
-              </Col>
-              <Col id="contactCol" lg={3}>
-                <h2>Contact</h2>
-                <h4>
-                  <MDBIcon icon="home" className="me-2" />
-                  1296 Rickert Dr, Naperville, IL 60540
-                </h4>
-                <h4>
-                  <MDBIcon icon="envelope" className="me-3" />
-                  kabdds@aol.com
-                </h4>
-                <h4>
-                  <MDBIcon icon="phone" className="me-3" /> 630-396-8702
-                </h4>
-
-                <h4>
-                  <MDBIcon icon="fax" className="me-3" /> 630-396-8703
-                </h4>
-                <h4>
-                  <MDBIcon fab icon="facebook-f" className="me-3" /> Facebook
-                </h4>
-              </Col>
-            </Row>
-          </Container>
-       <Stepper />
-
-          <Form ref={form} onSubmit={sendEmail}>
+                <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+                <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
+                  Contact
+                </Breadcrumb.Item>
+              </Breadcrumb>
+              <h2 className="secondHeader">Let's Get You Booked!</h2>
+              <p className="secondText">
+                We are excited to serve you! Just fill you the form below and we
+                will contact you shortly after to confirm your appointment and
+                answer any questions you have!
+              </p>
+            </Col>
+            <Col id="contactCol" lg={3}>
+              <h2>Contact</h2>
+              <h4>
+                <MDBIcon icon="home" className="me-2" />
+                1296 Rickert Dr, Naperville, IL 60540
+              </h4>
+              <h4>
+                <MDBIcon icon="envelope" className="me-3" />
+                kabdds@aol.com
+              </h4>
+              <h4>
+                <MDBIcon icon="phone" className="me-3" /> 630-396-8702
+              </h4>
+              <h4>
+                <MDBIcon icon="fax" className="me-3" /> 630-396-8703
+              </h4>
+              <h4>
+                <MDBIcon fab icon="facebook-f" className="me-3" /> Facebook
+              </h4>
+            </Col>
+          </Row>
+        </Container>
+        <Stepper />
+        <Form ref={form} onSubmit={sendEmail}>
           <h1>Request Your Appointment Today!</h1>
-            <h2>Your Information:</h2>
-            <Form.Field>
-              <label>Name</label>
-              <input placeholder="Name" />
-            </Form.Field>
-            <Form.Field>
-              <label>Phone</label>
-              <input type="tel" placeholder="Phone" />
-            </Form.Field>
-            <Form.Field>
-              <label>Email</label>
-              <input type="email" placeholder="Email" />
-            </Form.Field>
-            <Form.Field
-              control={Select}
-              label="Are You a New or Returning Patient?"
-              options={options}
-              placeholder="Select"
-            />
-            <Form.Field
-              control={Select}
-              label="Is this an Emergency?"
-              options={emergency}
-              placeholder="Select"
-            />
-            <Form.Field
-              control={Select}
-              label="How Can We Help You?"
-              options={services}
-              placeholder="Select"
-            />
-            <Form.TextArea
-              label="More Infomation"
-              placeholder="Let us Know about any details or questions you have ..."
-            />
-
-            <Form.Field>
-              <label>Date Requested</label>
-              <SemanticDatepicker onChange={onChange} />
-              <label>Back-Up Date</label>
-              <SemanticDatepicker onChange={onChange} />
-            </Form.Field>
-            <Button type="submit">Submit</Button>
-          </Form>
- 
+          <h2>Your Information:</h2>
+          <Form.Field>
+            <label>Name</label>
+            <input placeholder="Name" />
+          </Form.Field>
+          <Form.Field>
+            <label>Phone</label>
+            <input type="tel" placeholder="Phone" />
+          </Form.Field>
+          <Form.Field>
+            <label>Email</label>
+            <input type="email" placeholder="Email" />
+          </Form.Field>
+          <Form.Field
+            control={Select}
+            label="Are You a New or Returning Patient?"
+            options={options}
+            placeholder="Select"
+          />
+          <Form.Field
+            control={Select}
+            label="Is this an Emergency?"
+            options={emergency}
+            placeholder="Select"
+          />
+          <Form.Field
+            control={Select}
+            label="How Can We Help You?"
+            options={services}
+            placeholder="Select"
+          />
+          <Form.TextArea
+            label="More Infomation"
+            placeholder="Let us Know about any details or questions you have ..."
+          />
+          <Form.Field>
+            <label>Date Requested</label>
+            <SemanticDatepicker onChange={onChange} />
+            <label>Back-Up Date</label>
+            <SemanticDatepicker onChange={onChange} />
+          </Form.Field>
+          <Button type="submit">Submit</Button>
+        </Form>
       </div>
-
-      {/* <form id="contactForm" ref={form} onSubmit={sendEmail}>
-              <label>Patient name:</label>
-              <input type="text" name="patient_name" />
-              <label>Your Email:</label>
-              <input type="email" name="patient_email" />
-              <label>Your Phone Number:</label>
-              <input type="tel" name="patient_phone" />
-
-              <input type="radio" id="css" name="fav_language" value="CSS" />
-
-              <label>Message:</label>
-              <textarea rows="8" name="message" />
-              <lable>Preferred Appointment Date:</lable>
-              <input type="date" name="date" />
-              <lable>Back-Up Date</lable>
-              <input type="date" name="date" />
-
-              <fieldset />
-            </form> */}
-      {/* <div >
-              <Button
-                form="contactForm"
-                type="submit"
-                value="send"
-                onClick={toggleShowA}
-                id="contactMe"
-              >
-                Send
-              </Button>
-            </div> */}
-      {/* <Toast
-              delay="14000"
-              show={showA}
-              autohide="true"
-              onClose={toggleShowA}
-            >
-              <Toast.Header>
-                <img
-                  src="holder.js/20x20?text=%20"
-                  className="rounded me-2"
-                  alt=""
-                />
-                <strong className="me-auto">Success!</strong>
-              </Toast.Header>
-              <Toast.Body>
-                Thanks for sending your message! I'll get back to you ASAP! -
-                Trevor
-              </Toast.Body>
-            </Toast> */}
     </>
   );
 };

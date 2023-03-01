@@ -68,8 +68,6 @@ const Financing = () => {
               cash or credit cards, and we offer a flexible payment plan. We,
               however, are not accepting Medicad at this time.
             </p>
-
-            
           </Col>
           <Col lg={5} id="col2">
             <Image className="secondPhoto" src={financing} fluid />
@@ -96,7 +94,9 @@ const Financing = () => {
           <Item.Image size="large" src={care} />
 
           <Item.Content>
-            <Item.Header className="itemHead" as="a">Care Credit</Item.Header>
+            <Item.Header className="itemHead" as="a">
+              Care Credit
+            </Item.Header>
 
             <Item.Description>
               Whether you use your healthcare credit card to pay for
@@ -111,18 +111,19 @@ const Financing = () => {
           <Item.Image size="large" src={citi} />
 
           <Item.Content>
-            <Item.Header className="itemHead" as="a">Citi Benefits</Item.Header>
+            <Item.Header className="itemHead" as="a">
+              Citi Benefits
+            </Item.Header>
 
             <Item.Description>
-            Your needs are unique to you, so Citi provides you with different medical options from which to choose. Each plan offers comprehensive benefits to help you and your family stay healthy throughout the year.
-
-
+              Your needs are unique to you, so Citi provides you with different
+              medical options from which to choose. Each plan offers
+              comprehensive benefits to help you and your family stay healthy
+              throughout the year.
             </Item.Description>
-          
           </Item.Content>
         </Item>
       </Item.Group>
-
       <Promotions />
     </>
   );

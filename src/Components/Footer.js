@@ -11,7 +11,6 @@ const Footer = () => {
   return (
     <>
       <MDBFooter className="footer">
-        
         <section>
           <MDBContainer className="text-center text-md-start">
             <MDBRow>
@@ -68,28 +67,17 @@ const Footer = () => {
                 <h4>
                   <MDBIcon icon="phone" className="me-3" /> 630-396-8702
                 </h4>
-                
                 <h4>
                   <MDBIcon icon="fax" className="me-3" /> 630-396-8703
                 </h4>
                 <h4>
-                <MDBIcon fab icon="facebook-f" className="me-3"/> Facebook
+                  <MDBIcon fab icon="facebook-f" className="me-3" /> Facebook
                 </h4>
               </MDBCol>
-
-              
             </MDBRow>
           </MDBContainer>
-
-          
         </section>
-
-        <div
-          className="text-center p-1"
-          
-        >
-          © 2023 Keith Brown D.D.S.
-        </div>
+        <div className="text-center p-1">© 2023 Keith Brown D.D.S.</div>
       </MDBFooter>
     </>
   );
