@@ -55,7 +55,7 @@ const FAQ = () => {
             <p className="secondText">
               Have questions about your visit, financing or what to expect
               before, during and after your procedure? Let us answer your
-              questions. If you don't see your answer{" "}
+              questions. 
               <a href="/Contact">Let us know!</a>
             </p>
             <a href="/Appointment">
