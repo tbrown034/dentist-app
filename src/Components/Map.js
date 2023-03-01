@@ -18,10 +18,12 @@ const center = {
   lng: -88.1667606297537141,
 };
 
+const apiMap = process.env.REACT_APP_MAP_API_KEY;
+
 function Map() {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: "AIzaSyDwt5C1zgXggpCw44IjmYs2GbJcuc5QXcU",
+    googleMapsApiKey: apiMap,
     // libraries: ['places']
   });
  // eslint-disable-next-line

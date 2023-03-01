@@ -2,8 +2,11 @@ import { initializeApp } from "firebase/app";
 // import { getAnalytics } from "firebase/analytics";
 import {getFirestore} from "@firebase/firestore";
 
+const apiFire = process.env.REACT_APP_FIREBASE_API_KEY;
+
 const firebaseConfig = {
-  apiKey: "AIzaSyCEIp6kIuz4ILlQac_Qd502irjqEDgk8O4",
+
+  apiKey: {apiFire},
   authDomain: "dentist-app-938e1.firebaseapp.com",
   projectId: "dentist-app-938e1",
   storageBucket: "dentist-app-938e1.appspot.com",
