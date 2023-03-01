@@ -8,12 +8,13 @@ import Fellow from "./Images/Fellow.png"
 
 const Logos = () => (
   <div className="logos">
-    <Image.Group size='medium'>
-    <Image src={ADA} />
-      <Image src={CDS} />
+
+    <Image.Group className="logoGroup" size='medium'>
+    <Image className="logoImage" src={ADA} />
+      <Image className="logoImage" src={CDS} />
       
-      <Image src={AES} />
-      <Image src={Fellow} />
+      <Image className="logoImage"  src={AES} />
+      <Image className="logoImage" src={Fellow} />
     </Image.Group>
   </div>
 )

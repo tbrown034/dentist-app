@@ -1,5 +1,7 @@
 import React from 'react'
-import { Icon, Statistic, Header, Image, Item } from 'semantic-ui-react'
+import { Icon, Statistic, Item } 
+from 'semantic-ui-react'
+import { MDBIcon } from "mdb-react-ui-kit";
 import AGD from "./Images/AGD.png"
 
 const Statistics = () => (
@@ -11,7 +13,7 @@ const Statistics = () => (
       <Item.Content>
         <Item.Header as='a'>What it Means to be Fellow</Item.Header>
        
-        <Item.Description>If your dentist is a Fellow or Master of the Academy of General Dentistry (FAGD or MAGD), they are the best of the best in the field. You can rest assured that your dentist cares about knowing the latest techniques and best practices in dentistry. Your dentist practices these techniques in a classroom setting multiple times a year — not every dentist does this.
+        <Item.Description><MDBIcon fas icon="quote-left" />If your dentist is a Fellow or Master of the Academy of General Dentistry (FAGD or MAGD), they are the best of the best in the field. You can rest assured that your dentist cares about knowing the latest techniques and best practices in dentistry. Your dentist practices these techniques in a classroom setting multiple times a year — not every dentist does this.<MDBIcon fas icon="quote-right" />
         </Item.Description>
         <Item.Extra>- Academy of General Dentistry</Item.Extra>
       </Item.Content>

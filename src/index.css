@@ -101,15 +101,16 @@
 
 
 .footer h2 {
-  font-size: 40px;
-  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+  font-family: "Abril Fatface", cursive;
 
   text-decoration: underline;
   text-underline-offset: 10px;
 }
 
 .footer h4 {
-  font-size: 20px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Section */
@@ -312,7 +313,7 @@ span {
 
 .secondLayer {
   background-color: #e6d5be;
-  border: whitesmoke 5px solid;
+
   display: flex;
   flex-direction: row;
   background-color: #e1d8d8;
@@ -331,8 +332,9 @@ span {
 
 
 .secondText {
-  font-size: 30px;
+  font-size: 20px;
   color: #708a99;
+  font-family: "Poppins", sans-serif;
 }
 
 .secondList {
@@ -354,6 +356,7 @@ span {
 .secondContainer {
   padding-right: none !important;
   margin-right: none;
+  background-color: #708a99;
 }
 
 Marker {
@@ -457,6 +460,10 @@ padding-top: 20px;
   padding-top: 7px;
 }
 
+#serviceText p {
+  font-size: 20px;
+}
+
 .servicesCard {
   margin-right: 40px;
   margin-left: 40px;
@@ -517,9 +524,9 @@ padding-top: 20px;
   #buttonContainer {
     padding-bottom: 1px;
   }
-
-
-
+  .logoImage {
+    padding-bottom: 16px;
+  }
 
   /* .buttonGroup {
     display: flex;
@@ -533,6 +540,7 @@ padding-top: 20px;
 .statistics {
   background-color: #708a99;
   padding: 20px;
+  margin-top: none;
 }
 
 #statHead {
@@ -540,12 +548,81 @@ padding-top: 20px;
 }
 
 .logos {
-  display: flex;
+ 
   background-color: #e1d8d8;
-  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.logoImages {
+  display: flex;
+  align-items: center;
+
+}
+
+p a {
+  color: teal;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+
+
+}
+
+#financeText a {
+  color: lightblue;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+
+
 }
 
 
 
+.financeGroup {
+  background-color:#708a99;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 15px;
 
+
+  
+}
+
+#financeText {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background-color:#708a99;
+  margin-bottom: 0 !important;
+
+}
+
+#financeText h2 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  align-items: center;
+  background-color:#708a99;
+  margin-bottom: 0 !important;
+  font-size: 40px;
+  font-family: "Abril Fatface", cursive;
+  color: whitesmoke;
+}
+
+.itemHead {
+  color: whitesmoke !important;
+}
+
+#topItem, #bottomItem {
+  padding-bottom: 20px;
+}
 
