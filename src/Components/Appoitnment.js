@@ -1,10 +1,11 @@
 import React, { useRef } from "react";
 import { useState } from "react";
-import Breadcrumb from "react-bootstrap/Breadcrumb";
 import teeth from "./Images/smile3.webp";
 import { Button, Form, Select } from "semantic-ui-react";
+import { Breadcrumb, Col, Container, Row } from "react-bootstrap";
 import SemanticDatepicker from "react-semantic-ui-datepickers";
 import "react-semantic-ui-datepickers/dist/react-semantic-ui-datepickers.css";
+import { MDBIcon } from "mdb-react-ui-kit";
 import Section from "./Section";
 import Stepper from "./Stepper"
 
@@ -100,24 +101,52 @@ const Appointment = () => {
       
 
       <div id="secondLayer">
-        <div id="secondLayerText">
-            <Breadcrumb>
-              <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
-              <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
-               Appointments
-              </Breadcrumb.Item>
-            </Breadcrumb>
-            
-          
-          <h2>Let's Get You Scheduled!</h2>
-          <p>
-            We are committed to getting you in as fast as possible to meet your needs. 
-          </p>
+      <Container id="contactContainer" className="secondContainer" fluid>
+            <Row className="secondLayer">
+              
+              
+                
+              
+              <Col>
+              <Breadcrumb>
+                  <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+                  <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
+                    Contact
+                  </Breadcrumb.Item>
+                </Breadcrumb>
+                <h2 className="secondHeader">Let's Get You Booked!</h2>
+                <p className="secondText">
+                  We are excited to serve you! Just fill you the form below and we will contact you shortly after to confirm your appointment and answer any questions you have!
+                </p>
+              </Col>
+              <Col id="contactCol" lg={3}>
+                <h2>Contact</h2>
+                <h4>
+                  <MDBIcon icon="home" className="me-2" />
+                  1296 Rickert Dr, Naperville, IL 60540
+                </h4>
+                <h4>
+                  <MDBIcon icon="envelope" className="me-3" />
+                  kabdds@aol.com
+                </h4>
+                <h4>
+                  <MDBIcon icon="phone" className="me-3" /> 630-396-8702
+                </h4>
+
+                <h4>
+                  <MDBIcon icon="fax" className="me-3" /> 630-396-8703
+                </h4>
+                <h4>
+                  <MDBIcon fab icon="facebook-f" className="me-3" /> Facebook
+                </h4>
+              </Col>
+            </Row>
+          </Container>
        <Stepper />
-        </div>
-        <div id="secondPhoto">
-          <h2>Contact Us!</h2>
+
           <Form ref={form} onSubmit={sendEmail}>
+          <h1>Request Your Appointment Today!</h1>
+            <h2>Your Information:</h2>
             <Form.Field>
               <label>Name</label>
               <input placeholder="Name" />
@@ -161,7 +190,7 @@ const Appointment = () => {
             </Form.Field>
             <Button type="submit">Submit</Button>
           </Form>
-        </div>
+ 
       </div>
 
       {/* <form id="contactForm" ref={form} onSubmit={sendEmail}>

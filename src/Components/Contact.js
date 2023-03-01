@@ -1,9 +1,10 @@
 import React, { useRef } from "react";
 import { Button, Form, Select } from "semantic-ui-react";
-import Breadcrumb from "react-bootstrap/Breadcrumb";
+import { Breadcrumb, Col, Container, Row } from "react-bootstrap";
 import Section from "./Section";
 // import emailjs from "@emailjs/browser";
 import dentistwords from "./Images/dentistwords.jpeg";
+import { MDBIcon } from "mdb-react-ui-kit";
 
 const options = [
   { key: "new", text: "New", value: "New" },
@@ -55,16 +56,6 @@ const Contact = () => {
               </h3>
               <br></br>
             </div>
-            <div id="buttonContainer">
-              <br></br>
-              <a
-                className="btn btn-outline-light btn-lg"
-                href="/Appointment"
-                role="button"
-              >
-                Make an Appointment
-              </a>
-            </div>
           </div>
         </div>
       </div>
@@ -72,35 +63,59 @@ const Contact = () => {
         <Section />
       </div>
       <div id="secondLayer">
-        <div id="secondLayerText">
-          <div id="breadcrum">
-            <Breadcrumb>
-              <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
-              <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
-                Practice
-              </Breadcrumb.Item>
-            </Breadcrumb>
-          </div>
-          <h2>Have Questions? Let us know!</h2>
-          <p>
-            We understand that going to the dentist's office can be a stressful
-            and confusing experience for some. That's why we are committed to
-            answering all your questions before, during and after your visit!
-            Let us know how we can help!
-          </p>
-          <br></br>
-          <a href="/Appointment">
-            <button className="circular ui icon button">
-              Make an Appointment
-            </button>
-          </a>
-        </div>
-        <div id="secondPhoto">
-          <h2>Contact Us!</h2>
+          <Container id="contactContainer" className="secondContainer" fluid>
+            <Row className="secondLayer">
+              
+              
+                
+              
+              <Col>
+              <Breadcrumb>
+                  <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+                  <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
+                    Contact
+                  </Breadcrumb.Item>
+                </Breadcrumb>
+                <h2 className="secondHeader">Have Questions? Let us know!</h2>
+                <p className="secondText">
+                  We understand that going to the dentist's office can be a
+                  stressful and confusing experience for some. That's why we are
+                  committed to answering all your questions before, during and
+                  after your visit! Let us know how we can help!
+                </p>
+              </Col>
+              <Col id="contactCol" lg={3}>
+                <h2>Contact</h2>
+                <h4>
+                  <MDBIcon icon="home" className="me-2" />
+                  1296 Rickert Dr, Naperville, IL 60540
+                </h4>
+                <h4>
+                  <MDBIcon icon="envelope" className="me-3" />
+                  kabdds@aol.com
+                </h4>
+                <h4>
+                  <MDBIcon icon="phone" className="me-3" /> 630-396-8702
+                </h4>
+
+                <h4>
+                  <MDBIcon icon="fax" className="me-3" /> 630-396-8703
+                </h4>
+                <h4>
+                  <MDBIcon fab icon="facebook-f" className="me-3" /> Facebook
+                </h4>
+              </Col>
+            </Row>
+          </Container>
+      
+
+
           <Form ref={form} onSubmit={handleSubmit}>
-            <Form.Field>
-              <label>Name</label>
-              <input placeholder="Name" />
+            <h1>Contact Us Today!</h1>
+            <h2>Your Information:</h2>
+            <Form.Field >
+              <label >Name</label>
+              <input  placeholder="Name" />
             </Form.Field>
             <Form.Field>
               <label>Phone</label>
@@ -122,7 +137,7 @@ const Contact = () => {
             />
             <Button type="submit">Submit</Button>
           </Form>
-        </div>
+
       </div>
     </>
   );

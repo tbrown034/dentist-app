@@ -12,18 +12,19 @@ const AppointmentStepper = () => (
       </Step.Content>
     </Step>
 
-    <Step>
+    <Step >
       <Icon name='phone' />
       <Step.Content>
         <Step.Title>We'll Confirm</Step.Title>
-        <Step.Description>Will give you a call to confirm and set up your appointment and answer any questions you have.</Step.Description>
+        <Step.Description>We will give you a call to confirm and set up your appointment and answer any questions you have.</Step.Description>
       </Step.Content>
     </Step>
 
     <Step >
-      <Icon name='calendar check' />
+      <Icon name='calendar' />
       <Step.Content>
         <Step.Title>Appointment </Step.Title>
+        <Step.Description>Let's Brighten Your Smile!</Step.Description>
       </Step.Content>
     </Step>
   </Step.Group>
